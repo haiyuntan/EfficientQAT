@@ -1,0 +1,20 @@
+# Model weights and Hugging Face caches
+models/
+hf_cache/
+cache/
+
+# Experiment artifacts
+output/
+outputs/
+logs/*.log
+
+# Checkpoints
+checkpoint-*/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Python artifacts
+__pycache__/
+*.pyc
