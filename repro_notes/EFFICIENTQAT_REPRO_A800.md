@@ -1498,4 +1498,4 @@ R0–R5 统一使用 `local_datasets.py`：WikiText-2 和 MMLU 从现有 Arrow �
 
 ### 实验分析文件同步到 GitHub
 
-`scripts/sync_experiment_reports.py --watch` 用 nohup 常驻，每 5 分钟将 R0–R5 的配置、评测 JSON、训练指标、参数更新审计、状态和日志复制到仓库 `experiment_reports/`，提交并推送当前分支。失败会记录并重试，不影响 GPU 实验。模型权重、数据集、缓存不上传。单个日志最多保留末尾 2 MiB；超过 2 MiB 的其他文本文件记录在 manifest 但不复制。网页端分析应先读取 README、status.tsv，再读取指标与审计；私有仓库仍需网页端账号的 GitHub 访问权限。
+按照最新要求，实验期间不推送。`scripts/sync_experiment_reports.py --after-run <正式实验运行ID>` 用 nohup 等待该正式流水线的 `ALL_DONE` 标记，R0–R5 全部成功结束后才统一收集、提交并推送一次。失败或未完成时不会推送。同步包含配置、评测 JSON、训练指标、参数更新审计、状态和日志，存放在仓库 `experiment_reports/`；模型权重、数据集、缓存不上传。单个日志最多保留末尾 2 MiB；超过 2 MiB 的其他文本文件记录在 manifest 但不复制。推送失败记录错误，后续可手动重试；不会周期推送。网页端访问私有仓库仍需 GitHub 访问权限。

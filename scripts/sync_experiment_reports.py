@@ -68,17 +68,19 @@ def snapshot():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--watch", action="store_true")
+    parser.add_argument("--after-run", help="Wait for this formal run's ALL_DONE marker, then push once")
     args = parser.parse_args()
+    if args.after_run:
+        if not re.fullmatch(r"[A-Za-z0-9._-]+", args.after_run) or args.after_run in {".", ".."}:
+            parser.error("Invalid run ID")
+        marker = PROJECT / "logs/r0_r5" / args.after_run / "ALL_DONE"
+        print("Waiting for formal R0-R5 completion: " + str(marker), flush=True)
+        while not marker.is_file():
+            time.sleep(60)
     with (REPO / ".git/report-sync.lock").open("w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        while True:
-            try:
-                snapshot()
-            except Exception as error:
-                print(type(error).__name__ + ": " + str(error), flush=True)
-                if not args.watch:
-                    raise SystemExit(1)
-            if not args.watch:
-                break
-            time.sleep(300)
+        try:
+            snapshot()
+        except Exception as error:
+            print(type(error).__name__ + ": " + str(error), flush=True)
+            raise SystemExit(1)
