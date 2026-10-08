@@ -14,7 +14,8 @@ print('Alpaca:', len(json.loads(out.read_text())), out, flush=True)
 from lm_eval.tasks import TaskManager, get_task_dict
 import time
 manager = TaskManager()
-subjects = sorted(name for name in manager.all_tasks if name.startswith('mmlu_') and name not in manager.all_groups)
+import lm_eval
+subjects = sorted(p.stem for p in (Path(lm_eval.__file__).parent / 'tasks/mmlu/default').glob('mmlu_*.yaml'))
 assert len(subjects) == 57, f"Expected 57 default MMLU subjects, got {len(subjects)}"
 for index, subject in enumerate(subjects, 1):
     for attempt in range(1, 6):
