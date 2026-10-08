@@ -8,6 +8,11 @@ PROJECT_ROOT="$(cd -- "$REPO_ROOT/.." && pwd)"
 MODE="${1:-smoke}"
 RUN_ID="${2:-$(date -u +%Y%m%dT%H%M%SZ)}"
 GPU_ID="${GPU_ID:-0}"
+RESUME_FROM="${RESUME_FROM:-}"
+if [[ -n "$RESUME_FROM" && ( "$MODE" != "smoke" || "$RESUME_FROM" != "R2_E2E_QP" ) ]]; then
+  echo "Only smoke RESUME_FROM=R2_E2E_QP is supported" >&2
+  exit 2
+fi
 MODEL_DIR="${MODEL_DIR:-$PROJECT_ROOT/models/Llama-2-7b-hf}"
 OFFICIAL_DIR="${OFFICIAL_DIR:-$PROJECT_ROOT/outputs/official_w2g64}"
 RUN_ROOT="$PROJECT_ROOT/outputs/r0_r5/$RUN_ID"
@@ -40,7 +45,7 @@ if [[ "$MODE" == "auto" ]]; then
   echo "Started smoke then full: PID=$! logs=$LOG_ROOT"
   exit 0
 fi
-if [[ -s "$LOG_ROOT/status.tsv" || -e "$LOG_ROOT/ALL_DONE" ]]; then
+if [[ -z "$RESUME_FROM" && ( -s "$LOG_ROOT/status.tsv" || -e "$LOG_ROOT/ALL_DONE" ) ]]; then
   echo "Run already exists; choose a new RUN_ID" >&2
   exit 1
 fi
@@ -51,7 +56,7 @@ if [[ "$MODE" == "launch" ]]; then
     echo "A driver for RUN_ID=$RUN_ID is already active (PID $(<"$LOG_ROOT/driver.pid"))." >&2
     exit 1
   fi
-  if [[ -s "$LOG_ROOT/status.tsv" || -e "$LOG_ROOT/ALL_DONE" ]]; then
+  if [[ -z "$RESUME_FROM" && ( -s "$LOG_ROOT/status.tsv" || -e "$LOG_ROOT/ALL_DONE" ) ]]; then
     echo "RUN_ID=$RUN_ID already has a recorded run; choose a new RUN_ID to avoid overwriting results." >&2
     exit 1
   fi
@@ -137,6 +142,7 @@ if [[ "$MODE" == "smoke" ]]; then
   SMOKE_BLOCK_CACHE="$RUN_ROOT/smoke_data/blockap_cache"
   SMOKE_E2E_CACHE="$REPO_ROOT/cache/e2e_dataloader_${SMOKE_FAMILY}_redpajama_${SMOKE_SEQUENCE_LENGTH}.cache"
 
+  if [[ -z "$RESUME_FROM" ]]; then
   run_logged R0_FP16_limited_evaluation "$LOG_ROOT/R0_FP16_smoke.log" \
     "$PYTHON" main_block_ap.py --model "$MODEL_DIR" --net Llama-2 \
     --wbits 16 --group_size 64 --output_dir "$LOG_ROOT/R0_FP16_smoke" \
@@ -152,6 +158,14 @@ if [[ "$MODE" == "smoke" ]]; then
     --model-dir "$MODEL_DIR" --redpajama-file "$PROJECT_ROOT/data/local_datasets/redpajama/data/train-00000-of-00011.parquet" --blockap-cache-dir "$SMOKE_BLOCK_CACHE" \
     --blockap-net "$SMOKE_NET" --e2e-cache-file "$SMOKE_E2E_CACHE" \
     --sequence-length "$SMOKE_SEQUENCE_LENGTH" --train-size "$SMOKE_TRAIN_SIZE" --val-size "$SMOKE_VAL_SIZE"
+
+  else
+    test -s "$LOG_ROOT/R0_FP16_smoke/eval_results.json"
+    test -s "$LOG_ROOT/R1_official_smoke/eval_results.json"
+    test -s "$RUN_ROOT/R2_smoke/block_ap/model.safetensors"
+    test -s "$SMOKE_E2E_CACHE"
+    echo "Resuming existing smoke run at R2 E2E-QP"
+  fi
 
   smoke_block_ap() {
     local exp="$1" bits="$2" group="$3" weight_lr="$4"
@@ -184,7 +198,9 @@ if [[ "$MODE" == "smoke" ]]; then
       --output_dir "$out" --do_train True --do_eval False --audit_updates True --report_to none
   }
 
-  smoke_block_ap R2 4 128 1e-5
+  if [[ -z "$RESUME_FROM" ]]; then
+    smoke_block_ap R2 4 128 1e-5
+  fi
   smoke_e2e_qp R2 4 128 1e-5
   smoke_block_ap R3 2 64 2e-5
   mkdir -p "$RUN_ROOT/R4_smoke"
@@ -200,7 +216,7 @@ if [[ "$MODE" == "smoke" ]]; then
   exit 0
 fi
 
-if [[ -s "$LOG_ROOT/status.tsv" || -e "$LOG_ROOT/ALL_DONE" ]]; then
+if [[ -z "$RESUME_FROM" && ( -s "$LOG_ROOT/status.tsv" || -e "$LOG_ROOT/ALL_DONE" ) ]]; then
   echo "RUN_ID=$RUN_ID already has a recorded run; choose a new RUN_ID to avoid overwriting results." >&2
   exit 1
 fi

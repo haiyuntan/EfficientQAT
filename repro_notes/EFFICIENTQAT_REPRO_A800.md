@@ -1503,3 +1503,7 @@ R0–R5 统一使用 `local_datasets.py`：WikiText-2 和 MMLU 从现有 Arrow �
 ### 2026-10-08 冒烟修复与重新运行
 
 修复 E2E-QP 的 LLaMA 特殊 token 初始化：保留 tokenizer 已有 eos/bos/unk，缺失时补齐，不再将缺失的模型 pad ID 当作 unk ID；同步 model.config.pad_token_id。清理之前 R0–R4/R0–R5 冒烟生成权重、评估结果、日志和专用缓存及报告快照，保留下载的基础模型、官方权重和本地数据集。新运行 r0_r5_20261008_v7 使用 nohup 从 R0 开始，冒烟通过后自动启动正式流水线；仅正式 R0–R5 全部完成后推送。
+
+### R2 审计基准修复与续跑
+
+Trainer 初始化会转换模型精度，冻结参数摘要和 scale 副本改为初始化后、训练前采集；失败也保存两个审计结果。RESUME_FROM=R2_E2E_QP 支持在原 smoke RUN_ID 上复用 R0/R1、数据缓存和 R2 BlockAP，从 R2 E2E-QP 继续 R3–R5；正式阶段清除此续跑变量。

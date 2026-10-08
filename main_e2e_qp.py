@@ -440,8 +440,6 @@ def train():
                     digest.update(n.encode())
                     digest.update(t.detach().cpu().contiguous().view(torch.uint8).numpy().tobytes())
             return digest.hexdigest()
-        frozen_before = frozen_digest()
-        scales_before = {n: p.detach().cpu().clone() for n, p in trainable.items()}
 
 
     trainer = Seq2SeqTrainer(
@@ -451,6 +449,12 @@ def train():
         optimizers=(optimizer, None),
         **{k:v for k,v in data_module.items() if k != 'predict_dataset'},
     )
+
+    # Trainer initialization can cast the model for mixed precision. Take the
+    # baseline after those conversions so the audit measures training updates.
+    if args.audit_updates:
+        frozen_before = frozen_digest()
+        scales_before = {n: p.detach().cpu().clone() for n, p in trainable.items()}
 
     if args.do_ppl_eval:
         class PPLvalCallback(transformers.TrainerCallback):
@@ -490,9 +494,12 @@ def train():
             raise RuntimeError("Non-finite training loss")
         if args.audit_updates:
             changed = sum(not torch.equal(scales_before[n], p.detach().cpu()) for n, p in trainable.items())
-            if frozen_before != frozen_digest() or changed == 0:
-                raise RuntimeError("Frozen tensors changed or no scale updated")
-            Path(args.output_dir, 'update_audit.json').write_text(json.dumps({"frozen_unchanged": True, "changed_scales": changed}))
+            frozen_unchanged = frozen_before == frozen_digest()
+            Path(args.output_dir, 'update_audit.json').write_text(json.dumps({
+                "frozen_unchanged": frozen_unchanged, "changed_scales": changed,
+            }))
+            if not frozen_unchanged or changed == 0:
+                raise RuntimeError(f"Parameter audit failed: frozen_unchanged={frozen_unchanged}, changed_scales={changed}")
         trainer.save_model(args.output_dir)
         tokenizer.save_pretrained(args.output_dir)
         all_metrics.update(metrics)
