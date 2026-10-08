@@ -98,7 +98,7 @@ def make_data_module(tokenizer: transformers.PreTrainedTokenizer, args) -> Dict:
     """
     def load_data(dataset_name):
         if dataset_name == 'alpaca':
-            return load_dataset("tatsu-lab/alpaca")
+            return load_dataset("json", data_files={"train": os.environ["ALPACA_DATA_FILE"]}) if os.environ.get("ALPACA_DATA_FILE") else load_dataset("tatsu-lab/alpaca")
         elif dataset_name == 'oasst1':
             return load_dataset("timdettmers/openassistant-guanaco")
         elif dataset_name == 'deita-6k':
@@ -133,15 +133,8 @@ def make_data_module(tokenizer: transformers.PreTrainedTokenizer, args) -> Dict:
             except:
                 dataset = load_dataset("togethercomputer/RedPajama-Data-1T-Sample")   
             if "validation" not in dataset.keys():
-                validation_split = args.eval_dataset_size
-                dataset["validation"] = load_dataset(
-                    loacal_dataset,
-                    split=f"train[:{validation_split}]",
-                )
-                dataset["train"] = load_dataset(
-                    loacal_dataset,
-                    split=f"train[{validation_split}:]",
-                )
+                split = dataset["train"].train_test_split(test_size=args.eval_dataset_size, seed=args.data_seed)
+                dataset = {"train": split["train"], "validation": split["test"]}
             return dataset  
         else:
             raise NotImplementedError(f"Dataset {dataset_name} not implemented yet.")

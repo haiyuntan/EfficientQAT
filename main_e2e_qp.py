@@ -141,6 +141,8 @@ class TrainingArguments(transformers.Seq2SeqTrainingArguments):
         default=False,
         metadata={"help": "Whether to train on the input in addition to the target text."}
     )
+    eval_limit: Optional[int] = field(default=None)
+    audit_updates: bool = field(default=False)
     do_mmlu_eval: Optional[bool] = field(
         default=False,
         metadata={"help": "Whether to run the MMLU evaluation."}
@@ -417,7 +419,24 @@ def train():
         if isinstance(module, QuantLinear) and not 'head' in name:
             module.scales.requires_grad = True
     optimizer_grouped_parameters.append({'params': [p for n, p in model.named_parameters() if 'scale' in n], 'weight_decay': 0.0, 'lr': args.learning_rate})
+    trainable = {n: p for n, p in model.named_parameters() if p.requires_grad}
+    expected = {f"{n}.scales" for n, m in model.named_modules() if isinstance(m, QuantLinear) and 'head' not in n}
+    if not expected or set(trainable) != expected:
+        raise RuntimeError("E2E-QP must train exactly QuantLinear.scales")
+    optimizer_grouped_parameters[0]['params'] = list(trainable.values())
     optimizer = AdamW(optimizer_grouped_parameters)
+    if args.audit_updates:
+        import hashlib
+        def frozen_digest():
+            digest = hashlib.sha256()
+            for n, t in model.state_dict().items():
+                if n not in expected:
+                    digest.update(n.encode())
+                    digest.update(t.detach().cpu().contiguous().view(torch.uint8).numpy().tobytes())
+            return digest.hexdigest()
+        frozen_before = frozen_digest()
+        scales_before = {n: p.detach().cpu().clone() for n, p in trainable.items()}
+
 
     trainer = Seq2SeqTrainer(
         model=model,
@@ -461,6 +480,15 @@ def train():
         trainer.log_metrics("train", metrics)
         trainer.save_metrics("train", metrics)
         trainer.save_state()
+        if not np.isfinite(metrics['train_loss']):
+            raise RuntimeError("Non-finite training loss")
+        if args.audit_updates:
+            changed = sum(not torch.equal(scales_before[n], p.detach().cpu()) for n, p in trainable.items())
+            if frozen_before != frozen_digest() or changed == 0:
+                raise RuntimeError("Frozen tensors changed or no scale updated")
+            Path(args.output_dir, 'update_audit.json').write_text(json.dumps({"frozen_unchanged": True, "changed_scales": changed}))
+        trainer.save_model(args.output_dir)
+        tokenizer.save_pretrained(args.output_dir)
         all_metrics.update(metrics)
     # Evaluation
     if args.do_eval:
@@ -487,7 +515,7 @@ def train():
         print(prediction_metrics)
         trainer.log_metrics("predict", prediction_metrics)
         trainer.save_metrics("predict", prediction_metrics)
-        all_metrics.update(prediction_metrics)
+        all_metrics.update(metrics)
 
     if (args.do_train or args.do_eval or args.do_predict):
         with open(os.path.join(args.output_dir, "metrics.json"), "w") as fout:
@@ -506,6 +534,7 @@ def train():
         model=lm_eval_model,
         tasks=task_list,
         num_fewshot=0,
+        limit=args.eval_limit,
         task_manager=task_manager,
         )
         logger.info(make_table(results))
@@ -521,14 +550,13 @@ def train():
         model=lm_eval_model,
         tasks=['mmlu'],
         num_fewshot=5,
+        limit=args.eval_limit,
         task_manager=task_manager,
         cache_requests=True,
         )
         logger.info(make_table(results))
-        total_acc = 0
-        for task in results['results']:
-            total_acc += results['results'][task]['acc,none']
-        logger.info(f"Average MMLU Acc: {total_acc/len(results['results'])*100:.2f}%")
+        Path(args.output_dir, "mmlu_results.json").write_text(json.dumps(results, default=str))
+        logger.info(f"MMLU Acc: {results['results']['mmlu']['acc,none'] * 100:.2f}%")
 
 if __name__ == "__main__":
     train()

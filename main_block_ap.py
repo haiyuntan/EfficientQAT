@@ -50,11 +50,13 @@ def evaluate(model, tokenizer, args, logger):
         results = lm_eval.simple_evaluate(
         model=model,
         tasks=task_list,
-        num_fewshot=0,
+        num_fewshot=args.num_fewshot,
         limit=args.eval_limit,
         task_manager=task_manager,
         )
         logger.info(make_table(results))
+        import json
+        Path(args.output_dir, 'eval_results.json').write_text(json.dumps(results, default=str))
         total_acc = 0
         for task in task_list:
             total_acc += results['results'][task]['acc,none']
@@ -84,6 +86,7 @@ def main():
     parser.add_argument("--ppl_seqlen", type=int, default=2048, help="input sequence length for evaluating perplexity")
     parser.add_argument("--ppl_datasets", type=str, default="wikitext2,c4", help="comma-separated PPL datasets")
     parser.add_argument("--ppl_max_samples", type=int, default=None, help="optional cap for low-cost PPL smoke tests")
+    parser.add_argument("--num_fewshot", type=int, default=0)
     parser.add_argument("--eval_limit", type=int, default=None, help="optional lm-eval sample limit")
     parser.add_argument("--seed", type=int, default=2, help="Seed for sampling the calibration data.")
     parser.add_argument("--eval_ppl", action="store_true",help="evaluate perplexity on wikitext2 and c4")
