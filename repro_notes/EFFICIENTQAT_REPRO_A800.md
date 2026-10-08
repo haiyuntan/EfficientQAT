@@ -1454,3 +1454,24 @@ GPU 文件锁避免重复流水线并发占用同一卡。R0/R1 正式评测保�
 文档的仓库副本位于 `repro_notes/EFFICIENTQAT_REPRO_A800.md`，与项目根文档同步。
 只提交源码、脚本、文档、小型验收摘要，不提交模型和数据。
 本地提交身份为 haiyuntan；GitHub 推送能力需要网络连接与远端授权同时有效。
+
+
+## 28.3 存储预算及 nohup 启动
+
+冒烟和正式实验分别以 nohup 启动；总控等冒烟进程成功退出且 SMOKE_OK 存在后，才 nohup 启动正式进程。
+数据准备单独 nohup 执行并等待完成，不计入 7100 秒冒烟训练评测时限。
+总控保存 prepare_data.pid、smoke.pid、full.pid 及各自 driver.log。
+
+| 新增文件 | 冒烟 | 正式 |
+| --- | ---: | ---: |
+| R2 W4 与 R3 W2 Block-AP 模型 | 6–7 GiB | 6–7 GiB |
+| R2/R4/R5 E2E 最终模型及 tokenizer | 9–12 GiB | 9–12 GiB |
+| 中途 checkpoints 及 optimizer/RNG state | 不保存 | 15–22 GiB |
+| 数据与 tokenization 缓存 | 通常 <1 GiB | 预算 10–40 GiB |
+| 日志、指标 JSON、状态与审计 | 通常 <0.1 GiB | 通常 <1 GiB |
+| 合计估算 | 16–20 GiB | 40–85 GiB |
+
+合并保留冒烟与正式输出，建议预留 120 GiB 新增空间。实际大小依赖缓存与模型保存 dtype；
+模型是完整 7B，冒烟减少样本不会缩小权重文件。R4/R5 复用 R3，不复制起点。
+默认未启用磁盘激活卸载；若开启，Block-AP 两份 train/val FP16 激活会临时增加约 130 GiB。
+已有模型和数据另计；共享磁盘空闲不等于个人 quota，启动前记录 df 与实际目录大小。
