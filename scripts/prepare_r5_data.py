@@ -12,5 +12,20 @@ if not out.exists():
     out.write_text(json.dumps(rows))
 print('Alpaca:', len(json.loads(out.read_text())), out, flush=True)
 from lm_eval.tasks import TaskManager, get_task_dict
-get_task_dict(['mmlu'], TaskManager())
+import time
+manager = TaskManager()
+subjects = sorted(name for name in manager.all_tasks if name.startswith('mmlu_') and name not in manager.all_groups)
+assert len(subjects) == 57, f"Expected 57 default MMLU subjects, got {len(subjects)}"
+for index, subject in enumerate(subjects, 1):
+    for attempt in range(1, 6):
+        try:
+            get_task_dict([subject], manager)
+            print(f"MMLU prepared {index}/57: {subject}", flush=True)
+            break
+        except (ConnectionError, OSError, ValueError) as error:
+            print(f"Retry {attempt}/5 {subject}: {error}", flush=True)
+            if attempt == 5:
+                raise
+            time.sleep(2 * attempt)
+get_task_dict(['mmlu'], manager)
 print('MMLU data prepared', flush=True)
