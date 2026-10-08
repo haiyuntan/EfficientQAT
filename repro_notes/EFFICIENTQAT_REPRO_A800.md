@@ -1420,13 +1420,13 @@ R3 只训练一次。R4 RedPajama 和 R5 Alpaca 均独立从 R3 Block-AP checkpo
 R5 正式参数沿用仓库示例：10,000 steps、batch 16、384/128 source/target、scale LR 2e-5。
 R0/R3/R4/R5 均记录相同配置的 5-shot MMLU，保留各自产物；R5B 暂不纳入本轮。
 
-## 28.1 两小时内冒烟
+## 28.1 低成本完整冒烟（不设置外部时限）
 
 使用真实 Llama-2-7B 的全部 32 层，而非缩小架构：R0/R1 五任务各限 1 样本，WikiText2 1 段 128 tokens；
-R2/R3 Block-AP train/val 各 2 段、128 tokens、1 epoch；R2/R4 E2E 各 1 step；
+R2/R3 Block-AP 使用本地真实 RedPajama，train/val 各 2 段、128 tokens、1 epoch；R2/R4 E2E 各 1 step；
 R5 用真实 Alpaca 数据、正确 instruction/response mask，4 train samples、2 steps、96/32 tokens。
 R0/R3/R4/R5 的 57 个 MMLU 学科分别限 1 个 test 样本，仍用 5-shot prompt。
-数据准备在计时冒烟前进行。冒烟执行上限 7100 秒，超时后最多 30 秒强制终止，合计小于 2 小时。
+不使用 timeout 或外部两小时强制终止。通过少量真实数据、短序列和少量训练 steps 控制成本；每阶段失败仍会停止流水线。
 
 通过标准：所有阶段成功；训练 loss 有限；仅 QuantLinear.scales 可训练；
 R2/R4/R5 至少一个 scale 真正更新，所有冻结 tensors 的 SHA256 不变；
@@ -1438,7 +1438,7 @@ R3/R4/R5 checkpoint 从磁盘重载完成 MMLU；四组 MMLU 指标有限。
 cd "$QAT_ROOT/EfficientQAT"
 source ../env/activate.sh
 python scripts/prepare_r5_data.py
-# 后台：冒烟成功后自动运行正式全流程；任一错误/超时立即停止。
+# 后台：冒烟成功后自动运行正式全流程；任一错误立即停止。
 bash scripts/run_r0_r5.sh auto r0_r5_20261008
 ```
 
@@ -1459,7 +1459,7 @@ GPU 文件锁避免重复流水线并发占用同一卡。R0/R1 正式评测保�
 ## 28.3 存储预算及 nohup 启动
 
 冒烟和正式实验分别以 nohup 启动；总控等冒烟进程成功退出且 SMOKE_OK 存在后，才 nohup 启动正式进程。
-数据准备单独 nohup 执行并等待完成，不计入 7100 秒冒烟训练评测时限。
+数据准备单独 nohup 执行并等待完成，完成后再运行冒烟。
 总控保存 prepare_data.pid、smoke.pid、full.pid 及各自 driver.log。
 
 | 新增文件 | 冒烟 | 正式 |
@@ -1475,3 +1475,19 @@ GPU 文件锁避免重复流水线并发占用同一卡。R0/R1 正式评测保�
 模型是完整 7B，冒烟减少样本不会缩小权重文件。R4/R5 复用 R3，不复制起点。
 默认未启用磁盘激活卸载；若开启，Block-AP 两份 train/val FP16 激活会临时增加约 130 GiB。
 已有模型和数据另计；共享磁盘空闲不等于个人 quota，启动前记录 df 与实际目录大小。
+
+
+### 当前低成本配置（2026-10-08 更新）
+
+| Run | 训练配置 | 保存后评测 |
+| --- | --- | --- |
+| R0 FP16 | 不训练，完整 7B | WikiText2 1×128 tokens，五任务各 1 样本，57 学科 MMLU 各 1 样本/5-shot |
+| R1 官方 W2g64 | 不训练 | WikiText2 1×128 tokens，五任务各 1 样本 |
+| R2 W4g128 | 全部 32 层 Block-AP；真实 RedPajama train=2、val=2、seq=128、batch=2、epoch=1；E2E 1 step/batch=1 | 重载最终模型，WikiText2 1×128 tokens、五任务各 1 样本 |
+| R3 W2g64 | 全部 32 层 Block-AP；真实 RedPajama train=2、val=2、seq=128、batch=2、epoch=1 | 重载 Block-AP，WikiText2、五任务及 57 学科 MMLU/5-shot 小评测 |
+| R4 W2g64 | 从 R3 起点独立做真实 RedPajama E2E，1 step/batch=1/seq=128 | 重载最终模型，WikiText2、五任务及 57 学科 MMLU/5-shot 小评测 |
+| R5 W2g64 | 从 R3 起点独立做 Alpaca E2E；train=4、val=16、2 steps、batch=1、source/target=96/32 | 重载最终模型，WikiText2、五任务及 57 学科 MMLU/5-shot 小评测 |
+
+所有 E2E 仅 scales 训练，bf16、grad accumulation=1；R2 scale LR=1e-5，R4/R5=2e-5。
+Block-AP quant LR=1e-4；R2 weight LR=1e-5，R3 weight LR=2e-5。
+微量数据验证完整训练/保存/重载/评测链路；成功后 nohup 启动原正式参数的 R0–R5。

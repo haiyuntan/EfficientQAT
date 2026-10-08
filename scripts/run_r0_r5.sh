@@ -146,7 +146,7 @@ if [[ "$MODE" == "smoke" ]]; then
     --eval_tasks "$TASKS" --eval_limit 1 --eval_batch_size 1
   run_logged prepare_tiny_local_datasets "$LOG_ROOT/prepare_smoke_data.log" \
     "$PYTHON" "$SCRIPT_DIR/prepare_smoke_data.py" \
-    --model-dir "$MODEL_DIR" --blockap-cache-dir "$SMOKE_BLOCK_CACHE" \
+    --model-dir "$MODEL_DIR" --redpajama-file "$PROJECT_ROOT/data/local_datasets/redpajama/data/train-00000-of-00011.parquet" --blockap-cache-dir "$SMOKE_BLOCK_CACHE" \
     --blockap-net "$SMOKE_NET" --e2e-cache-file "$SMOKE_E2E_CACHE" \
     --sequence-length "$SMOKE_SEQUENCE_LENGTH" --train-size "$SMOKE_TRAIN_SIZE" --val-size "$SMOKE_VAL_SIZE"
 
@@ -156,7 +156,7 @@ if [[ "$MODE" == "smoke" ]]; then
     mkdir -p "$out"
     run_logged "${exp}_BlockAP_smoke" "$LOG_ROOT/${exp}_BlockAP_smoke.console.log" \
       "$PYTHON" main_block_ap.py --model "$MODEL_DIR" --net "$SMOKE_NET" \
-      --wbits "$bits" --group_size "$group" --calib_dataset wikitext2 \
+      --wbits "$bits" --group_size "$group" --calib_dataset redpajama \
       --train_size "$SMOKE_TRAIN_SIZE" --val_size "$SMOKE_VAL_SIZE" \
       --training_seqlen "$SMOKE_SEQUENCE_LENGTH" --batch_size 2 --epochs 1 \
       --quant_lr 1e-4 --weight_lr "$weight_lr" --real_quant \
@@ -189,6 +189,7 @@ if [[ "$MODE" == "smoke" ]]; then
   smoke_e2e_qp R4 2 64 2e-5
   run_logged R2_checkpoint_reload "$LOG_ROOT/R2_reload.log" "$PYTHON" "$SCRIPT_DIR/smoke_model.py" --kind efficientqat --model-dir "$RUN_ROOT/R2_smoke/e2e_qp" --wbits 4 --group-size 128
   r5_train smoke
+  smoke_checkpoint_evaluation
   mmlu_comparison smoke
   validate_smoke
   printf 'SMOKE_OK\t%s\n' "$(date -u +%FT%TZ)" >"$LOG_ROOT/SMOKE_OK"

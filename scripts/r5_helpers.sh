@@ -37,3 +37,14 @@ mmlu_comparison() {
 validate_smoke() {
   run_logged smoke_artifact_validation "$LOG_ROOT/validation.log" "$PYTHON" "$SCRIPT_DIR/validate_smoke.py" "$RUN_ROOT" "$LOG_ROOT"
 }
+
+smoke_checkpoint_evaluation() {
+  local exp bits group path
+  for exp in R2 R3 R4 R5; do
+    bits=2; group=64
+    if [[ "$exp" == R2 ]]; then bits=4; group=128; fi
+    path="$RUN_ROOT/${exp}_smoke/e2e_qp"
+    if [[ "$exp" == R3 ]]; then path="$RUN_ROOT/R3_smoke/block_ap"; fi
+    run_logged "${exp}_saved_evaluation" "$LOG_ROOT/${exp}_saved_eval.log"       "$PYTHON" main_block_ap.py --resume_quant "$path" --net Llama-2 --wbits "$bits" --group_size "$group"       --output_dir "$LOG_ROOT/${exp}_saved_eval" --eval_ppl --ppl_datasets wikitext2 --ppl_max_samples 1 --ppl_seqlen 128       --eval_tasks "$TASKS" --eval_limit 1 --eval_batch_size 1
+  done
+}

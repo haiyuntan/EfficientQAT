@@ -25,23 +25,38 @@ def main() -> None:
     parser.add_argument("--sequence-length", type=int, default=128)
     parser.add_argument("--train-size", type=int, default=2)
     parser.add_argument("--val-size", type=int, default=2)
+    parser.add_argument("--redpajama-file", required=True)
     args = parser.parse_args()
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_dir, use_fast=False)
+    import pyarrow.parquet as pq
+    texts = []
+    for batch in pq.ParquetFile(args.redpajama_file).iter_batches(batch_size=32, columns=['text']):
+        for text in batch.column(0).to_pylist():
+            ids = tokenizer.encode(text, add_special_tokens=False)
+            if len(ids) >= args.sequence_length:
+                texts.append(ids[:args.sequence_length])
+            if len(texts) >= args.train_size + args.val_size:
+                break
+        if len(texts) >= args.train_size + args.val_size:
+            break
+    if len(texts) < args.train_size + args.val_size:
+        raise RuntimeError("Insufficient real calibration samples")
+    splits = {'train': texts[:args.train_size], 'val': texts[args.train_size:]}
     block_cache = Path(args.blockap_cache_dir)
     block_cache.mkdir(parents=True, exist_ok=True)
     for split, count in (("train", args.train_size), ("val", args.val_size)):
         examples = []
         for index in range(count):
             ids = torch.tensor(
-                [make_ids(tokenizer, f"Smoke calibration sample {split} {index}.", args.sequence_length)],
+                [splits[split][index]],
                 dtype=torch.long,
             )
             labels = ids.clone()
             labels[:, :-1] = -100
             examples.append((ids, labels))
         cache_file = block_cache / (
-            f"dataloader_{args.blockap_net}_wikitext2_{args.train_size}_"
+            f"dataloader_{args.blockap_net}_redpajama_{args.train_size}_"
             f"{args.val_size}_{args.sequence_length}_{split}.cache"
         )
         torch.save(examples, cache_file)
@@ -52,7 +67,7 @@ def main() -> None:
     def as_dataset(count: int, split: str) -> Dataset:
         rows = []
         for index in range(count):
-            ids = make_ids(tokenizer, f"Smoke causal language modeling {split} sample {index}.", args.sequence_length)
+            ids = splits['val' if split == 'validation' else 'train'][index]
             rows.append({"input_ids": ids, "attention_mask": [1] * args.sequence_length, "labels": ids.copy()})
         return Dataset.from_list(rows)
 

@@ -10,7 +10,7 @@ nohup python "$HERE/prepare_r5_data.py" >"$LOG_ROOT/prepare_data.log" 2>&1 </dev
 DATA_PID=$!
 echo "$DATA_PID" >"$LOG_ROOT/prepare_data.pid"
 wait "$DATA_PID"
-nohup timeout --signal=TERM --kill-after=30s 7100s bash "$HERE/run_r0_r5.sh" smoke "${RUN_ID}_smoke" >"$LOG_ROOT/smoke_driver.log" 2>&1 </dev/null &
+nohup bash "$HERE/run_r0_r5.sh" smoke "${RUN_ID}_smoke" >"$LOG_ROOT/smoke_driver.log" 2>&1 </dev/null &
 SMOKE_PID=$!
 echo "$SMOKE_PID" >"$LOG_ROOT/smoke.pid"
 echo "Smoke started PID=$SMOKE_PID"
