@@ -33,8 +33,10 @@ def evaluate(model, tokenizer, args, logger):
     results = {}
 
     if args.eval_ppl:
-        datasets = ["wikitext2", "c4"]
-        ppl_results = test_ppl(model, tokenizer, datasets, args.ppl_seqlen)
+        datasets = [name for name in args.ppl_datasets.split(",") if name]
+        ppl_results = test_ppl(
+            model, tokenizer, datasets, args.ppl_seqlen, args.ppl_max_samples
+        )
         for dataset in ppl_results:
             logger.info(f'{dataset} perplexity: {ppl_results[dataset]:.2f}')
 
@@ -49,6 +51,7 @@ def evaluate(model, tokenizer, args, logger):
         model=model,
         tasks=task_list,
         num_fewshot=0,
+        limit=args.eval_limit,
         task_manager=task_manager,
         )
         logger.info(make_table(results))
@@ -79,6 +82,9 @@ def main():
     parser.add_argument("--batch_size", type=int, default=2, help="batch size.")
     parser.add_argument("--epochs", type=int, default=2)
     parser.add_argument("--ppl_seqlen", type=int, default=2048, help="input sequence length for evaluating perplexity")
+    parser.add_argument("--ppl_datasets", type=str, default="wikitext2,c4", help="comma-separated PPL datasets")
+    parser.add_argument("--ppl_max_samples", type=int, default=None, help="optional cap for low-cost PPL smoke tests")
+    parser.add_argument("--eval_limit", type=int, default=None, help="optional lm-eval sample limit")
     parser.add_argument("--seed", type=int, default=2, help="Seed for sampling the calibration data.")
     parser.add_argument("--eval_ppl", action="store_true",help="evaluate perplexity on wikitext2 and c4")
     parser.add_argument("--eval_tasks", type=str,default="", help="exampe:piqa,arc_easy,arc_challenge,hellaswag,winogrande")

@@ -170,7 +170,7 @@ def get_loaders(
 
 
 @torch.no_grad()
-def test_ppl(model, tokenizer, datasets=['wikitext2'],ppl_seqlen=2048):
+def test_ppl(model, tokenizer, datasets=['wikitext2'],ppl_seqlen=2048,max_samples=None):
     results = {}
     for dataset in datasets:
         testloader = get_loaders(
@@ -187,6 +187,8 @@ def test_ppl(model, tokenizer, datasets=['wikitext2'],ppl_seqlen=2048):
 
         seqlen = ppl_seqlen
         nsamples = testenc.numel() // seqlen
+        if max_samples is not None:
+            nsamples = min(nsamples, max_samples)
         use_cache = model.config.use_cache
         model.config.use_cache = False
         model.eval()
