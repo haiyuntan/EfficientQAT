@@ -1495,3 +1495,7 @@ Block-AP quant LR=1e-4；R2 weight LR=1e-5，R3 weight LR=2e-5。
 ### 本地数据加载（2026-10-08 更新）
 
 R0–R5 统一使用 `local_datasets.py`：WikiText-2 和 MMLU 从现有 Arrow 缓存直接读取；PIQA、ARC、HellaSwag、WinoGrande、RedPajama 从本地 Parquet 读取；C4、Alpaca 从本地 JSON 读取。lm-eval 使用同一加载入口。运行启用 `HF_DATASETS_OFFLINE=1` 和 `HF_HUB_OFFLINE=1`；缺少文件立即报错，不回退在线下载。`prepare_r5_data.py` 在 nohup 冒烟开始前校验全部数据及评测任务。首次解析本地 Parquet/JSON 会生成 Arrow 缓存，空间计入原先的数据缓存预算。
+
+### 实验分析文件同步到 GitHub
+
+`scripts/sync_experiment_reports.py --watch` 用 nohup 常驻，每 5 分钟将 R0–R5 的配置、评测 JSON、训练指标、参数更新审计、状态和日志复制到仓库 `experiment_reports/`，提交并推送当前分支。失败会记录并重试，不影响 GPU 实验。模型权重、数据集、缓存不上传。单个日志最多保留末尾 2 MiB；超过 2 MiB 的其他文本文件记录在 manifest 但不复制。网页端分析应先读取 README、status.tsv，再读取指标与审计；私有仓库仍需网页端账号的 GitHub 访问权限。
