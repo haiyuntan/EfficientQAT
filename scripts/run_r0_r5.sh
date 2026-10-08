@@ -192,7 +192,7 @@ if [[ "$MODE" == "smoke" ]]; then
       --pt_context_len "$SMOKE_SEQUENCE_LENGTH" --max_train_samples 1 \
       --eval_dataset_size "$SMOKE_VAL_SIZE" --max_eval_samples 1 \
       --per_device_train_batch_size 1 --per_device_eval_batch_size 1 \
-      --gradient_accumulation_steps 1 --max_steps 1 --num_train_epochs 1 \
+      --gradient_accumulation_steps 1 --max_steps 1 --num_train_epochs 1 --warmup_ratio 0 \
       --logging_steps 1 --save_strategy no --evaluation_strategy no \
       --preprocessing_num_workers 1 --bf16 --data_seed 42 --max_grad_norm 0.3 \
       --output_dir "$out" --do_train True --do_eval False --audit_updates True --report_to none

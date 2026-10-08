@@ -1507,3 +1507,5 @@ R0–R5 统一使用 `local_datasets.py`：WikiText-2 和 MMLU 从现有 Arrow �
 ### R2 审计基准修复与续跑
 
 Trainer 初始化会转换模型精度，冻结参数摘要和 scale 副本改为初始化后、训练前采集；失败也保存两个审计结果。RESUME_FROM=R2_E2E_QP 支持在原 smoke RUN_ID 上复用 R0/R1、数据缓存和 R2 BlockAP，从 R2 E2E-QP 继续 R3–R5；正式阶段清除此续跑变量。
+
+单步 E2E-QP 冒烟必须设置 warmup_ratio=0；默认 warmup_ratio=0.03 向上取整成一个 warmup step，唯一训练步学习率为零，导致 scales 不更新。正式训练保留原 warmup 配置。
