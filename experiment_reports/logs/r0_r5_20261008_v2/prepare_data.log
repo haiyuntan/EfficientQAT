@@ -1,65 +1,0 @@
-Alpaca: 52002 /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/data/local_datasets/alpaca/alpaca_data.json
-/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-Downloading builder script: 0.00B [00:00, ?B/s]Downloading builder script: 2.11kB [00:00, 3.03MB/s]
-Downloading readme: 0.00B [00:00, ?B/s]Downloading readme: 42.6kB [00:00, 2.41MB/s]
-Downloading data:   0%|          | 0.00/28.3k [00:00<?, ?B/s]Downloading data: 100%|██████████| 28.3k/28.3k [00:02<00:00, 13.8kB/s]Downloading data: 100%|██████████| 28.3k/28.3k [00:02<00:00, 13.8kB/s]
-Downloading data:   0%|          | 0.00/6.06k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.06k/6.06k [00:00<00:00, 8.96kB/s]Downloading data: 100%|██████████| 6.06k/6.06k [00:00<00:00, 8.95kB/s]
-Downloading data:   0%|          | 0.00/4.95k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.95k/4.95k [00:00<00:00, 7.35kB/s]Downloading data: 100%|██████████| 4.95k/4.95k [00:00<00:00, 7.34kB/s]
-Generating test split:   0%|          | 0/152 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 152/152 [00:00<00:00, 164.53 examples/s]Generating test split: 100%|██████████| 152/152 [00:00<00:00, 163.97 examples/s]
-Generating validation split:   0%|          | 0/16 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 16/16 [00:00<00:00, 4700.49 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1881.19 examples/s]
-HF google storage unreachable. Downloading and preparing it from source
-2026-10-08:07:17:56,407 WARNING  [builder.py:998] HF google storage unreachable. Downloading and preparing it from source
-Downloading data:   0%|          | 0.00/27.3k [00:00<?, ?B/s]Downloading data: 100%|██████████| 27.3k/27.3k [00:00<00:00, 32.2kB/s]Downloading data: 100%|██████████| 27.3k/27.3k [00:00<00:00, 32.1kB/s]
-Downloading data:   0%|          | 0.00/5.29k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.29k/5.29k [00:00<00:00, 6.33kB/s]Downloading data: 100%|██████████| 5.29k/5.29k [00:00<00:00, 6.33kB/s]
-Downloading data:   0%|          | 0.00/6.55k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.55k/6.55k [00:00<00:00, 10.1kB/s]Downloading data: 100%|██████████| 6.55k/6.55k [00:00<00:00, 10.1kB/s]
-Generating test split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 100/100 [00:00<00:00, 11662.83 examples/s]
-Generating validation split:   0%|          | 0/9 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 9/9 [00:00<00:00, 1498.32 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 941.23 examples/s]
-Downloading data:   0%|          | 0.00/18.6k [00:00<?, ?B/s]Downloading data: 100%|██████████| 18.6k/18.6k [00:00<00:00, 26.1kB/s]Downloading data: 100%|██████████| 18.6k/18.6k [00:00<00:00, 26.1kB/s]
-Downloading data:   0%|          | 0.00/6.40k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.40k/6.40k [00:00<00:00, 9.46kB/s]Downloading data: 100%|██████████| 6.40k/6.40k [00:00<00:00, 9.45kB/s]
-Downloading data:   0%|          | 0.00/4.52k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.52k/4.52k [00:00<00:00, 6.60kB/s]Downloading data: 100%|██████████| 4.52k/4.52k [00:00<00:00, 6.59kB/s]
-Generating test split:   0%|          | 0/102 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 102/102 [00:00<00:00, 13596.23 examples/s]
-Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 1519.63 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 874.65 examples/s]
-Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
-2026-10-08:07:18:35,572 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
-Traceback (most recent call last):
-  File "/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/EfficientQAT/scripts/prepare_r5_data.py", line 15, in <module>
-    get_task_dict(['mmlu'], TaskManager())
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/tasks/__init__.py", line 420, in get_task_dict
-    task_name_from_string_dict = task_manager.load_task_or_group(
-                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/tasks/__init__.py", line 270, in load_task_or_group
-    collections.ChainMap(*map(self._load_individual_task_or_group, task_list))
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/tasks/__init__.py", line 253, in _load_individual_task_or_group
-    **dict(collections.ChainMap(*map(fn, subtask_list))),
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/tasks/__init__.py", line 253, in _load_individual_task_or_group
-    **dict(collections.ChainMap(*map(fn, subtask_list))),
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/tasks/__init__.py", line 161, in _load_individual_task_or_group
-    return load_task(task_config, task=name_or_config, group=parent_name)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/tasks/__init__.py", line 150, in load_task
-    task_object = ConfigurableTask(config=config)
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/api/task.py", line 782, in __init__
-    self.download(self.config.dataset_kwargs)
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/api/task.py", line 871, in download
-    self.dataset = datasets.load_dataset(
-                   ^^^^^^^^^^^^^^^^^^^^^^
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/load.py", line 2556, in load_dataset
-    builder_instance = load_dataset_builder(
-                       ^^^^^^^^^^^^^^^^^^^^^
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/load.py", line 2265, in load_dataset_builder
-    builder_instance: DatasetBuilder = builder_cls(
-                                       ^^^^^^^^^^^^
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/packaged_modules/cache/cache.py", line 122, in __init__
-    config_name, version, hash = _find_hash_in_cache(
-                                 ^^^^^^^^^^^^^^^^^^^^
-  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/packaged_modules/cache/cache.py", line 48, in _find_hash_in_cache
-    raise ValueError(
-ValueError: Couldn't find cache for hails/mmlu_no_train for config 'high_school_mathematics'
-Available configs in the cache: ['astronomy', 'college_physics', 'high_school_computer_science']

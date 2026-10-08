@@ -1,48 +1,0 @@
-/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-['main_block_ap.py', '--resume_quant', '/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/official_w2g64', '--net', 'Llama-2', '--wbits', '2', '--group_size', '64', '--output_dir', '/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/logs/r0_r5/r0_r5_20261008_v6_smoke/R1_official_smoke', '--eval_ppl', '--ppl_datasets', 'wikitext2', '--ppl_max_samples', '1', '--ppl_seqlen', '128', '--eval_tasks', 'piqa,arc_easy,arc_challenge,hellaswag,winogrande', '--eval_limit', '1', '--eval_batch_size', '1']
-[2026-10-08 08:20:44 root](main_block_ap.py 125): INFO Namespace(model=None, cache_dir='./cache', output_dir='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/logs/r0_r5/r0_r5_20261008_v6_smoke/R1_official_smoke', save_quant_dir=None, real_quant=False, resume_quant='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/official_w2g64', calib_dataset='redpajama', train_size=4096, val_size=64, training_seqlen=2048, batch_size=2, epochs=2, ppl_seqlen=128, ppl_datasets='wikitext2', ppl_max_samples=1, num_fewshot=0, eval_limit=1, seed=2, eval_ppl=True, eval_tasks='piqa,arc_easy,arc_challenge,hellaswag,winogrande', eval_batch_size=1, wbits=2, group_size=64, quant_lr=0.0001, weight_lr=1e-05, min_lr_factor=20, clip_grad=0.3, wd=0, net='Llama-2', max_memory='70GiB', early_stop=0, off_load_to_disk=False)
-Loading quantized model from /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/official_w2g64
-  0%|          | 0/32 [00:00<?, ?it/s]  3%|▎         | 1/32 [00:00<00:07,  3.94it/s]  6%|▋         | 2/32 [00:00<00:06,  4.56it/s]  9%|▉         | 3/32 [00:00<00:04,  6.00it/s] 12%|█▎        | 4/32 [00:00<00:04,  5.65it/s] 22%|██▏       | 7/32 [00:00<00:02, 11.46it/s] 28%|██▊       | 9/32 [00:00<00:01, 13.58it/s] 34%|███▍      | 11/32 [00:01<00:02, 10.03it/s] 41%|████      | 13/32 [00:01<00:01, 11.85it/s] 47%|████▋     | 15/32 [00:01<00:01, 11.31it/s] 53%|█████▎    | 17/32 [00:01<00:01, 10.83it/s] 59%|█████▉    | 19/32 [00:02<00:01,  9.10it/s] 66%|██████▌   | 21/32 [00:02<00:01,  8.19it/s] 69%|██████▉   | 22/32 [00:02<00:01,  8.41it/s] 75%|███████▌  | 24/32 [00:02<00:00,  8.87it/s] 81%|████████▏ | 26/32 [00:02<00:00, 10.82it/s] 88%|████████▊ | 28/32 [00:02<00:00, 10.58it/s] 94%|█████████▍| 30/32 [00:03<00:00, 10.39it/s]100%|██████████| 32/32 [00:03<00:00, 10.32it/s]100%|██████████| 32/32 [00:03<00:00,  9.56it/s]
-Loading pre-computed quantized weights...
-Loading pre-computed quantized weights Successfully
-[2026-10-08 08:20:53 root](main_block_ap.py 133): INFO memory footprint after loading quantized model: 2.21GiB
-get_wikitext2
-Token indices sequence length is longer than the specified maximum sequence length for this model (341469 > 4096). Running this sequence through the model will result in indexing errors
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:06<00:00,  6.50s/it]100%|██████████| 1/1 [00:06<00:00,  6.50s/it]
-wikitext2:9.674864768981934
-[2026-10-08 08:21:01 root](main_block_ap.py 42): INFO wikitext2 perplexity: 9.67
-[2026-10-08 08:21:11 lm-eval](huggingface.py 118): WARNING `pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
-You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
-[2026-10-08 08:21:12 lm-eval](huggingface.py 337): WARNING Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
-[2026-10-08 08:21:16 lm-eval](evaluator.py 131): INFO Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234
-[2026-10-08 08:21:19 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of winogrande from None to 0
-[2026-10-08 08:21:19 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of hellaswag from None to 0
-[2026-10-08 08:21:19 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of arc_challenge from None to 0
-[2026-10-08 08:21:19 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of arc_easy from None to 0
-[2026-10-08 08:21:19 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of piqa from None to 0
-[2026-10-08 08:21:19 lm-eval](task.py 395): INFO Building contexts for winogrande on rank 0...
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 18477.11it/s]
-[2026-10-08 08:21:19 lm-eval](task.py 395): INFO Building contexts for hellaswag on rank 0...
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2045.00it/s]
-[2026-10-08 08:21:20 lm-eval](task.py 395): INFO Building contexts for arc_challenge on rank 0...
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1368.45it/s]
-[2026-10-08 08:21:20 lm-eval](task.py 395): INFO Building contexts for arc_easy on rank 0...
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1504.95it/s]
-[2026-10-08 08:21:20 lm-eval](task.py 395): INFO Building contexts for piqa on rank 0...
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1398.10it/s]
-[2026-10-08 08:21:20 lm-eval](evaluator.py 362): INFO Running loglikelihood requests
-Running loglikelihood requests:   0%|          | 0/16 [00:00<?, ?it/s]Running loglikelihood requests:   6%|▋         | 1/16 [00:00<00:01,  9.26it/s]Running loglikelihood requests:  19%|█▉        | 3/16 [00:00<00:01, 10.32it/s]Running loglikelihood requests:  31%|███▏      | 5/16 [00:00<00:01, 10.78it/s]Running loglikelihood requests:  44%|████▍     | 7/16 [00:00<00:00, 10.95it/s]Running loglikelihood requests:  56%|█████▋    | 9/16 [00:00<00:00, 11.06it/s]Running loglikelihood requests:  69%|██████▉   | 11/16 [00:01<00:00, 11.13it/s]Running loglikelihood requests:  81%|████████▏ | 13/16 [00:01<00:00, 11.18it/s]Running loglikelihood requests:  94%|█████████▍| 15/16 [00:01<00:00, 11.19it/s]Running loglikelihood requests: 100%|██████████| 16/16 [00:01<00:00, 11.03it/s]
-[2026-10-08 08:21:27 root](main_block_ap.py 58): INFO |    Tasks    |Version|Filter|n-shot| Metric |Value|   |Stderr|
-|-------------|------:|------|-----:|--------|----:|---|------|
-|winogrande   |      1|none  |     0|acc     |    0|±  |N/A   |
-|hellaswag    |      1|none  |     0|acc     |    0|±  |N/A   |
-|             |       |none  |     0|acc_norm|    0|±  |N/A   |
-|arc_challenge|      1|none  |     0|acc     |    0|±  |N/A   |
-|             |       |none  |     0|acc_norm|    0|±  |N/A   |
-|arc_easy     |      1|none  |     0|acc     |    1|±  |N/A   |
-|             |       |none  |     0|acc_norm|    1|±  |N/A   |
-|piqa         |      1|none  |     0|acc     |    1|±  |N/A   |
-|             |       |none  |     0|acc_norm|    1|±  |N/A   |
-
-[2026-10-08 08:21:27 root](main_block_ap.py 64): INFO Average Acc: 40.00%

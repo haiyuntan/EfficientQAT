@@ -273,21 +273,26 @@ def get_accelerate_model(args, checkpoint_dir):
             model=model,
         )    
 
-    # TODO
-    # if 'llama1' in args.model_name_or_path or 'llama2' in args.model_name_or_path or 'llama-1' in args.model_name_or_path or 'llama-2' in args.model_name_or_path:
     if isinstance(tokenizer, LlamaTokenizer):
-        # LLaMA tokenizer may not have correct special tokens set.
-        # Check and add them if missing to prevent them from being parsed into different tokens.
-        # Note that these are present in the vocabulary.
-        # Note also that `model.config.pad_token_id` is 0 which corresponds to `<unk>` token.
-        print('Adding special tokens.')
-        tokenizer.add_special_tokens({
-                "eos_token": tokenizer.convert_ids_to_tokens(model.config.eos_token_id),
-                "bos_token": tokenizer.convert_ids_to_tokens(model.config.bos_token_id),
-                "unk_token": tokenizer.convert_ids_to_tokens(
-                    model.config.pad_token_id if model.config.pad_token_id != -1 else tokenizer.pad_token_id
-                ),
-        })
+        # Preserve tokenizer special tokens. A missing model pad ID is valid
+        # and must never be used as an unknown-token ID.
+        special_tokens = {}
+        for token_name in ("eos_token", "bos_token", "unk_token"):
+            if getattr(tokenizer, token_name) is not None:
+                continue
+            token_id = getattr(model.config, f"{token_name}_id", None)
+            if not isinstance(token_id, int) or token_id < 0:
+                token_id = tokenizer.convert_tokens_to_ids({
+                    "eos_token": "</s>", "bos_token": "<s>", "unk_token": "<unk>",
+                }[token_name])
+            if not isinstance(token_id, int) or token_id < 0:
+                raise ValueError(f"Cannot resolve LLaMA {token_name}")
+            special_tokens[token_name] = tokenizer.convert_ids_to_tokens(token_id)
+        if special_tokens:
+            smart_tokenizer_and_embedding_resize(
+                special_tokens_dict=special_tokens, tokenizer=tokenizer, model=model,
+            )
+    model.config.pad_token_id = tokenizer.pad_token_id
 
 
     for name, param in model.named_parameters():

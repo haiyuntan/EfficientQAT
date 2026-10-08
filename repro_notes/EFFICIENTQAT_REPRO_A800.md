@@ -1499,3 +1499,7 @@ R0–R5 统一使用 `local_datasets.py`：WikiText-2 和 MMLU 从现有 Arrow �
 ### 实验分析文件同步到 GitHub
 
 按照最新要求，实验期间不推送。`scripts/sync_experiment_reports.py --after-run <正式实验运行ID>` 用 nohup 等待该正式流水线的 `ALL_DONE` 标记，R0–R5 全部成功结束后才统一收集、提交并推送一次。失败或未完成时不会推送。同步包含配置、评测 JSON、训练指标、参数更新审计、状态和日志，存放在仓库 `experiment_reports/`；模型权重、数据集、缓存不上传。单个日志最多保留末尾 2 MiB；超过 2 MiB 的其他文本文件记录在 manifest 但不复制。推送失败记录错误，后续可手动重试；不会周期推送。网页端访问私有仓库仍需 GitHub 访问权限。
+
+### 2026-10-08 冒烟修复与重新运行
+
+修复 E2E-QP 的 LLaMA 特殊 token 初始化：保留 tokenizer 已有 eos/bos/unk，缺失时补齐，不再将缺失的模型 pad ID 当作 unk ID；同步 model.config.pad_token_id。清理之前 R0–R4/R0–R5 冒烟生成权重、评估结果、日志和专用缓存及报告快照，保留下载的基础模型、官方权重和本地数据集。新运行 r0_r5_20261008_v7 使用 nohup 从 R0 开始，冒烟通过后自动启动正式流水线；仅正式 R0–R5 全部完成后推送。

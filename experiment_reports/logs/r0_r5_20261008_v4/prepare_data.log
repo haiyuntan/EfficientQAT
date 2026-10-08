@@ -1,264 +1,0 @@
-Alpaca: 52002 /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/data/local_datasets/alpaca/alpaca_data.json
-/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-Downloading data:   0%|          | 0.00/9.97k [00:00<?, ?B/s]Downloading data: 100%|██████████| 9.97k/9.97k [00:01<00:00, 5.08kB/s]Downloading data: 100%|██████████| 9.97k/9.97k [00:01<00:00, 5.08kB/s]
-Downloading data:   0%|          | 0.00/3.74k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.74k/3.74k [00:00<00:00, 5.56kB/s]Downloading data: 100%|██████████| 3.74k/3.74k [00:00<00:00, 5.55kB/s]
-Downloading data:   0%|          | 0.00/3.46k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.46k/3.46k [00:00<00:00, 5.36kB/s]Downloading data: 100%|██████████| 3.46k/3.46k [00:00<00:00, 5.36kB/s]
-Generating test split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 100/100 [00:00<00:00, 7751.87 examples/s]
-Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 2207.11 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1050.26 examples/s]
-MMLU prepared 1/57: mmlu_abstract_algebra
-Downloading data:   0%|          | 0.00/20.1k [00:00<?, ?B/s]Downloading data: 100%|██████████| 20.1k/20.1k [00:00<00:00, 25.0kB/s]Downloading data: 100%|██████████| 20.1k/20.1k [00:00<00:00, 24.9kB/s]
-Downloading data:   0%|          | 0.00/5.29k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.29k/5.29k [00:00<00:00, 7.53kB/s]Downloading data: 100%|██████████| 5.29k/5.29k [00:00<00:00, 7.52kB/s]
-Downloading data:   0%|          | 0.00/3.51k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.51k/3.51k [00:00<00:00, 4.30kB/s]Downloading data: 100%|██████████| 3.51k/3.51k [00:00<00:00, 4.30kB/s]
-Generating test split:   0%|          | 0/135 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 135/135 [00:00<00:00, 18301.53 examples/s]
-Generating validation split:   0%|          | 0/14 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 14/14 [00:00<00:00, 695.73 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 75.48 examples/s]
-MMLU prepared 2/57: mmlu_anatomy
-MMLU prepared 3/57: mmlu_astronomy
-Downloading data:   0%|          | 0.00/21.6k [00:00<?, ?B/s]Downloading data: 100%|██████████| 21.6k/21.6k [00:00<00:00, 26.5kB/s]Downloading data: 100%|██████████| 21.6k/21.6k [00:00<00:00, 26.5kB/s]
-Downloading data:   0%|          | 0.00/5.10k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.10k/5.10k [00:00<00:00, 7.09kB/s]Downloading data: 100%|██████████| 5.10k/5.10k [00:00<00:00, 7.09kB/s]
-Downloading data:   0%|          | 0.00/4.97k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.97k/4.97k [00:00<00:00, 7.16kB/s]Downloading data: 100%|██████████| 4.97k/4.97k [00:00<00:00, 7.15kB/s]
-Generating test split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 100/100 [00:00<00:00, 8767.36 examples/s]
-Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 1774.31 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 289.00 examples/s]
-MMLU prepared 4/57: mmlu_business_ethics
-Downloading data:   0%|          | 0.00/40.5k [00:00<?, ?B/s]Downloading data: 100%|██████████| 40.5k/40.5k [00:01<00:00, 35.5kB/s]Downloading data: 100%|██████████| 40.5k/40.5k [00:01<00:00, 35.5kB/s]
-Downloading data:   0%|          | 0.00/7.49k [00:00<?, ?B/s]Downloading data: 100%|██████████| 7.49k/7.49k [00:00<00:00, 10.7kB/s]Downloading data: 100%|██████████| 7.49k/7.49k [00:00<00:00, 10.7kB/s]
-Downloading data:   0%|          | 0.00/3.68k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.68k/3.68k [00:00<00:00, 5.78kB/s]Downloading data: 100%|██████████| 3.68k/3.68k [00:00<00:00, 5.78kB/s]
-Generating test split:   0%|          | 0/265 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 265/265 [00:00<00:00, 32790.23 examples/s]
-Generating validation split:   0%|          | 0/29 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 29/29 [00:00<00:00, 5667.19 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 853.16 examples/s]
-MMLU prepared 5/57: mmlu_clinical_knowledge
-Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
-2026-10-08:07:26:41,019 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
-Retry 1/5 mmlu_college_biology: Couldn't find cache for hails/mmlu_no_train for config 'college_biology'
-Available configs in the cache: ['abstract_algebra', 'anatomy', 'astronomy', 'business_ethics', 'clinical_knowledge', 'college_physics', 'high_school_computer_science']
-Downloading data:   0%|          | 0.00/31.9k [00:00<?, ?B/s]Downloading data: 100%|██████████| 31.9k/31.9k [00:00<00:00, 40.8kB/s]Downloading data: 100%|██████████| 31.9k/31.9k [00:00<00:00, 40.7kB/s]
-Downloading data:   0%|          | 0.00/6.91k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.91k/6.91k [00:00<00:00, 10.1kB/s]Downloading data: 100%|██████████| 6.91k/6.91k [00:00<00:00, 10.1kB/s]
-Downloading data:   0%|          | 0.00/4.28k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.28k/4.28k [00:00<00:00, 6.07kB/s]Downloading data: 100%|██████████| 4.28k/4.28k [00:00<00:00, 6.06kB/s]
-Generating test split:   0%|          | 0/144 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 144/144 [00:00<00:00, 13778.80 examples/s]
-Generating validation split:   0%|          | 0/16 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 16/16 [00:00<00:00, 3220.81 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 815.35 examples/s]
-MMLU prepared 6/57: mmlu_college_biology
-Downloading data:   0%|          | 0.00/17.9k [00:00<?, ?B/s]Downloading data: 100%|██████████| 17.9k/17.9k [00:00<00:00, 25.9kB/s]Downloading data: 100%|██████████| 17.9k/17.9k [00:00<00:00, 25.9kB/s]
-Downloading data:   0%|          | 0.00/4.88k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.88k/4.88k [00:00<00:00, 7.56kB/s]Downloading data: 100%|██████████| 4.88k/4.88k [00:00<00:00, 7.55kB/s]
-Downloading data:   0%|          | 0.00/4.05k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.05k/4.05k [00:00<00:00, 5.95kB/s]Downloading data: 100%|██████████| 4.05k/4.05k [00:00<00:00, 5.95kB/s]
-Generating test split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 100/100 [00:00<00:00, 1976.35 examples/s]
-Generating validation split:   0%|          | 0/8 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 8/8 [00:00<00:00, 1656.19 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1057.67 examples/s]
-MMLU prepared 7/57: mmlu_college_chemistry
-Downloading data:   0%|          | 0.00/28.1k [00:00<?, ?B/s]Downloading data: 100%|██████████| 28.1k/28.1k [00:00<00:00, 39.6kB/s]Downloading data: 100%|██████████| 28.1k/28.1k [00:00<00:00, 39.5kB/s]
-Downloading data:   0%|          | 0.00/6.26k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.26k/6.26k [00:00<00:00, 9.33kB/s]Downloading data: 100%|██████████| 6.26k/6.26k [00:00<00:00, 9.32kB/s]
-Downloading data:   0%|          | 0.00/6.82k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.82k/6.82k [00:00<00:00, 9.92kB/s]Downloading data: 100%|██████████| 6.82k/6.82k [00:00<00:00, 9.91kB/s]
-Generating test split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 100/100 [00:00<00:00, 14199.21 examples/s]
-Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 2203.84 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 223.18 examples/s]
-MMLU prepared 8/57: mmlu_college_computer_science
-HF google storage unreachable. Downloading and preparing it from source
-2026-10-08:07:27:37,483 WARNING  [builder.py:998] HF google storage unreachable. Downloading and preparing it from source
-Downloading data:   0%|          | 0.00/16.6k [00:00<?, ?B/s]Downloading data: 100%|██████████| 16.6k/16.6k [00:00<00:00, 24.0kB/s]Downloading data: 100%|██████████| 16.6k/16.6k [00:00<00:00, 23.9kB/s]
-Downloading data:   0%|          | 0.00/5.01k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.01k/5.01k [00:00<00:00, 6.89kB/s]Downloading data: 100%|██████████| 5.01k/5.01k [00:00<00:00, 6.88kB/s]
-Downloading data:   0%|          | 0.00/5.17k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.17k/5.17k [00:00<00:00, 7.68kB/s]Downloading data: 100%|██████████| 5.17k/5.17k [00:00<00:00, 7.67kB/s]
-Generating test split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 100/100 [00:00<00:00, 14999.48 examples/s]
-Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 2316.36 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1047.84 examples/s]
-MMLU prepared 9/57: mmlu_college_mathematics
-Downloading data:   0%|          | 0.00/42.5k [00:00<?, ?B/s]Downloading data: 100%|██████████| 42.5k/42.5k [00:00<00:00, 46.8kB/s]Downloading data: 100%|██████████| 42.5k/42.5k [00:00<00:00, 46.8kB/s]
-Downloading data:   0%|          | 0.00/9.00k [00:00<?, ?B/s]Downloading data: 100%|██████████| 9.00k/9.00k [00:00<00:00, 13.1kB/s]Downloading data: 100%|██████████| 9.00k/9.00k [00:00<00:00, 13.1kB/s]
-Downloading data:   0%|          | 0.00/4.85k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.85k/4.85k [00:00<00:00, 6.99kB/s]Downloading data: 100%|██████████| 4.85k/4.85k [00:00<00:00, 6.98kB/s]
-Generating test split:   0%|          | 0/173 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 173/173 [00:00<00:00, 33389.22 examples/s]
-Generating validation split:   0%|          | 0/22 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 22/22 [00:00<00:00, 7132.07 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1752.15 examples/s]
-MMLU prepared 10/57: mmlu_college_medicine
-MMLU prepared 11/57: mmlu_college_physics
-Downloading data:   0%|          | 0.00/19.2k [00:00<?, ?B/s]Downloading data: 100%|██████████| 19.2k/19.2k [00:00<00:00, 23.5kB/s]Downloading data: 100%|██████████| 19.2k/19.2k [00:00<00:00, 23.5kB/s]
-Downloading data:   0%|          | 0.00/6.68k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.68k/6.68k [00:00<00:00, 10.1kB/s]Downloading data: 100%|██████████| 6.68k/6.68k [00:00<00:00, 10.1kB/s]
-Downloading data:   0%|          | 0.00/4.33k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.33k/4.33k [00:00<00:00, 6.49kB/s]Downloading data: 100%|██████████| 4.33k/4.33k [00:00<00:00, 6.49kB/s]
-Generating test split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 100/100 [00:00<00:00, 5263.94 examples/s]
-Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 543.57 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 872.69 examples/s]
-MMLU prepared 12/57: mmlu_computer_security
-Downloading data:   0%|          | 0.00/25.0k [00:00<?, ?B/s]Downloading data: 100%|██████████| 25.0k/25.0k [00:00<00:00, 32.5kB/s]Downloading data: 100%|██████████| 25.0k/25.0k [00:00<00:00, 32.4kB/s]
-Downloading data:   0%|          | 0.00/5.99k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.99k/5.99k [00:00<00:00, 8.89kB/s]Downloading data: 100%|██████████| 5.99k/5.99k [00:00<00:00, 8.88kB/s]
-Downloading data:   0%|          | 0.00/3.97k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.97k/3.97k [00:00<00:00, 6.09kB/s]Downloading data: 100%|██████████| 3.97k/3.97k [00:00<00:00, 6.08kB/s]
-Generating test split:   0%|          | 0/235 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 235/235 [00:00<00:00, 27912.93 examples/s]
-Generating validation split:   0%|          | 0/26 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 26/26 [00:00<00:00, 4920.00 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 940.64 examples/s]
-MMLU prepared 13/57: mmlu_conceptual_physics
-Downloading data:   0%|          | 0.00/24.5k [00:00<?, ?B/s]Downloading data: 100%|██████████| 24.5k/24.5k [00:00<00:00, 34.0kB/s]Downloading data: 100%|██████████| 24.5k/24.5k [00:00<00:00, 34.0kB/s]
-Downloading data:   0%|          | 0.00/7.03k [00:00<?, ?B/s]Downloading data: 100%|██████████| 7.03k/7.03k [00:00<00:00, 9.84kB/s]Downloading data: 100%|██████████| 7.03k/7.03k [00:00<00:00, 9.83kB/s]
-Downloading data:   0%|          | 0.00/4.55k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.55k/4.55k [00:00<00:00, 6.44kB/s]Downloading data: 100%|██████████| 4.55k/4.55k [00:00<00:00, 6.43kB/s]
-Generating test split:   0%|          | 0/114 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 114/114 [00:00<00:00, 5520.54 examples/s]
-Generating validation split:   0%|          | 0/12 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 12/12 [00:00<00:00, 2417.70 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1033.89 examples/s]
-MMLU prepared 14/57: mmlu_econometrics
-Downloading data:   0%|          | 0.00/17.6k [00:00<?, ?B/s]Downloading data: 100%|██████████| 17.6k/17.6k [00:00<00:00, 20.8kB/s]Downloading data: 100%|██████████| 17.6k/17.6k [00:00<00:00, 20.8kB/s]
-Downloading data:   0%|          | 0.00/5.09k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.09k/5.09k [00:00<00:00, 7.32kB/s]Downloading data: 100%|██████████| 5.09k/5.09k [00:00<00:00, 7.31kB/s]
-Downloading data:   0%|          | 0.00/4.09k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.09k/4.09k [00:00<00:00, 6.19kB/s]Downloading data: 100%|██████████| 4.09k/4.09k [00:00<00:00, 6.18kB/s]
-Generating test split:   0%|          | 0/145 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 145/145 [00:00<00:00, 20261.66 examples/s]
-Generating validation split:   0%|          | 0/16 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 16/16 [00:00<00:00, 3010.18 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 968.97 examples/s]
-MMLU prepared 15/57: mmlu_electrical_engineering
-Downloading data:   0%|          | 0.00/41.1k [00:00<?, ?B/s]Downloading data: 100%|██████████| 41.1k/41.1k [00:00<00:00, 45.3kB/s]Downloading data: 100%|██████████| 41.1k/41.1k [00:00<00:00, 45.3kB/s]
-Downloading data:   0%|          | 0.00/9.39k [00:00<?, ?B/s]Downloading data: 100%|██████████| 9.39k/9.39k [00:00<00:00, 12.6kB/s]Downloading data: 100%|██████████| 9.39k/9.39k [00:00<00:00, 12.6kB/s]
-Downloading data:   0%|          | 0.00/4.56k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.56k/4.56k [00:00<00:00, 6.61kB/s]Downloading data: 100%|██████████| 4.56k/4.56k [00:00<00:00, 6.60kB/s]
-Generating test split:   0%|          | 0/378 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 378/378 [00:00<00:00, 52369.92 examples/s]
-Generating validation split:   0%|          | 0/41 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 41/41 [00:00<00:00, 6960.23 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1074.97 examples/s]
-MMLU prepared 16/57: mmlu_elementary_mathematics
-Downloading data:   0%|          | 0.00/21.5k [00:00<?, ?B/s]Downloading data: 100%|██████████| 21.5k/21.5k [00:00<00:00, 29.3kB/s]Downloading data: 100%|██████████| 21.5k/21.5k [00:00<00:00, 29.2kB/s]
-Downloading data:   0%|          | 0.00/6.57k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.57k/6.57k [00:00<00:00, 9.33kB/s]Downloading data: 100%|██████████| 6.57k/6.57k [00:00<00:00, 9.32kB/s]
-Downloading data:   0%|          | 0.00/4.82k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.82k/4.82k [00:00<00:00, 7.26kB/s]Downloading data: 100%|██████████| 4.82k/4.82k [00:00<00:00, 7.25kB/s]
-Generating test split:   0%|          | 0/126 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 126/126 [00:00<00:00, 19624.30 examples/s]
-Generating validation split:   0%|          | 0/14 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 14/14 [00:00<00:00, 2701.40 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1065.79 examples/s]
-MMLU prepared 17/57: mmlu_formal_logic
-Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
-2026-10-08:07:30:18,295 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
-Retry 1/5 mmlu_global_facts: Couldn't find cache for hails/mmlu_no_train for config 'global_facts'
-Available configs in the cache: ['abstract_algebra', 'anatomy', 'astronomy', 'business_ethics', 'clinical_knowledge', 'college_biology', 'college_chemistry', 'college_computer_science', 'college_mathematics', 'college_medicine', 'college_physics', 'computer_security', 'conceptual_physics', 'econometrics', 'electrical_engineering', 'elementary_mathematics', 'formal_logic', 'high_school_computer_science']
-HF google storage unreachable. Downloading and preparing it from source
-2026-10-08:07:30:38,743 WARNING  [builder.py:998] HF google storage unreachable. Downloading and preparing it from source
-Downloading data:   0%|          | 0.00/11.5k [00:00<?, ?B/s]Downloading data: 100%|██████████| 11.5k/11.5k [00:00<00:00, 16.0kB/s]Downloading data: 100%|██████████| 11.5k/11.5k [00:00<00:00, 15.9kB/s]
-Downloading data:   0%|          | 0.00/4.20k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.20k/4.20k [00:00<00:00, 6.09kB/s]Downloading data: 100%|██████████| 4.20k/4.20k [00:00<00:00, 6.09kB/s]
-Downloading data:   0%|          | 0.00/3.58k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.58k/3.58k [00:00<00:00, 5.27kB/s]Downloading data: 100%|██████████| 3.58k/3.58k [00:00<00:00, 5.26kB/s]
-Generating test split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 100/100 [00:00<00:00, 14548.91 examples/s]
-Generating validation split:   0%|          | 0/10 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 10/10 [00:00<00:00, 1974.16 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 398.99 examples/s]
-MMLU prepared 18/57: mmlu_global_facts
-Downloading data:   0%|          | 0.00/62.7k [00:00<?, ?B/s]Downloading data: 100%|██████████| 62.7k/62.7k [00:00<00:00, 71.0kB/s]Downloading data: 100%|██████████| 62.7k/62.7k [00:00<00:00, 71.0kB/s]
-Downloading data:   0%|          | 0.00/10.6k [00:00<?, ?B/s]Downloading data: 100%|██████████| 10.6k/10.6k [00:00<00:00, 14.0kB/s]Downloading data: 100%|██████████| 10.6k/10.6k [00:00<00:00, 14.0kB/s]
-Downloading data:   0%|          | 0.00/4.95k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.95k/4.95k [00:00<00:00, 7.47kB/s]Downloading data: 100%|██████████| 4.95k/4.95k [00:00<00:00, 7.46kB/s]
-Generating test split:   0%|          | 0/310 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 310/310 [00:00<00:00, 45015.73 examples/s]
-Generating validation split:   0%|          | 0/32 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 32/32 [00:00<00:00, 6068.53 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 913.00 examples/s]
-MMLU prepared 19/57: mmlu_high_school_biology
-Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
-2026-10-08:07:31:12,673 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
-Retry 1/5 mmlu_high_school_chemistry: Couldn't find cache for hails/mmlu_no_train for config 'high_school_chemistry'
-Available configs in the cache: ['abstract_algebra', 'anatomy', 'astronomy', 'business_ethics', 'clinical_knowledge', 'college_biology', 'college_chemistry', 'college_computer_science', 'college_mathematics', 'college_medicine', 'college_physics', 'computer_security', 'conceptual_physics', 'econometrics', 'electrical_engineering', 'elementary_mathematics', 'formal_logic', 'global_facts', 'high_school_biology', 'high_school_computer_science']
-Downloading data:   0%|          | 0.00/33.3k [00:00<?, ?B/s]Downloading data: 100%|██████████| 33.3k/33.3k [00:00<00:00, 45.7kB/s]Downloading data: 100%|██████████| 33.3k/33.3k [00:00<00:00, 45.7kB/s]
-Downloading data:   0%|          | 0.00/8.32k [00:00<?, ?B/s]Downloading data: 100%|██████████| 8.32k/8.32k [00:00<00:00, 11.7kB/s]Downloading data: 100%|██████████| 8.32k/8.32k [00:00<00:00, 11.7kB/s]
-Downloading data:   0%|          | 0.00/4.17k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.17k/4.17k [00:00<00:00, 5.87kB/s]Downloading data: 100%|██████████| 4.17k/4.17k [00:00<00:00, 5.86kB/s]
-Generating test split:   0%|          | 0/203 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 203/203 [00:00<00:00, 31858.25 examples/s]
-Generating validation split:   0%|          | 0/22 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 22/22 [00:00<00:00, 3128.49 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 925.53 examples/s]
-MMLU prepared 20/57: mmlu_high_school_chemistry
-MMLU prepared 21/57: mmlu_high_school_computer_science
-Downloading data:   0%|          | 0.00/142k [00:00<?, ?B/s]Downloading data: 100%|██████████| 142k/142k [00:01<00:00, 96.0kB/s]Downloading data: 100%|██████████| 142k/142k [00:01<00:00, 95.9kB/s]
-Downloading data:   0%|          | 0.00/31.6k [00:00<?, ?B/s]Downloading data: 100%|██████████| 31.6k/31.6k [00:00<00:00, 46.6kB/s]Downloading data: 100%|██████████| 31.6k/31.6k [00:00<00:00, 46.6kB/s]
-Downloading data:   0%|          | 0.00/22.2k [00:00<?, ?B/s]Downloading data: 100%|██████████| 22.2k/22.2k [00:00<00:00, 32.7kB/s]Downloading data: 100%|██████████| 22.2k/22.2k [00:00<00:00, 32.6kB/s]
-Generating test split:   0%|          | 0/165 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 165/165 [00:00<00:00, 16659.29 examples/s]
-Generating validation split:   0%|          | 0/18 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 18/18 [00:00<00:00, 716.46 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 870.66 examples/s]
-MMLU prepared 22/57: mmlu_high_school_european_history
-Downloading data:   0%|          | 0.00/28.2k [00:00<?, ?B/s]Downloading data: 100%|██████████| 28.2k/28.2k [00:00<00:00, 42.5kB/s]Downloading data: 100%|██████████| 28.2k/28.2k [00:00<00:00, 42.5kB/s]
-Downloading data:   0%|          | 0.00/6.17k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.17k/6.17k [00:00<00:00, 8.76kB/s]Downloading data: 100%|██████████| 6.17k/6.17k [00:00<00:00, 8.75kB/s]
-Downloading data:   0%|          | 0.00/3.94k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.94k/3.94k [00:00<00:00, 6.37kB/s]Downloading data: 100%|██████████| 3.94k/3.94k [00:00<00:00, 6.36kB/s]
-Generating test split:   0%|          | 0/198 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 198/198 [00:00<00:00, 32053.43 examples/s]
-Generating validation split:   0%|          | 0/22 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 22/22 [00:00<00:00, 4270.39 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1034.10 examples/s]
-MMLU prepared 23/57: mmlu_high_school_geography
-Downloading data:   0%|          | 0.00/40.2k [00:00<?, ?B/s]Downloading data: 100%|██████████| 40.2k/40.2k [00:00<00:00, 49.2kB/s]Downloading data: 100%|██████████| 40.2k/40.2k [00:00<00:00, 49.1kB/s]
-Downloading data:   0%|          | 0.00/8.28k [00:00<?, ?B/s]Downloading data: 100%|██████████| 8.28k/8.28k [00:00<00:00, 12.0kB/s]Downloading data: 100%|██████████| 8.28k/8.28k [00:00<00:00, 12.0kB/s]
-Downloading data:   0%|          | 0.00/4.48k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.48k/4.48k [00:00<00:00, 6.66kB/s]Downloading data: 100%|██████████| 4.48k/4.48k [00:00<00:00, 6.66kB/s]
-Generating test split:   0%|          | 0/193 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 193/193 [00:00<00:00, 25508.14 examples/s]
-Generating validation split:   0%|          | 0/21 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 21/21 [00:00<00:00, 4264.36 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 935.81 examples/s]
-MMLU prepared 24/57: mmlu_high_school_government_and_politics
-Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
-2026-10-08:07:32:56,932 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
-Retry 1/5 mmlu_high_school_macroeconomics: Couldn't find cache for hails/mmlu_no_train for config 'high_school_macroeconomics'
-Available configs in the cache: ['abstract_algebra', 'anatomy', 'astronomy', 'business_ethics', 'clinical_knowledge', 'college_biology', 'college_chemistry', 'college_computer_science', 'college_mathematics', 'college_medicine', 'college_physics', 'computer_security', 'conceptual_physics', 'econometrics', 'electrical_engineering', 'elementary_mathematics', 'formal_logic', 'global_facts', 'high_school_biology', 'high_school_chemistry', 'high_school_computer_science', 'high_school_european_history', 'high_school_geography', 'high_school_government_and_politics']
-Downloading data:   0%|          | 0.00/54.8k [00:00<?, ?B/s]Downloading data: 100%|██████████| 54.8k/54.8k [00:00<00:00, 76.0kB/s]Downloading data: 100%|██████████| 54.8k/54.8k [00:00<00:00, 75.9kB/s]
-Downloading data:   0%|          | 0.00/9.90k [00:00<?, ?B/s]Downloading data: 100%|██████████| 9.90k/9.90k [00:00<00:00, 14.8kB/s]Downloading data: 100%|██████████| 9.90k/9.90k [00:00<00:00, 14.8kB/s]
-Downloading data:   0%|          | 0.00/4.05k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.05k/4.05k [00:00<00:00, 5.51kB/s]Downloading data: 100%|██████████| 4.05k/4.05k [00:00<00:00, 5.51kB/s]
-Generating test split:   0%|          | 0/390 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 390/390 [00:00<00:00, 52682.08 examples/s]
-Generating validation split:   0%|          | 0/43 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 43/43 [00:00<00:00, 8844.84 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1978.26 examples/s]
-MMLU prepared 25/57: mmlu_high_school_macroeconomics
-Downloading data:   0%|          | 0.00/33.7k [00:00<?, ?B/s]Downloading data: 100%|██████████| 33.7k/33.7k [00:00<00:00, 50.8kB/s]Downloading data: 100%|██████████| 33.7k/33.7k [00:00<00:00, 50.7kB/s]
-Downloading data:   0%|          | 0.00/7.00k [00:00<?, ?B/s]Downloading data: 100%|██████████| 7.00k/7.00k [00:00<00:00, 10.4kB/s]Downloading data: 100%|██████████| 7.00k/7.00k [00:00<00:00, 10.4kB/s]
-Downloading data:   0%|          | 0.00/4.51k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.51k/4.51k [00:00<00:00, 6.96kB/s]Downloading data: 100%|██████████| 4.51k/4.51k [00:00<00:00, 6.96kB/s]
-Generating test split:   0%|          | 0/270 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 270/270 [00:00<00:00, 43016.87 examples/s]
-Generating validation split:   0%|          | 0/29 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 29/29 [00:00<00:00, 5653.23 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 878.09 examples/s]
-MMLU prepared 26/57: mmlu_high_school_mathematics
-Downloading data:   0%|          | 0.00/38.8k [00:00<?, ?B/s]Downloading data: 100%|██████████| 38.8k/38.8k [00:00<00:00, 48.8kB/s]Downloading data: 100%|██████████| 38.8k/38.8k [00:00<00:00, 48.7kB/s]
-Downloading data:   0%|          | 0.00/7.23k [00:00<?, ?B/s]Downloading data: 100%|██████████| 7.23k/7.23k [00:00<00:00, 10.6kB/s]Downloading data: 100%|██████████| 7.23k/7.23k [00:00<00:00, 10.6kB/s]
-Downloading data:   0%|          | 0.00/3.84k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.84k/3.84k [00:00<00:00, 5.61kB/s]Downloading data: 100%|██████████| 3.84k/3.84k [00:00<00:00, 5.61kB/s]
-Generating test split:   0%|          | 0/238 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 238/238 [00:00<00:00, 37331.50 examples/s]
-Generating validation split:   0%|          | 0/26 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 26/26 [00:00<00:00, 5079.74 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 980.02 examples/s]
-MMLU prepared 27/57: mmlu_high_school_microeconomics
-Downloading data:   0%|          | 0.00/33.0k [00:00<?, ?B/s]Downloading data: 100%|██████████| 33.0k/33.0k [00:00<00:00, 43.2kB/s]Downloading data: 100%|██████████| 33.0k/33.0k [00:00<00:00, 43.2kB/s]
-Downloading data:   0%|          | 0.00/7.97k [00:00<?, ?B/s]Downloading data: 100%|██████████| 7.97k/7.97k [00:00<00:00, 12.3kB/s]Downloading data: 100%|██████████| 7.97k/7.97k [00:00<00:00, 12.3kB/s]
-Downloading data:   0%|          | 0.00/4.58k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.58k/4.58k [00:00<00:00, 6.68kB/s]Downloading data: 100%|██████████| 4.58k/4.58k [00:00<00:00, 6.67kB/s]
-Generating test split:   0%|          | 0/151 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 151/151 [00:00<00:00, 20701.44 examples/s]
-Generating validation split:   0%|          | 0/17 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 17/17 [00:00<00:00, 3364.47 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 999.36 examples/s]
-MMLU prepared 28/57: mmlu_high_school_physics
-Downloading data:   0%|          | 0.00/92.8k [00:00<?, ?B/s]Downloading data: 100%|██████████| 92.8k/92.8k [00:00<00:00, 131kB/s]Downloading data: 100%|██████████| 92.8k/92.8k [00:00<00:00, 131kB/s]
-Downloading data:   0%|          | 0.00/15.2k [00:00<?, ?B/s]Downloading data: 100%|██████████| 15.2k/15.2k [00:00<00:00, 22.9kB/s]Downloading data: 100%|██████████| 15.2k/15.2k [00:00<00:00, 22.9kB/s]
-Downloading data:   0%|          | 0.00/5.19k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.19k/5.19k [00:00<00:00, 7.78kB/s]Downloading data: 100%|██████████| 5.19k/5.19k [00:00<00:00, 7.77kB/s]
-Generating test split:   0%|          | 0/545 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 545/545 [00:00<00:00, 16690.49 examples/s]
-Generating validation split:   0%|          | 0/60 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 60/60 [00:00<00:00, 11299.31 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1045.28 examples/s]
-MMLU prepared 29/57: mmlu_high_school_psychology
-Downloading data:   0%|          | 0.00/58.0k [00:00<?, ?B/s]Downloading data: 100%|██████████| 58.0k/58.0k [00:00<00:00, 76.3kB/s]Downloading data: 100%|██████████| 58.0k/58.0k [00:00<00:00, 76.2kB/s]
-Downloading data:   0%|          | 0.00/10.9k [00:00<?, ?B/s]Downloading data: 100%|██████████| 10.9k/10.9k [00:00<00:00, 15.2kB/s]Downloading data: 100%|██████████| 10.9k/10.9k [00:00<00:00, 15.2kB/s]
-Downloading data:   0%|          | 0.00/6.08k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.08k/6.08k [00:00<00:00, 8.24kB/s]Downloading data: 100%|██████████| 6.08k/6.08k [00:00<00:00, 8.23kB/s]
-Generating test split:   0%|          | 0/216 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 216/216 [00:00<00:00, 4597.36 examples/s]
-Generating validation split:   0%|          | 0/23 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 23/23 [00:00<00:00, 4452.35 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 258.24 examples/s]
-MMLU prepared 30/57: mmlu_high_school_statistics
-Downloading data:   0%|          | 0.00/155k [00:00<?, ?B/s]Downloading data: 100%|██████████| 155k/155k [00:00<00:00, 155kB/s]Downloading data: 100%|██████████| 155k/155k [00:00<00:00, 155kB/s]
-Downloading data:   0%|          | 0.00/27.3k [00:00<?, ?B/s]Downloading data: 100%|██████████| 27.3k/27.3k [00:00<00:00, 33.2kB/s]Downloading data: 100%|██████████| 27.3k/27.3k [00:00<00:00, 33.2kB/s]
-Downloading data:   0%|          | 0.00/17.8k [00:00<?, ?B/s]Downloading data: 100%|██████████| 17.8k/17.8k [00:00<00:00, 22.0kB/s]Downloading data: 100%|██████████| 17.8k/17.8k [00:00<00:00, 22.0kB/s]
-Generating test split:   0%|          | 0/204 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 204/204 [00:00<00:00, 24676.65 examples/s]
-Generating validation split:   0%|          | 0/22 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 22/22 [00:00<00:00, 4144.38 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1012.14 examples/s]
-MMLU prepared 31/57: mmlu_high_school_us_history
-Downloading data:   0%|          | 0.00/202k [00:00<?, ?B/s]Downloading data: 100%|██████████| 202k/202k [00:01<00:00, 199kB/s]Downloading data: 100%|██████████| 202k/202k [00:01<00:00, 199kB/s]
-Downloading data:   0%|          | 0.00/38.5k [00:00<?, ?B/s]Downloading data: 100%|██████████| 38.5k/38.5k [00:00<00:00, 56.2kB/s]Downloading data: 100%|██████████| 38.5k/38.5k [00:00<00:00, 56.1kB/s]
-Downloading data:   0%|          | 0.00/10.3k [00:00<?, ?B/s]Downloading data: 100%|██████████| 10.3k/10.3k [00:00<00:00, 15.6kB/s]Downloading data: 100%|██████████| 10.3k/10.3k [00:00<00:00, 15.6kB/s]
-Generating test split:   0%|          | 0/237 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 237/237 [00:00<00:00, 8428.37 examples/s]
-Generating validation split:   0%|          | 0/26 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 26/26 [00:00<00:00, 4914.90 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 934.73 examples/s]
-MMLU prepared 32/57: mmlu_high_school_world_history
-Downloading data:   0%|          | 0.00/31.3k [00:00<?, ?B/s]Downloading data: 100%|██████████| 31.3k/31.3k [00:00<00:00, 46.5kB/s]Downloading data: 100%|██████████| 31.3k/31.3k [00:00<00:00, 46.5kB/s]
-Downloading data:   0%|          | 0.00/6.29k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.29k/6.29k [00:00<00:00, 9.51kB/s]Downloading data: 100%|██████████| 6.29k/6.29k [00:00<00:00, 9.50kB/s]
-Downloading data:   0%|          | 0.00/3.68k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.68k/3.68k [00:00<00:00, 5.46kB/s]Downloading data: 100%|██████████| 3.68k/3.68k [00:00<00:00, 5.46kB/s]
-Generating test split:   0%|          | 0/223 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 223/223 [00:00<00:00, 34047.90 examples/s]
-Generating validation split:   0%|          | 0/23 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 23/23 [00:00<00:00, 4633.03 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1052.26 examples/s]
-MMLU prepared 33/57: mmlu_human_aging
-Downloading data:   0%|          | 0.00/23.2k [00:00<?, ?B/s]Downloading data: 100%|██████████| 23.2k/23.2k [00:00<00:00, 31.0kB/s]Downloading data: 100%|██████████| 23.2k/23.2k [00:00<00:00, 31.0kB/s]
-Downloading data:   0%|          | 0.00/5.27k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.27k/5.27k [00:00<00:00, 7.23kB/s]Downloading data: 100%|██████████| 5.27k/5.27k [00:00<00:00, 7.22kB/s]
-Downloading data:   0%|          | 0.00/4.09k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.09k/4.09k [00:00<00:00, 5.89kB/s]Downloading data: 100%|██████████| 4.09k/4.09k [00:00<00:00, 5.89kB/s]
-Generating test split:   0%|          | 0/131 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 131/131 [00:00<00:00, 21187.44 examples/s]
-Generating validation split:   0%|          | 0/12 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 12/12 [00:00<00:00, 538.72 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1081.73 examples/s]
-MMLU prepared 34/57: mmlu_human_sexuality
-Downloading data:   0%|          | 0.00/29.5k [00:00<?, ?B/s]Downloading data: 100%|██████████| 29.5k/29.5k [00:00<00:00, 42.0kB/s]Downloading data: 100%|██████████| 29.5k/29.5k [00:00<00:00, 42.0kB/s]
-Downloading data:   0%|          | 0.00/7.13k [00:00<?, ?B/s]Downloading data: 100%|██████████| 7.13k/7.13k [00:00<00:00, 10.2kB/s]Downloading data: 100%|██████████| 7.13k/7.13k [00:00<00:00, 10.2kB/s]
-Downloading data:   0%|          | 0.00/4.97k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.97k/4.97k [00:00<00:00, 7.67kB/s]Downloading data: 100%|██████████| 4.97k/4.97k [00:00<00:00, 7.66kB/s]
-Generating test split:   0%|          | 0/121 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 121/121 [00:00<00:00, 16149.91 examples/s]
-Generating validation split:   0%|          | 0/13 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 13/13 [00:00<00:00, 2470.26 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1043.98 examples/s]
-MMLU prepared 35/57: mmlu_international_law
-Downloading data:   0%|          | 0.00/23.3k [00:00<?, ?B/s]Downloading data: 100%|██████████| 23.3k/23.3k [00:00<00:00, 34.1kB/s]Downloading data: 100%|██████████| 23.3k/23.3k [00:00<00:00, 34.1kB/s]
-Downloading data:   0%|          | 0.00/6.22k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.22k/6.22k [00:00<00:00, 9.20kB/s]Downloading data: 100%|██████████| 6.22k/6.22k [00:00<00:00, 9.19kB/s]
-Downloading data:   0%|          | 0.00/4.06k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.06k/4.06k [00:00<00:00, 6.17kB/s]Downloading data: 100%|██████████| 4.06k/4.06k [00:00<00:00, 6.16kB/s]
-Generating test split:   0%|          | 0/108 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 108/108 [00:00<00:00, 18263.31 examples/s]
-Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 2287.54 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1103.65 examples/s]
-MMLU prepared 36/57: mmlu_jurisprudence
-Downloading data:   0%|          | 0.00/23.0k [00:00<?, ?B/s]Downloading data: 100%|██████████| 23.0k/23.0k [00:00<00:00, 32.0kB/s]Downloading data: 100%|██████████| 23.0k/23.0k [00:00<00:00, 32.0kB/s]
-Downloading data:   0%|          | 0.00/6.53k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.53k/6.53k [00:00<00:00, 9.09kB/s]Downloading data: 100%|██████████| 6.53k/6.53k [00:00<00:00, 9.08kB/s]
-Downloading data:   0%|          | 0.00/4.13k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.13k/4.13k [00:00<00:00, 6.17kB/s]Downloading data: 100%|██████████| 4.13k/4.13k [00:00<00:00, 6.16kB/s]
-Generating test split:   0%|          | 0/163 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 163/163 [00:00<00:00, 26108.29 examples/s]
-Generating validation split:   0%|          | 0/18 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 18/18 [00:00<00:00, 674.47 examples/s]
-Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1082.79 examples/s]
-MMLU prepared 37/57: mmlu_logical_fallacies
