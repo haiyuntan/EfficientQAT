@@ -1491,3 +1491,7 @@ GPU 文件锁避免重复流水线并发占用同一卡。R0/R1 正式评测保�
 所有 E2E 仅 scales 训练，bf16、grad accumulation=1；R2 scale LR=1e-5，R4/R5=2e-5。
 Block-AP quant LR=1e-4；R2 weight LR=1e-5，R3 weight LR=2e-5。
 微量数据验证完整训练/保存/重载/评测链路；成功后 nohup 启动原正式参数的 R0–R5。
+
+### 本地数据加载（2026-10-08 更新）
+
+R0–R5 统一使用 `local_datasets.py`：WikiText-2 和 MMLU 从现有 Arrow 缓存直接读取；PIQA、ARC、HellaSwag、WinoGrande、RedPajama 从本地 Parquet 读取；C4、Alpaca 从本地 JSON 读取。lm-eval 使用同一加载入口。运行启用 `HF_DATASETS_OFFLINE=1` 和 `HF_HUB_OFFLINE=1`；缺少文件立即报错，不回退在线下载。`prepare_r5_data.py` 在 nohup 冒烟开始前校验全部数据及评测任务。首次解析本地 Parquet/JSON 会生成 Arrow 缓存，空间计入原先的数据缓存预算。

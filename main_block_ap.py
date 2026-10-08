@@ -1,3 +1,4 @@
+import local_datasets  # install local-only loading before other imports
 import os
 import sys
 import random

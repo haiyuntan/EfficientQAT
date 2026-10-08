@@ -1,3 +1,4 @@
+import local_datasets  # install local-only loading before other imports
 # This file is modified from https://github.com/artidoro/qlora/blob/main/qlora.py 
 import json
 import os

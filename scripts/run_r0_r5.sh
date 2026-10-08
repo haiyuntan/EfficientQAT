@@ -85,6 +85,9 @@ fi
 
 export HF_HOME="$PROJECT_ROOT/hf_cache"
 export HF_DATASETS_CACHE="$HF_HOME/datasets"
+export HF_DATASETS_OFFLINE=1
+export HF_HUB_OFFLINE=1
+export LOCAL_DATASETS_DIR="$PROJECT_ROOT/data/local_datasets"
 export TRANSFORMERS_CACHE="$HF_HOME/transformers"
 export TOKENIZERS_PARALLELISM=false
 export PYTHONUNBUFFERED=1

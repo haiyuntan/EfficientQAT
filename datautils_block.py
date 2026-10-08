@@ -1,5 +1,5 @@
 from transformers import AutoTokenizer
-from datasets import load_dataset
+from local_datasets import load_dataset
 import numpy as np
 import torch
 import random
@@ -44,26 +44,8 @@ def get_wikitext2(tokenizer, train_size, val_size, seed, seqlen, test_only):
 
 def get_c4(tokenizer, train_size, val_size, seed, seqlen, test_only):
     print("get_c4")
-    try:
-        # set local path for faster loading
-        traindata = load_dataset("arrow",
-                    data_files={
-                        "train": "/cpfs01/user/chenmengzhao/huggingface/datasets/allenai___json/allenai--c4-6fbe877195f42de5/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/json-train-00000-of-00002.arrow",
-                        "validation": "/cpfs01/user/chenmengzhao/huggingface/datasets/allenai___json/allenai--c4-efc3d4f4606f44bd/0.0.0/fe5dd6ea2639a6df622901539cb550cf8797e5a6b2dd7af1cf934bed8e233e6e/json-validation.arrow",
-                    },split='train'
-                    )
-        valdata = load_dataset("arrow",
-                    data_files={
-                        "validation": "/cpfs01/user/chenmengzhao/huggingface/datasets/allenai___json/allenai--c4-efc3d4f4606f44bd/0.0.0/fe5dd6ea2639a6df622901539cb550cf8797e5a6b2dd7af1cf934bed8e233e6e/json-validation.arrow",
-                    },split='validation'
-                    )
-    except:
-        traindata = load_dataset(
-            'allenai/c4', 'allenai--c4', data_files={'train': 'en/c4-train.00000-of-01024.json.gz'}, split='train'
-        )
-        valdata = load_dataset(
-            'allenai/c4', 'allenai--c4', data_files={'validation': 'en/c4-validation.00000-of-00008.json.gz'}, split='validation'
-        )
+    traindata = load_dataset('allenai/c4', split='train')
+    valdata = load_dataset('allenai/c4', split='validation')
 
     random.seed(0)
     valenc = []
@@ -116,11 +98,7 @@ def get_c4(tokenizer, train_size, val_size, seed, seqlen, test_only):
 
 def get_redpajama(tokenizer, train_size, val_size, seed, seqlen):
     print("get_redpajama")
-    try:
-        loacal_dataset = "/cpfs01/user/chenmengzhao/huggingface/datasets/togethercomputer___red_pajama-data-1_t-sample"
-        traindata = load_dataset(loacal_dataset,split='train')   
-    except:
-        traindata = load_dataset("togethercomputer/RedPajama-Data-1T-Sample",split='train')   
+    traindata = load_dataset("togethercomputer/RedPajama-Data-1T-Sample", split='train')
     random.seed(seed)
     traindata = traindata.shuffle(seed=seed) 
     trainloader = []
