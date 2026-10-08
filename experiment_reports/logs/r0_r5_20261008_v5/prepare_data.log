@@ -1,0 +1,243 @@
+Alpaca: 52002 /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/data/local_datasets/alpaca/alpaca_data.json
+/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+MMLU prepared 1/57: mmlu_abstract_algebra
+MMLU prepared 2/57: mmlu_anatomy
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:37:48,790 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'astronomy' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/astronomy/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:17:33 2026).
+2026-10-08:07:37:48,792 WARNING  [cache.py:72] Found the latest cached dataset configuration 'astronomy' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/astronomy/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:17:33 2026).
+MMLU prepared 3/57: mmlu_astronomy
+MMLU prepared 4/57: mmlu_business_ethics
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:38:34,170 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'clinical_knowledge' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/clinical_knowledge/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:26:16 2026).
+2026-10-08:07:38:34,177 WARNING  [cache.py:72] Found the latest cached dataset configuration 'clinical_knowledge' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/clinical_knowledge/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:26:16 2026).
+MMLU prepared 5/57: mmlu_clinical_knowledge
+MMLU prepared 6/57: mmlu_college_biology
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:39:19,672 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'college_chemistry' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/college_chemistry/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:27:07 2026).
+2026-10-08:07:39:19,675 WARNING  [cache.py:72] Found the latest cached dataset configuration 'college_chemistry' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/college_chemistry/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:27:07 2026).
+MMLU prepared 7/57: mmlu_college_chemistry
+MMLU prepared 8/57: mmlu_college_computer_science
+MMLU prepared 9/57: mmlu_college_mathematics
+MMLU prepared 10/57: mmlu_college_medicine
+MMLU prepared 11/57: mmlu_college_physics
+MMLU prepared 12/57: mmlu_computer_security
+MMLU prepared 13/57: mmlu_conceptual_physics
+MMLU prepared 14/57: mmlu_econometrics
+MMLU prepared 15/57: mmlu_electrical_engineering
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:40:55,810 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'elementary_mathematics' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/elementary_mathematics/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:29:52 2026).
+2026-10-08:07:40:55,818 WARNING  [cache.py:72] Found the latest cached dataset configuration 'elementary_mathematics' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/elementary_mathematics/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:29:52 2026).
+MMLU prepared 16/57: mmlu_elementary_mathematics
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:41:10,938 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'formal_logic' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/formal_logic/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:30:05 2026).
+2026-10-08:07:41:10,945 WARNING  [cache.py:72] Found the latest cached dataset configuration 'formal_logic' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/formal_logic/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:30:05 2026).
+MMLU prepared 17/57: mmlu_formal_logic
+MMLU prepared 18/57: mmlu_global_facts
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:41:31,548 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'high_school_biology' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/high_school_biology/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:31:00 2026).
+2026-10-08:07:41:31,555 WARNING  [cache.py:72] Found the latest cached dataset configuration 'high_school_biology' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/high_school_biology/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:31:00 2026).
+MMLU prepared 19/57: mmlu_high_school_biology
+MMLU prepared 20/57: mmlu_high_school_chemistry
+MMLU prepared 21/57: mmlu_high_school_computer_science
+MMLU prepared 22/57: mmlu_high_school_european_history
+MMLU prepared 23/57: mmlu_high_school_geography
+MMLU prepared 24/57: mmlu_high_school_government_and_politics
+MMLU prepared 25/57: mmlu_high_school_macroeconomics
+MMLU prepared 26/57: mmlu_high_school_mathematics
+MMLU prepared 27/57: mmlu_high_school_microeconomics
+MMLU prepared 28/57: mmlu_high_school_physics
+MMLU prepared 29/57: mmlu_high_school_psychology
+MMLU prepared 30/57: mmlu_high_school_statistics
+MMLU prepared 31/57: mmlu_high_school_us_history
+MMLU prepared 32/57: mmlu_high_school_world_history
+MMLU prepared 33/57: mmlu_human_aging
+MMLU prepared 34/57: mmlu_human_sexuality
+MMLU prepared 35/57: mmlu_international_law
+MMLU prepared 36/57: mmlu_jurisprudence
+MMLU prepared 37/57: mmlu_logical_fallacies
+Downloading data:   0%|          | 0.00/19.7k [00:00<?, ?B/s]'(MaxRetryError("HTTPSConnectionPool(host='us.aws.cdn.hf.co', port=443): Max retries exceeded with url: /xet-bridge-us/654138a2a385933e81fdbb4c/5319ff859e21302f46d699b6aa32c953a1398ff8c8e84cd4d69ec2e3504994ff?X-Xet-Cas-Uid=public&xip=ML3Vt8HCzmw&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27test-00000-of-00001.parquet%3B+filename%3D%22test-00000-of-00001.parquet%22%3B&Expires=1791449137&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjU0MTM4YTJhMzg1OTMzZTgxZmRiYjRjLzUzMTlmZjg1OWUyMTMwMmY0NmQ2OTliNmFhMzJjOTUzYTEzOThmZjhjOGU4NGNkNGQ2OWVjMmUzNTA0OTk0ZmZcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ4aXA9TUwzVnQ4SEN6bXcmdXNlcl9pZD1wdWJsaWMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN3Rlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUzQitmaWxlbmFtZSUzRCUyMnRlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkxNDQ5MTM3fX19XX0_&Signature=MEYCIQD-q9WxXJZvAz-4BH5EMzsuypbUEtzx9oacORlQYgJIHAIhANmn8ohgGxM9vyIGfcNNEetegRbNLetgZrxtNeEkjW9e&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 0ea336a3-cfa0-4653-9e05-0adcded854f3)')' thrown while requesting GET https://huggingface.co/datasets/hails/mmlu_no_train/resolve/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60/machine_learning/test-00000-of-00001.parquet
+2026-10-08:07:45:42,744 WARNING  [_http.py:320] '(MaxRetryError("HTTPSConnectionPool(host='us.aws.cdn.hf.co', port=443): Max retries exceeded with url: /xet-bridge-us/654138a2a385933e81fdbb4c/5319ff859e21302f46d699b6aa32c953a1398ff8c8e84cd4d69ec2e3504994ff?X-Xet-Cas-Uid=public&xip=ML3Vt8HCzmw&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27test-00000-of-00001.parquet%3B+filename%3D%22test-00000-of-00001.parquet%22%3B&Expires=1791449137&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjU0MTM4YTJhMzg1OTMzZTgxZmRiYjRjLzUzMTlmZjg1OWUyMTMwMmY0NmQ2OTliNmFhMzJjOTUzYTEzOThmZjhjOGU4NGNkNGQ2OWVjMmUzNTA0OTk0ZmZcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ4aXA9TUwzVnQ4SEN6bXcmdXNlcl9pZD1wdWJsaWMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN3Rlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUzQitmaWxlbmFtZSUzRCUyMnRlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkxNDQ5MTM3fX19XX0_&Signature=MEYCIQD-q9WxXJZvAz-4BH5EMzsuypbUEtzx9oacORlQYgJIHAIhANmn8ohgGxM9vyIGfcNNEetegRbNLetgZrxtNeEkjW9e&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 0ea336a3-cfa0-4653-9e05-0adcded854f3)')' thrown while requesting GET https://huggingface.co/datasets/hails/mmlu_no_train/resolve/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60/machine_learning/test-00000-of-00001.parquet
+Retrying in 1s [Retry 1/5].
+2026-10-08:07:45:42,749 WARNING  [_http.py:329] Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='us.aws.cdn.hf.co', port=443): Max retries exceeded with url: /xet-bridge-us/654138a2a385933e81fdbb4c/5319ff859e21302f46d699b6aa32c953a1398ff8c8e84cd4d69ec2e3504994ff?xip=ML3Vt8HCzmw&user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27test-00000-of-00001.parquet%3B+filename%3D%22test-00000-of-00001.parquet%22%3B&Expires=1791449143&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjU0MTM4YTJhMzg1OTMzZTgxZmRiYjRjLzUzMTlmZjg1OWUyMTMwMmY0NmQ2OTliNmFhMzJjOTUzYTEzOThmZjhjOGU4NGNkNGQ2OWVjMmUzNTA0OTk0ZmZcXD94aXA9TUwzVnQ4SEN6bXcmdXNlcl9pZD1wdWJsaWMmWC1YZXQtQ2FzLVVpZD1wdWJsaWMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN3Rlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUzQitmaWxlbmFtZSUzRCUyMnRlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkxNDQ5MTQzfX19XX0_&Signature=MEYCIQDl2U4i2~U00haPVZ6x-kWki3ZpHrFo6FXaJdWROL318AIhAM40xmpUnCxT269U~PLL7EioJXpD4gnghArrBzawVB~N&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: dc77d2f7-2d1a-4231-9731-c9547831b522)')' thrown while requesting GET https://huggingface.co/datasets/hails/mmlu_no_train/resolve/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60/machine_learning/test-00000-of-00001.parquet
+2026-10-08:07:45:48,781 WARNING  [_http.py:320] '(MaxRetryError("HTTPSConnectionPool(host='us.aws.cdn.hf.co', port=443): Max retries exceeded with url: /xet-bridge-us/654138a2a385933e81fdbb4c/5319ff859e21302f46d699b6aa32c953a1398ff8c8e84cd4d69ec2e3504994ff?xip=ML3Vt8HCzmw&user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27test-00000-of-00001.parquet%3B+filename%3D%22test-00000-of-00001.parquet%22%3B&Expires=1791449143&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjU0MTM4YTJhMzg1OTMzZTgxZmRiYjRjLzUzMTlmZjg1OWUyMTMwMmY0NmQ2OTliNmFhMzJjOTUzYTEzOThmZjhjOGU4NGNkNGQ2OWVjMmUzNTA0OTk0ZmZcXD94aXA9TUwzVnQ4SEN6bXcmdXNlcl9pZD1wdWJsaWMmWC1YZXQtQ2FzLVVpZD1wdWJsaWMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN3Rlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUzQitmaWxlbmFtZSUzRCUyMnRlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkxNDQ5MTQzfX19XX0_&Signature=MEYCIQDl2U4i2~U00haPVZ6x-kWki3ZpHrFo6FXaJdWROL318AIhAM40xmpUnCxT269U~PLL7EioJXpD4gnghArrBzawVB~N&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: dc77d2f7-2d1a-4231-9731-c9547831b522)')' thrown while requesting GET https://huggingface.co/datasets/hails/mmlu_no_train/resolve/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60/machine_learning/test-00000-of-00001.parquet
+Retrying in 2s [Retry 2/5].
+2026-10-08:07:45:48,782 WARNING  [_http.py:329] Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='us.aws.cdn.hf.co', port=443): Max retries exceeded with url: /xet-bridge-us/654138a2a385933e81fdbb4c/5319ff859e21302f46d699b6aa32c953a1398ff8c8e84cd4d69ec2e3504994ff?xip=ML3Vt8HCzmw&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27test-00000-of-00001.parquet%3B+filename%3D%22test-00000-of-00001.parquet%22%3B&user_id=public&Expires=1791449150&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjU0MTM4YTJhMzg1OTMzZTgxZmRiYjRjLzUzMTlmZjg1OWUyMTMwMmY0NmQ2OTliNmFhMzJjOTUzYTEzOThmZjhjOGU4NGNkNGQ2OWVjMmUzNTA0OTk0ZmZcXD94aXA9TUwzVnQ4SEN6bXcmWC1YZXQtQ2FzLVVpZD1wdWJsaWMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN3Rlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUzQitmaWxlbmFtZSUzRCUyMnRlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkxNDQ5MTUwfX19XX0_&Signature=MEYCIQCDhzdfg7s-TlAL0q1J0wcuBnuIH~sl7AbgOt3DjhzKRAIhAONP-MOoLVQ4tFFV~5Xg2gPM7LsyUFtbkWs4T~GZLqfA&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 0049c9fb-fc05-417d-9cad-ae670759ee1c)')' thrown while requesting GET https://huggingface.co/datasets/hails/mmlu_no_train/resolve/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60/machine_learning/test-00000-of-00001.parquet
+2026-10-08:07:45:55,820 WARNING  [_http.py:320] '(MaxRetryError("HTTPSConnectionPool(host='us.aws.cdn.hf.co', port=443): Max retries exceeded with url: /xet-bridge-us/654138a2a385933e81fdbb4c/5319ff859e21302f46d699b6aa32c953a1398ff8c8e84cd4d69ec2e3504994ff?xip=ML3Vt8HCzmw&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27test-00000-of-00001.parquet%3B+filename%3D%22test-00000-of-00001.parquet%22%3B&user_id=public&Expires=1791449150&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjU0MTM4YTJhMzg1OTMzZTgxZmRiYjRjLzUzMTlmZjg1OWUyMTMwMmY0NmQ2OTliNmFhMzJjOTUzYTEzOThmZjhjOGU4NGNkNGQ2OWVjMmUzNTA0OTk0ZmZcXD94aXA9TUwzVnQ4SEN6bXcmWC1YZXQtQ2FzLVVpZD1wdWJsaWMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN3Rlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUzQitmaWxlbmFtZSUzRCUyMnRlc3QtMDAwMDAtb2YtMDAwMDEucGFycXVldCUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkxNDQ5MTUwfX19XX0_&Signature=MEYCIQCDhzdfg7s-TlAL0q1J0wcuBnuIH~sl7AbgOt3DjhzKRAIhAONP-MOoLVQ4tFFV~5Xg2gPM7LsyUFtbkWs4T~GZLqfA&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 0049c9fb-fc05-417d-9cad-ae670759ee1c)')' thrown while requesting GET https://huggingface.co/datasets/hails/mmlu_no_train/resolve/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60/machine_learning/test-00000-of-00001.parquet
+Retrying in 4s [Retry 3/5].
+2026-10-08:07:45:55,820 WARNING  [_http.py:329] Retrying in 4s [Retry 3/5].
+Downloading data: 100%|██████████| 19.7k/19.7k [00:24<00:00, 818B/s]Downloading data: 100%|██████████| 19.7k/19.7k [00:24<00:00, 818B/s]
+Downloading data:   0%|          | 0.00/6.18k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.18k/6.18k [00:02<00:00, 3.01kB/s]Downloading data: 100%|██████████| 6.18k/6.18k [00:02<00:00, 3.01kB/s]
+Downloading data:   0%|          | 0.00/5.26k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.26k/5.26k [00:00<00:00, 7.34kB/s]Downloading data: 100%|██████████| 5.26k/5.26k [00:00<00:00, 7.33kB/s]
+Generating test split:   0%|          | 0/112 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 112/112 [00:00<00:00, 6391.84 examples/s]
+Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 1316.33 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 743.72 examples/s]
+MMLU prepared 38/57: mmlu_machine_learning
+Downloading data:   0%|          | 0.00/14.7k [00:00<?, ?B/s]Downloading data: 100%|██████████| 14.7k/14.7k [00:00<00:00, 16.8kB/s]Downloading data: 100%|██████████| 14.7k/14.7k [00:00<00:00, 16.8kB/s]
+Downloading data:   0%|          | 0.00/4.51k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.51k/4.51k [00:00<00:00, 6.39kB/s]Downloading data: 100%|██████████| 4.51k/4.51k [00:00<00:00, 6.39kB/s]
+Downloading data:   0%|          | 0.00/3.62k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.62k/3.62k [00:00<00:00, 5.17kB/s]Downloading data: 100%|██████████| 3.62k/3.62k [00:00<00:00, 5.16kB/s]
+Generating test split:   0%|          | 0/103 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 103/103 [00:00<00:00, 4639.37 examples/s]
+Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 1841.44 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 761.77 examples/s]
+MMLU prepared 39/57: mmlu_management
+Downloading data:   0%|          | 0.00/37.3k [00:00<?, ?B/s]Downloading data: 100%|██████████| 37.3k/37.3k [00:01<00:00, 36.3kB/s]Downloading data: 100%|██████████| 37.3k/37.3k [00:01<00:00, 36.2kB/s]
+Downloading data:   0%|          | 0.00/8.21k [00:00<?, ?B/s]Downloading data: 100%|██████████| 8.21k/8.21k [00:00<00:00, 11.7kB/s]Downloading data: 100%|██████████| 8.21k/8.21k [00:00<00:00, 11.7kB/s]
+Downloading data:   0%|          | 0.00/4.29k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.29k/4.29k [00:00<00:00, 6.01kB/s]Downloading data: 100%|██████████| 4.29k/4.29k [00:00<00:00, 6.01kB/s]
+Generating test split:   0%|          | 0/234 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 234/234 [00:00<00:00, 27646.18 examples/s]
+Generating validation split:   0%|          | 0/25 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 25/25 [00:00<00:00, 5016.39 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1054.06 examples/s]
+MMLU prepared 40/57: mmlu_marketing
+Downloading data:   0%|          | 0.00/16.4k [00:00<?, ?B/s]Downloading data: 100%|██████████| 16.4k/16.4k [00:00<00:00, 24.0kB/s]Downloading data: 100%|██████████| 16.4k/16.4k [00:00<00:00, 24.0kB/s]
+Downloading data:   0%|          | 0.00/5.64k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.64k/5.64k [00:00<00:00, 8.58kB/s]Downloading data: 100%|██████████| 5.64k/5.64k [00:00<00:00, 8.57kB/s]
+Downloading data:   0%|          | 0.00/3.77k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.77k/3.77k [00:00<00:00, 5.62kB/s]Downloading data: 100%|██████████| 3.77k/3.77k [00:00<00:00, 5.62kB/s]
+Generating test split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 100/100 [00:00<00:00, 15345.76 examples/s]
+Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 2204.26 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1056.71 examples/s]
+MMLU prepared 41/57: mmlu_medical_genetics
+Downloading data:   0%|          | 0.00/98.6k [00:00<?, ?B/s]Downloading data: 100%|██████████| 98.6k/98.6k [00:00<00:00, 99.8kB/s]Downloading data: 100%|██████████| 98.6k/98.6k [00:00<00:00, 99.7kB/s]
+Downloading data:   0%|          | 0.00/13.2k [00:00<?, ?B/s]Downloading data: 100%|██████████| 13.2k/13.2k [00:00<00:00, 19.9kB/s]Downloading data: 100%|██████████| 13.2k/13.2k [00:00<00:00, 19.9kB/s]
+Downloading data:   0%|          | 0.00/3.38k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.38k/3.38k [00:00<00:00, 5.10kB/s]Downloading data: 100%|██████████| 3.38k/3.38k [00:00<00:00, 5.10kB/s]
+Generating test split:   0%|          | 0/783 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 783/783 [00:00<00:00, 80067.78 examples/s]
+Generating validation split:   0%|          | 0/86 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 86/86 [00:00<00:00, 16540.27 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1024.35 examples/s]
+MMLU prepared 42/57: mmlu_miscellaneous
+HF google storage unreachable. Downloading and preparing it from source
+2026-10-08:07:47:31,967 WARNING  [builder.py:998] HF google storage unreachable. Downloading and preparing it from source
+Downloading data:   0%|          | 0.00/60.9k [00:00<?, ?B/s]Downloading data: 100%|██████████| 60.9k/60.9k [00:00<00:00, 84.4kB/s]Downloading data: 100%|██████████| 60.9k/60.9k [00:00<00:00, 84.4kB/s]
+Downloading data:   0%|          | 0.00/10.7k [00:00<?, ?B/s]Downloading data: 100%|██████████| 10.7k/10.7k [00:00<00:00, 13.4kB/s]Downloading data: 100%|██████████| 10.7k/10.7k [00:00<00:00, 13.4kB/s]
+Downloading data:   0%|          | 0.00/4.42k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.42k/4.42k [00:00<00:00, 6.67kB/s]Downloading data: 100%|██████████| 4.42k/4.42k [00:00<00:00, 6.67kB/s]
+Generating test split:   0%|          | 0/346 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 346/346 [00:00<00:00, 47542.32 examples/s]
+Generating validation split:   0%|          | 0/38 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 38/38 [00:00<00:00, 7397.70 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1074.58 examples/s]
+MMLU prepared 43/57: mmlu_moral_disputes
+Downloading data:   0%|          | 0.00/89.8k [00:00<?, ?B/s]Downloading data: 100%|██████████| 89.8k/89.8k [00:00<00:00, 102kB/s]Downloading data: 100%|██████████| 89.8k/89.8k [00:00<00:00, 101kB/s]
+Downloading data:   0%|          | 0.00/14.9k [00:00<?, ?B/s]Downloading data: 100%|██████████| 14.9k/14.9k [00:00<00:00, 19.6kB/s]Downloading data: 100%|██████████| 14.9k/14.9k [00:00<00:00, 19.6kB/s]
+Downloading data:   0%|          | 0.00/5.15k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.15k/5.15k [00:00<00:00, 8.05kB/s]Downloading data: 100%|██████████| 5.15k/5.15k [00:00<00:00, 8.04kB/s]
+Generating test split:   0%|          | 0/895 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 895/895 [00:00<00:00, 74457.07 examples/s]
+Generating validation split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 100/100 [00:00<00:00, 18938.47 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1055.17 examples/s]
+MMLU prepared 44/57: mmlu_moral_scenarios
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:48:05,114 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Retry 1/5 mmlu_nutrition: Couldn't find cache for hails/mmlu_no_train for config 'nutrition'
+Available configs in the cache: ['abstract_algebra', 'anatomy', 'astronomy', 'business_ethics', 'clinical_knowledge', 'college_biology', 'college_chemistry', 'college_computer_science', 'college_mathematics', 'college_medicine', 'college_physics', 'computer_security', 'conceptual_physics', 'econometrics', 'electrical_engineering', 'elementary_mathematics', 'formal_logic', 'global_facts', 'high_school_biology', 'high_school_chemistry', 'high_school_computer_science', 'high_school_european_history', 'high_school_geography', 'high_school_government_and_politics', 'high_school_macroeconomics', 'high_school_mathematics', 'high_school_microeconomics', 'high_school_physics', 'high_school_psychology', 'high_school_statistics', 'high_school_us_history', 'high_school_world_history', 'human_aging', 'human_sexuality', 'international_law', 'jurisprudence', 'logical_fallacies', 'machine_learning', 'management', 'marketing', 'medical_genetics', 'miscellaneous', 'moral_disputes', 'moral_scenarios']
+Downloading data:   0%|          | 0.00/55.0k [00:00<?, ?B/s]Downloading data: 100%|██████████| 55.0k/55.0k [00:00<00:00, 70.3kB/s]Downloading data: 100%|██████████| 55.0k/55.0k [00:00<00:00, 70.2kB/s]
+Downloading data:   0%|          | 0.00/9.03k [00:00<?, ?B/s]Downloading data: 100%|██████████| 9.03k/9.03k [00:00<00:00, 12.7kB/s]Downloading data: 100%|██████████| 9.03k/9.03k [00:00<00:00, 12.6kB/s]
+Downloading data:   0%|          | 0.00/5.00k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.00k/5.00k [00:00<00:00, 7.86kB/s]Downloading data: 100%|██████████| 5.00k/5.00k [00:00<00:00, 7.86kB/s]
+Generating test split:   0%|          | 0/306 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 306/306 [00:00<00:00, 38575.85 examples/s]
+Generating validation split:   0%|          | 0/33 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 33/33 [00:00<00:00, 6605.52 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 989.55 examples/s]
+MMLU prepared 45/57: mmlu_nutrition
+Downloading data:   0%|          | 0.00/48.6k [00:00<?, ?B/s]Downloading data: 100%|██████████| 48.6k/48.6k [00:00<00:00, 55.0kB/s]Downloading data: 100%|██████████| 48.6k/48.6k [00:00<00:00, 55.0kB/s]
+Downloading data:   0%|          | 0.00/9.16k [00:00<?, ?B/s]Downloading data: 100%|██████████| 9.16k/9.16k [00:00<00:00, 13.4kB/s]Downloading data: 100%|██████████| 9.16k/9.16k [00:00<00:00, 13.4kB/s]
+Downloading data:   0%|          | 0.00/4.21k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.21k/4.21k [00:00<00:00, 6.76kB/s]Downloading data: 100%|██████████| 4.21k/4.21k [00:00<00:00, 6.76kB/s]
+Generating test split:   0%|          | 0/311 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 311/311 [00:00<00:00, 90066.18 examples/s]
+Generating validation split:   0%|          | 0/34 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 34/34 [00:00<00:00, 14433.84 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 2154.68 examples/s]
+MMLU prepared 46/57: mmlu_philosophy
+Downloading data:   0%|          | 0.00/54.3k [00:00<?, ?B/s]Downloading data: 100%|██████████| 54.3k/54.3k [00:00<00:00, 65.7kB/s]Downloading data: 100%|██████████| 54.3k/54.3k [00:00<00:00, 65.6kB/s]
+Downloading data:   0%|          | 0.00/9.90k [00:00<?, ?B/s]Downloading data: 100%|██████████| 9.90k/9.90k [00:00<00:00, 13.9kB/s]Downloading data: 100%|██████████| 9.90k/9.90k [00:00<00:00, 13.9kB/s]
+Downloading data:   0%|          | 0.00/4.62k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.62k/4.62k [00:00<00:00, 7.31kB/s]Downloading data: 100%|██████████| 4.62k/4.62k [00:00<00:00, 7.30kB/s]
+Generating test split:   0%|          | 0/324 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 324/324 [00:00<00:00, 63339.76 examples/s]
+Generating validation split:   0%|          | 0/35 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 35/35 [00:00<00:00, 13935.89 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 2097.57 examples/s]
+MMLU prepared 47/57: mmlu_prehistory
+Downloading data:   0%|          | 0.00/69.5k [00:00<?, ?B/s]Downloading data: 100%|██████████| 69.5k/69.5k [00:00<00:00, 76.3kB/s]Downloading data: 100%|██████████| 69.5k/69.5k [00:00<00:00, 76.3kB/s]
+Downloading data:   0%|          | 0.00/12.9k [00:00<?, ?B/s]Downloading data: 100%|██████████| 12.9k/12.9k [00:00<00:00, 20.3kB/s]Downloading data: 100%|██████████| 12.9k/12.9k [00:00<00:00, 20.3kB/s]
+Downloading data:   0%|          | 0.00/4.90k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.90k/4.90k [00:00<00:00, 7.22kB/s]Downloading data: 100%|██████████| 4.90k/4.90k [00:00<00:00, 7.21kB/s]
+Generating test split:   0%|          | 0/282 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 282/282 [00:00<00:00, 34294.81 examples/s]
+Generating validation split:   0%|          | 0/31 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 31/31 [00:00<00:00, 2035.78 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 949.63 examples/s]
+MMLU prepared 48/57: mmlu_professional_accounting
+Downloading data:   0%|          | 0.00/1.04M [00:00<?, ?B/s]Downloading data: 100%|██████████| 1.04M/1.04M [00:01<00:00, 521kB/s]Downloading data: 100%|██████████| 1.04M/1.04M [00:01<00:00, 521kB/s]
+Downloading data:   0%|          | 0.00/116k [00:00<?, ?B/s]Downloading data: 100%|██████████| 116k/116k [00:00<00:00, 124kB/s]Downloading data: 100%|██████████| 116k/116k [00:00<00:00, 123kB/s]
+Downloading data:   0%|          | 0.00/15.1k [00:00<?, ?B/s]Downloading data: 100%|██████████| 15.1k/15.1k [00:00<00:00, 23.8kB/s]Downloading data: 100%|██████████| 15.1k/15.1k [00:00<00:00, 23.7kB/s]
+Generating test split:   0%|          | 0/1534 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1534/1534 [00:00<00:00, 55831.85 examples/s]
+Generating validation split:   0%|          | 0/170 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 170/170 [00:00<00:00, 27289.94 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 906.72 examples/s]
+MMLU prepared 49/57: mmlu_professional_law
+Downloading data:   0%|          | 0.00/125k [00:00<?, ?B/s]Downloading data: 100%|██████████| 125k/125k [00:00<00:00, 169kB/s]Downloading data: 100%|██████████| 125k/125k [00:00<00:00, 169kB/s]
+Downloading data:   0%|          | 0.00/19.9k [00:00<?, ?B/s]Downloading data: 100%|██████████| 19.9k/19.9k [00:00<00:00, 24.5kB/s]Downloading data: 100%|██████████| 19.9k/19.9k [00:00<00:00, 24.4kB/s]
+Downloading data:   0%|          | 0.00/8.45k [00:00<?, ?B/s]Downloading data: 100%|██████████| 8.45k/8.45k [00:00<00:00, 12.8kB/s]Downloading data: 100%|██████████| 8.45k/8.45k [00:00<00:00, 12.8kB/s]
+Generating test split:   0%|          | 0/272 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 272/272 [00:00<00:00, 22259.63 examples/s]
+Generating validation split:   0%|          | 0/31 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 31/31 [00:00<00:00, 6026.02 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1012.53 examples/s]
+MMLU prepared 50/57: mmlu_professional_medicine
+Downloading data:   0%|          | 0.00/133k [00:00<?, ?B/s]Downloading data: 100%|██████████| 133k/133k [00:00<00:00, 153kB/s]Downloading data: 100%|██████████| 133k/133k [00:00<00:00, 153kB/s]
+Downloading data:   0%|          | 0.00/22.1k [00:00<?, ?B/s]Downloading data: 100%|██████████| 22.1k/22.1k [00:00<00:00, 34.4kB/s]Downloading data: 100%|██████████| 22.1k/22.1k [00:00<00:00, 34.4kB/s]
+Downloading data:   0%|          | 0.00/4.70k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.70k/4.70k [00:00<00:00, 7.40kB/s]Downloading data: 100%|██████████| 4.70k/4.70k [00:00<00:00, 7.40kB/s]
+Generating test split:   0%|          | 0/612 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 612/612 [00:00<00:00, 66664.43 examples/s]
+Generating validation split:   0%|          | 0/69 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 69/69 [00:00<00:00, 12399.61 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 954.60 examples/s]
+MMLU prepared 51/57: mmlu_professional_psychology
+Downloading data:   0%|          | 0.00/20.6k [00:00<?, ?B/s]Downloading data: 100%|██████████| 20.6k/20.6k [00:00<00:00, 30.2kB/s]Downloading data: 100%|██████████| 20.6k/20.6k [00:00<00:00, 30.2kB/s]
+Downloading data:   0%|          | 0.00/6.46k [00:00<?, ?B/s]Downloading data: 100%|██████████| 6.46k/6.46k [00:00<00:00, 10.3kB/s]Downloading data: 100%|██████████| 6.46k/6.46k [00:00<00:00, 10.3kB/s]
+Downloading data:   0%|          | 0.00/4.44k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.44k/4.44k [00:00<00:00, 6.05kB/s]Downloading data: 100%|██████████| 4.44k/4.44k [00:00<00:00, 6.04kB/s]
+Generating test split:   0%|          | 0/110 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 110/110 [00:00<00:00, 18932.02 examples/s]
+Generating validation split:   0%|          | 0/12 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 12/12 [00:00<00:00, 2541.62 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1066.22 examples/s]
+MMLU prepared 52/57: mmlu_public_relations
+Downloading data:   0%|          | 0.00/114k [00:00<?, ?B/s]Downloading data: 100%|██████████| 114k/114k [00:00<00:00, 165kB/s]Downloading data: 100%|██████████| 114k/114k [00:00<00:00, 165kB/s]
+Downloading data:   0%|          | 0.00/18.7k [00:00<?, ?B/s]Downloading data: 100%|██████████| 18.7k/18.7k [00:00<00:00, 29.2kB/s]Downloading data: 100%|██████████| 18.7k/18.7k [00:00<00:00, 29.2kB/s]
+Downloading data:   0%|          | 0.00/7.50k [00:00<?, ?B/s]Downloading data: 100%|██████████| 7.50k/7.50k [00:00<00:00, 11.5kB/s]Downloading data: 100%|██████████| 7.50k/7.50k [00:00<00:00, 11.5kB/s]
+Generating test split:   0%|          | 0/245 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 245/245 [00:00<00:00, 47726.74 examples/s]
+Generating validation split:   0%|          | 0/27 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 27/27 [00:00<00:00, 11368.96 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 2058.25 examples/s]
+MMLU prepared 53/57: mmlu_security_studies
+Downloading data:   0%|          | 0.00/43.9k [00:00<?, ?B/s]Downloading data: 100%|██████████| 43.9k/43.9k [00:00<00:00, 59.4kB/s]Downloading data: 100%|██████████| 43.9k/43.9k [00:00<00:00, 59.3kB/s]
+Downloading data:   0%|          | 0.00/8.36k [00:00<?, ?B/s]Downloading data: 100%|██████████| 8.36k/8.36k [00:00<00:00, 12.3kB/s]Downloading data: 100%|██████████| 8.36k/8.36k [00:00<00:00, 12.3kB/s]
+Downloading data:   0%|          | 0.00/4.21k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.21k/4.21k [00:00<00:00, 6.61kB/s]Downloading data: 100%|██████████| 4.21k/4.21k [00:00<00:00, 6.60kB/s]
+Generating test split:   0%|          | 0/201 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 201/201 [00:00<00:00, 31641.46 examples/s]
+Generating validation split:   0%|          | 0/22 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 22/22 [00:00<00:00, 804.84 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 940.93 examples/s]
+MMLU prepared 54/57: mmlu_sociology
+Downloading data:   0%|          | 0.00/19.5k [00:00<?, ?B/s]Downloading data: 100%|██████████| 19.5k/19.5k [00:00<00:00, 26.2kB/s]Downloading data: 100%|██████████| 19.5k/19.5k [00:00<00:00, 26.2kB/s]
+Downloading data:   0%|          | 0.00/5.28k [00:00<?, ?B/s]Downloading data: 100%|██████████| 5.28k/5.28k [00:00<00:00, 7.80kB/s]Downloading data: 100%|██████████| 5.28k/5.28k [00:00<00:00, 7.80kB/s]
+Downloading data:   0%|          | 0.00/4.23k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.23k/4.23k [00:00<00:00, 6.44kB/s]Downloading data: 100%|██████████| 4.23k/4.23k [00:00<00:00, 6.43kB/s]
+Generating test split:   0%|          | 0/100 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 100/100 [00:00<00:00, 16637.46 examples/s]
+Generating validation split:   0%|          | 0/11 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 11/11 [00:00<00:00, 1960.70 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 896.72 examples/s]
+MMLU prepared 55/57: mmlu_us_foreign_policy
+Downloading data:   0%|          | 0.00/27.3k [00:00<?, ?B/s]Downloading data: 100%|██████████| 27.3k/27.3k [00:00<00:00, 30.6kB/s]Downloading data: 100%|██████████| 27.3k/27.3k [00:00<00:00, 30.5kB/s]
+Downloading data:   0%|          | 0.00/7.06k [00:00<?, ?B/s]Downloading data: 100%|██████████| 7.06k/7.06k [00:00<00:00, 10.4kB/s]Downloading data: 100%|██████████| 7.06k/7.06k [00:00<00:00, 10.4kB/s]
+Downloading data:   0%|          | 0.00/3.88k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.88k/3.88k [00:00<00:00, 5.48kB/s]Downloading data: 100%|██████████| 3.88k/3.88k [00:00<00:00, 5.47kB/s]
+Generating test split:   0%|          | 0/166 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 166/166 [00:00<00:00, 4175.31 examples/s]
+Generating validation split:   0%|          | 0/18 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 18/18 [00:00<00:00, 3474.34 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1064.33 examples/s]
+MMLU prepared 56/57: mmlu_virology
+Downloading data:   0%|          | 0.00/18.9k [00:00<?, ?B/s]Downloading data: 100%|██████████| 18.9k/18.9k [00:00<00:00, 28.7kB/s]Downloading data: 100%|██████████| 18.9k/18.9k [00:00<00:00, 28.6kB/s]
+Downloading data:   0%|          | 0.00/4.95k [00:00<?, ?B/s]Downloading data: 100%|██████████| 4.95k/4.95k [00:00<00:00, 7.29kB/s]Downloading data: 100%|██████████| 4.95k/4.95k [00:00<00:00, 7.28kB/s]
+Downloading data:   0%|          | 0.00/3.31k [00:00<?, ?B/s]Downloading data: 100%|██████████| 3.31k/3.31k [00:00<00:00, 5.20kB/s]Downloading data: 100%|██████████| 3.31k/3.31k [00:00<00:00, 5.20kB/s]
+Generating test split:   0%|          | 0/171 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 171/171 [00:00<00:00, 26297.06 examples/s]
+Generating validation split:   0%|          | 0/19 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 19/19 [00:00<00:00, 3863.28 examples/s]
+Generating dev split:   0%|          | 0/5 [00:00<?, ? examples/s]Generating dev split: 100%|██████████| 5/5 [00:00<00:00, 1046.22 examples/s]
+MMLU prepared 57/57: mmlu_world_religions
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:51:53,356 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'high_school_computer_science' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/high_school_computer_science/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:17:58 2026).
+2026-10-08:07:51:53,369 WARNING  [cache.py:72] Found the latest cached dataset configuration 'high_school_computer_science' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/high_school_computer_science/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:17:58 2026).
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:53:20,298 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'high_school_physics' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/high_school_physics/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:34:12 2026).
+2026-10-08:07:53:20,305 WARNING  [cache.py:72] Found the latest cached dataset configuration 'high_school_physics' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/high_school_physics/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:34:12 2026).
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:57:30,021 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'security_studies' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/security_studies/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:50:27 2026).
+2026-10-08:07:57:30,033 WARNING  [cache.py:72] Found the latest cached dataset configuration 'security_studies' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/security_studies/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:50:27 2026).
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:07:59:49,212 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'world_religions' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/world_religions/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:51:29 2026).
+2026-10-08:07:59:49,225 WARNING  [cache.py:72] Found the latest cached dataset configuration 'world_religions' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/world_religions/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:51:29 2026).
+Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+2026-10-08:08:02:08,611 WARNING  [load.py:1600] Using the latest cached version of the dataset since hails/mmlu_no_train couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'international_law' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/international_law/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:36:11 2026).
+2026-10-08:08:02:08,622 WARNING  [cache.py:72] Found the latest cached dataset configuration 'international_law' at /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/hf_cache/datasets/hails___mmlu_no_train/international_law/0.0.0/b2e1ec9aa795adafe68e8e983248dbd4b52a1c60 (last modified on Thu Oct  8 07:36:11 2026).
+MMLU data prepared

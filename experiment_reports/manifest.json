@@ -1,0 +1,194 @@
+[
+  {
+    "path": "logs/r0_r5_20261008/auto.log",
+    "bytes": 0,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008/nohup_v2.log",
+    "bytes": 0,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v2/prepare_data.log",
+    "bytes": 8400,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v3/auto.log",
+    "bytes": 0,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v3/prepare_data.log",
+    "bytes": 1226,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v4/auto.log",
+    "bytes": 0,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v4/prepare_data.log",
+    "bytes": 48255,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v5/auto.log",
+    "bytes": 23,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v5/prepare_data.log",
+    "bytes": 48739,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v5/smoke_driver.log",
+    "bytes": 15700,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v5_smoke/R0_FP16_smoke/log_rank0_1791446537.txt",
+    "bytes": 1496,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v5_smoke/R0_FP16_smoke.log",
+    "bytes": 15486,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v5_smoke/efficientqat-commit.txt",
+    "bytes": 41,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v5_smoke/nvidia-smi.txt",
+    "bytes": 1689,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v5_smoke/run_metadata.tsv",
+    "bytes": 234,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v5_smoke/status.tsv",
+    "bytes": 111,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6/auto.log",
+    "bytes": 23,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6/prepare_data.log",
+    "bytes": 29850,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6/smoke_driver.log",
+    "bytes": 21195,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/R0_FP16_smoke/eval_results.json",
+    "bytes": 16088,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/R0_FP16_smoke/log_rank0_1791447584.txt",
+    "bytes": 3489,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/R0_FP16_smoke.log",
+    "bytes": 5863,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/R1_official_smoke/eval_results.json",
+    "bytes": 16093,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/R1_official_smoke/log_rank0_1791447644.txt",
+    "bytes": 3606,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/R1_official_smoke.log",
+    "bytes": 7654,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/R2_BlockAP_smoke/log_rank0_1791447698.txt",
+    "bytes": 5171,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/R2_BlockAP_smoke.console.log",
+    "bytes": 6609,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/efficientqat-commit.txt",
+    "bytes": 41,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/nvidia-smi.txt",
+    "bytes": 1689,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/prepare_smoke_data.log",
+    "bytes": 575,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/run_metadata.tsv",
+    "bytes": 234,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v6_smoke/status.tsv",
+    "bytes": 395,
+    "copied": true,
+    "tail_only": false
+  }
+]

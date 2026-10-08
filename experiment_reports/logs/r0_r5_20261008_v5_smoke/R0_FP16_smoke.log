@@ -1,0 +1,134 @@
+/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+['main_block_ap.py', '--model', '/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/models/Llama-2-7b-hf', '--net', 'Llama-2', '--wbits', '16', '--group_size', '64', '--output_dir', '/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/logs/r0_r5/r0_r5_20261008_v5_smoke/R0_FP16_smoke', '--eval_ppl', '--ppl_datasets', 'wikitext2', '--ppl_max_samples', '1', '--ppl_seqlen', '128', '--eval_tasks', 'piqa,arc_easy,arc_challenge,hellaswag,winogrande', '--eval_limit', '1', '--eval_batch_size', '1']
+[2026-10-08 08:02:17 root](main_block_ap.py 124): INFO Namespace(model='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/models/Llama-2-7b-hf', cache_dir='./cache', output_dir='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/logs/r0_r5/r0_r5_20261008_v5_smoke/R0_FP16_smoke', save_quant_dir=None, real_quant=False, resume_quant=None, calib_dataset='redpajama', train_size=4096, val_size=64, training_seqlen=2048, batch_size=2, epochs=2, ppl_seqlen=128, ppl_datasets='wikitext2', ppl_max_samples=1, num_fewshot=0, eval_limit=1, seed=2, eval_ppl=True, eval_tasks='piqa,arc_easy,arc_challenge,hellaswag,winogrande', eval_batch_size=1, wbits=16, group_size=64, quant_lr=0.0001, weight_lr=1e-05, min_lr_factor=20, clip_grad=0.3, wd=0, net='Llama-2', max_memory='70GiB', early_stop=0, off_load_to_disk=False)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.20s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  2.96s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.30s/it]
+get_wikitext2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:08<00:00,  8.69s/it]100%|██████████| 1/1 [00:08<00:00,  8.69s/it]
+wikitext2:7.713475227355957
+[2026-10-08 08:03:58 root](main_block_ap.py 41): INFO wikitext2 perplexity: 7.71
+[2026-10-08 08:04:04 lm-eval](huggingface.py 118): WARNING `pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+[2026-10-08 08:04:05 lm-eval](huggingface.py 337): WARNING Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+[2026-10-08 08:04:09 lm-eval](evaluator.py 131): INFO Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234
+/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/load.py:1461: FutureWarning: The repository for piqa contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/piqa
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+Downloading data:   0%|          | 0.00/1.82M [00:00<?, ?B/s]Downloading data:   1%|▏         | 24.6k/1.82M [00:00<00:11, 163kB/s]Downloading data:   3%|▎         | 55.3k/1.82M [00:00<00:07, 224kB/s]Downloading data:   5%|▌         | 96.3k/1.82M [00:00<00:05, 292kB/s]Downloading data:   7%|▋         | 130k/1.82M [00:00<00:05, 305kB/s] Downloading data:  11%|█         | 194k/1.82M [00:00<00:03, 416kB/s]Downloading data:  16%|█▌        | 289k/1.82M [00:00<00:02, 584kB/s]Downloading data:  24%|██▎       | 429k/1.82M [00:00<00:01, 835kB/s]Downloading data:  36%|███▋      | 663k/1.82M [00:00<00:00, 1.30MB/s]Downloading data:  51%|█████     | 929k/1.82M [00:00<00:00, 1.69MB/s]Downloading data:  67%|██████▋   | 1.22M/1.82M [00:01<00:00, 2.06MB/s]Downloading data:  78%|███████▊  | 1.43M/1.82M [00:01<00:00, 2.01MB/s]Downloading data: 100%|█████████▉| 1.82M/1.82M [00:01<00:00, 2.56MB/s]Downloading data: 100%|██████████| 1.82M/1.82M [00:01<00:00, 1.41MB/s]
+Downloading data:   0%|          | 0.00/220k [00:00<?, ?B/s]Downloading data:  27%|██▋       | 59.4k/220k [00:00<00:00, 340kB/s]Downloading data:  82%|████████▏ | 181k/220k [00:00<00:00, 677kB/s] Downloading data: 364kB [00:00, 995kB/s]                           Downloading data: 484kB [00:00, 1.01MB/s]Downloading data: 815kB [00:00, 1.33MB/s]
+Generating train split:   0%|          | 0/16113 [00:00<?, ? examples/s]Generating train split:   6%|▌         | 1000/16113 [00:00<00:05, 2780.21 examples/s]Generating train split:  37%|███▋      | 6000/16113 [00:00<00:00, 16178.67 examples/s]Generating train split:  79%|███████▊  | 12684/16113 [00:00<00:00, 30793.43 examples/s]Generating train split: 100%|██████████| 16113/16113 [00:00<00:00, 26102.02 examples/s]
+Generating test split:   0%|          | 0/3084 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3084/3084 [00:00<00:00, 62035.32 examples/s]
+Generating validation split:   0%|          | 0/1838 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 1838/1838 [00:00<00:00, 57832.51 examples/s]
+Downloading readme: 0.00B [00:00, ?B/s]Downloading readme: 9.00kB [00:00, 12.8MB/s]
+Traceback (most recent call last):
+  File "/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/EfficientQAT/main_block_ap.py", line 184, in <module>
+    main()
+  File "/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/EfficientQAT/main_block_ap.py", line 178, in main
+    evaluate(model, tokenizer, args,logger)
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/EfficientQAT/main_block_ap.py", line 50, in evaluate
+    results = lm_eval.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/utils.py", line 288, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/evaluator.py", line 192, in simple_evaluate
+    task_dict = get_task_dict(tasks, task_manager)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/tasks/__init__.py", line 420, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/tasks/__init__.py", line 270, in load_task_or_group
+    collections.ChainMap(*map(self._load_individual_task_or_group, task_list))
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/tasks/__init__.py", line 161, in _load_individual_task_or_group
+    return load_task(task_config, task=name_or_config, group=parent_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/tasks/__init__.py", line 150, in load_task
+    task_object = ConfigurableTask(config=config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/api/task.py", line 782, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/lm_eval/api/task.py", line 871, in download
+    self.dataset = datasets.load_dataset(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/load.py", line 2556, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/load.py", line 2228, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/load.py", line 1879, in dataset_module_factory
+    raise e1 from None
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/load.py", line 1861, in dataset_module_factory
+    ).get_module()
+      ^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/load.py", line 1239, in get_module
+    data_files = DataFilesDict.from_patterns(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/data_files.py", line 700, in from_patterns
+    DataFilesList.from_patterns(
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/data_files.py", line 615, in from_patterns
+    origin_metadata = _get_origin_metadata(data_files, download_config=download_config)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/data_files.py", line 529, in _get_origin_metadata
+    return thread_map(
+           ^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/tqdm/contrib/concurrent.py", line 94, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/tqdm/contrib/concurrent.py", line 76, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, **map_args), **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/tqdm/std.py", line 1183, in __iter__
+    for obj in iterable:
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/datasets/data_files.py", line 509, in _get_single_origin_metadata
+    resolved_path = fs.resolve_path(data_file)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/huggingface_hub/hf_file_system.py", line 199, in resolve_path
+    repo_and_revision_exist, err = self._repo_and_revision_exist(repo_type, repo_id, revision)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/huggingface_hub/hf_file_system.py", line 126, in _repo_and_revision_exist
+    self._api.repo_info(
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2867, in repo_info
+    return method(
+           ^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 2730, in dataset_info
+    r = get_session().get(path, headers=headers, timeout=timeout, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/requests/sessions.py", line 671, in get
+    return self.request("GET", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/requests/adapters.py", line 727, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/datasets/allenai/ai2_arc/revision/210d026faf9955653af8916fad021475a3f00453 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: e2eab26e-3f74-498a-9ab4-ddeedea92515)')
