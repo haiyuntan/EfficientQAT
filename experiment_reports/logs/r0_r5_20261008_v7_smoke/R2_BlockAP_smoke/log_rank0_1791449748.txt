@@ -1,0 +1,297 @@
+[2026-10-08 08:55:48 root] (main_block_ap.py 125): INFO Namespace(model='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/models/Llama-2-7b-hf', cache_dir='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/smoke_data/blockap_cache', output_dir='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/logs/r0_r5/r0_r5_20261008_v7_smoke/R2_BlockAP_smoke', save_quant_dir='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R2_smoke/block_ap', real_quant=True, resume_quant=None, calib_dataset='redpajama', train_size=2, val_size=2, training_seqlen=128, batch_size=2, epochs=1, ppl_seqlen=2048, ppl_datasets='wikitext2,c4', ppl_max_samples=None, num_fewshot=0, eval_limit=None, seed=2, eval_ppl=False, eval_tasks='', eval_batch_size=16, wbits=4, group_size=128, quant_lr=0.0001, weight_lr=1e-05, min_lr_factor=20, clip_grad=0.3, wd=0, net='Llama-2-smoke-r0_r5_20261008_v7_smoke', max_memory='70GiB', early_stop=0, off_load_to_disk=False)
+[2026-10-08 08:55:50 root] (main_block_ap.py 144): INFO === start quantization ===
+[2026-10-08 08:55:50 root] (main_block_ap.py 151): INFO load trainloader from /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/smoke_data/blockap_cache/dataloader_Llama-2-smoke-r0_r5_20261008_v7_smoke_redpajama_2_2_128_train.cache
+[2026-10-08 08:55:50 root] (main_block_ap.py 153): INFO load valloader from /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/smoke_data/blockap_cache/dataloader_Llama-2-smoke-r0_r5_20261008_v7_smoke_redpajama_2_2_128_val.cache
+[2026-10-08 08:55:50 root] (block_ap.py 40): INFO Starting ...
+[2026-10-08 08:55:50 root] (block_ap.py 125): INFO No attention mask caught from the first layer. Seems that model's attention works without a mask.
+[2026-10-08 08:55:51 root] (block_ap.py 162): INFO === Start quantize blocks 0===
+[2026-10-08 08:55:51 root] (block_ap.py 262): INFO blocks 0 epoch 0 recon_loss:8.187089406419545e-06 val_loss:7.621697022841545e-06 quant_lr:5e-06 norm:0.00055582 max memory_allocated 4330.36328125 time 0.16232967376708984 
+[2026-10-08 08:55:56 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 08:56:01 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 08:56:05 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 08:56:09 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 08:56:19 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 08:56:28 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 08:56:41 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 08:56:41 root] (block_ap.py 162): INFO === Start quantize blocks 1===
+[2026-10-08 08:56:41 root] (block_ap.py 262): INFO blocks 1 epoch 0 recon_loss:0.018226586282253265 val_loss:0.01822565123438835 quant_lr:5e-06 norm:nan max memory_allocated 4330.36328125 time 0.06338882446289062 
+[2026-10-08 08:56:46 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 08:56:50 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 08:56:55 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 08:56:59 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 08:57:09 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 08:57:17 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 08:57:29 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 08:57:29 root] (block_ap.py 162): INFO === Start quantize blocks 2===
+[2026-10-08 08:57:29 root] (block_ap.py 262): INFO blocks 2 epoch 0 recon_loss:0.018148815259337425 val_loss:0.0181149672716856 quant_lr:5e-06 norm:0.01171853 max memory_allocated 4330.36328125 time 0.058439016342163086 
+[2026-10-08 08:57:34 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 08:57:39 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 08:57:45 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 08:57:48 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 08:57:57 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 08:58:07 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 08:58:18 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 08:58:18 root] (block_ap.py 162): INFO === Start quantize blocks 3===
+[2026-10-08 08:58:19 root] (block_ap.py 262): INFO blocks 3 epoch 0 recon_loss:0.018245691433548927 val_loss:0.0182068832218647 quant_lr:5e-06 norm:0.00469322 max memory_allocated 4331.42578125 time 0.08348846435546875 
+[2026-10-08 08:58:23 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 08:58:27 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 08:58:31 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 08:58:34 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 08:58:43 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 08:58:50 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 08:59:02 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 08:59:02 root] (block_ap.py 162): INFO === Start quantize blocks 4===
+[2026-10-08 08:59:02 root] (block_ap.py 262): INFO blocks 4 epoch 0 recon_loss:0.019269363954663277 val_loss:0.01920396275818348 quant_lr:5e-06 norm:0.04083148 max memory_allocated 4331.42578125 time 0.06109261512756348 
+[2026-10-08 08:59:06 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 08:59:10 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 08:59:14 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 08:59:18 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 08:59:28 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 08:59:37 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 08:59:49 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 08:59:49 root] (block_ap.py 162): INFO === Start quantize blocks 5===
+[2026-10-08 08:59:49 root] (block_ap.py 262): INFO blocks 5 epoch 0 recon_loss:0.019474206492304802 val_loss:0.019444288685917854 quant_lr:5e-06 norm:0.00537854 max memory_allocated 4332.26953125 time 0.05876588821411133 
+[2026-10-08 08:59:54 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 08:59:58 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:00:02 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:00:07 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:00:16 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:00:26 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:00:39 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:00:39 root] (block_ap.py 162): INFO === Start quantize blocks 6===
+[2026-10-08 09:00:40 root] (block_ap.py 262): INFO blocks 6 epoch 0 recon_loss:0.019735371693968773 val_loss:0.01973314955830574 quant_lr:5e-06 norm:0.00726967 max memory_allocated 4332.26953125 time 0.05870413780212402 
+[2026-10-08 09:00:44 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:00:48 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:00:52 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:00:57 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:01:06 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:01:15 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:01:29 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:01:29 root] (block_ap.py 162): INFO === Start quantize blocks 7===
+[2026-10-08 09:01:29 root] (block_ap.py 262): INFO blocks 7 epoch 0 recon_loss:0.020027419552206993 val_loss:0.020095789805054665 quant_lr:5e-06 norm:0.00622809 max memory_allocated 4332.26953125 time 0.09677886962890625 
+[2026-10-08 09:01:37 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:01:47 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:01:51 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:01:58 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:02:08 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:02:17 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:02:28 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:02:28 root] (block_ap.py 162): INFO === Start quantize blocks 8===
+[2026-10-08 09:02:28 root] (block_ap.py 262): INFO blocks 8 epoch 0 recon_loss:0.020306652411818504 val_loss:0.020488642156124115 quant_lr:5e-06 norm:0.00720913 max memory_allocated 4332.26953125 time 0.05924034118652344 
+[2026-10-08 09:02:33 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:02:37 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:02:41 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:02:44 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:02:54 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:03:03 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:03:16 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:03:16 root] (block_ap.py 162): INFO === Start quantize blocks 9===
+[2026-10-08 09:03:16 root] (block_ap.py 262): INFO blocks 9 epoch 0 recon_loss:0.020623670890927315 val_loss:0.020932381972670555 quant_lr:5e-06 norm:0.00752584 max memory_allocated 4332.26953125 time 0.08909082412719727 
+[2026-10-08 09:03:21 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:03:25 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:03:30 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:03:35 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:03:46 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:03:57 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:04:10 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:04:10 root] (block_ap.py 162): INFO === Start quantize blocks 10===
+[2026-10-08 09:04:10 root] (block_ap.py 262): INFO blocks 10 epoch 0 recon_loss:0.02093258872628212 val_loss:0.021419061347842216 quant_lr:5e-06 norm:0.00858999 max memory_allocated 4332.26953125 time 0.10368728637695312 
+[2026-10-08 09:04:15 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:04:18 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:04:23 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:04:27 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:04:37 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:04:47 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:04:58 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:04:58 root] (block_ap.py 162): INFO === Start quantize blocks 11===
+[2026-10-08 09:04:59 root] (block_ap.py 262): INFO blocks 11 epoch 0 recon_loss:0.021196376532316208 val_loss:0.02189713716506958 quant_lr:5e-06 norm:0.01402271 max memory_allocated 4332.26953125 time 0.08952450752258301 
+[2026-10-08 09:05:03 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:05:07 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:05:11 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:05:15 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:05:26 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:05:36 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:05:49 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:05:49 root] (block_ap.py 162): INFO === Start quantize blocks 12===
+[2026-10-08 09:05:49 root] (block_ap.py 262): INFO blocks 12 epoch 0 recon_loss:0.021486951038241386 val_loss:0.022424977272748947 quant_lr:5e-06 norm:0.01327961 max memory_allocated 4332.26953125 time 0.05852341651916504 
+[2026-10-08 09:05:54 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:05:59 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:06:04 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:06:09 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:06:19 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:06:27 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:06:39 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:06:39 root] (block_ap.py 162): INFO === Start quantize blocks 13===
+[2026-10-08 09:06:39 root] (block_ap.py 262): INFO blocks 13 epoch 0 recon_loss:0.02179073542356491 val_loss:0.023016754537820816 quant_lr:5e-06 norm:0.01565579 max memory_allocated 4332.26953125 time 0.05870819091796875 
+[2026-10-08 09:06:45 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:06:49 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:06:54 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:06:58 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:07:08 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:07:19 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:07:31 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:07:31 root] (block_ap.py 162): INFO === Start quantize blocks 14===
+[2026-10-08 09:07:31 root] (block_ap.py 262): INFO blocks 14 epoch 0 recon_loss:0.022110579535365105 val_loss:0.023766210302710533 quant_lr:5e-06 norm:0.01203772 max memory_allocated 4332.26953125 time 0.06580901145935059 
+[2026-10-08 09:07:36 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:07:41 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:07:46 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:07:50 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:07:59 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:08:07 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:08:19 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:08:19 root] (block_ap.py 162): INFO === Start quantize blocks 15===
+[2026-10-08 09:08:19 root] (block_ap.py 262): INFO blocks 15 epoch 0 recon_loss:0.022721003741025925 val_loss:0.024747295305132866 quant_lr:5e-06 norm:0.01890444 max memory_allocated 4332.26953125 time 0.05835413932800293 
+[2026-10-08 09:08:24 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:08:27 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:08:31 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:08:35 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:08:45 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:08:56 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:09:06 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:09:07 root] (block_ap.py 162): INFO === Start quantize blocks 16===
+[2026-10-08 09:09:07 root] (block_ap.py 262): INFO blocks 16 epoch 0 recon_loss:0.023856332525610924 val_loss:0.026642408221960068 quant_lr:5e-06 norm:0.02322481 max memory_allocated 4332.26953125 time 0.05809903144836426 
+[2026-10-08 09:09:11 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:09:15 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:09:19 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:09:23 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:09:33 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:09:44 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:09:57 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:09:57 root] (block_ap.py 162): INFO === Start quantize blocks 17===
+[2026-10-08 09:09:57 root] (block_ap.py 262): INFO blocks 17 epoch 0 recon_loss:0.024721791967749596 val_loss:0.028266604989767075 quant_lr:5e-06 norm:0.02594499 max memory_allocated 4332.26953125 time 0.05853152275085449 
+[2026-10-08 09:10:02 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:10:07 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:10:12 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:10:16 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:10:27 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:10:35 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:10:46 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:10:46 root] (block_ap.py 162): INFO === Start quantize blocks 18===
+[2026-10-08 09:10:46 root] (block_ap.py 262): INFO blocks 18 epoch 0 recon_loss:0.02636813372373581 val_loss:0.03108976036310196 quant_lr:5e-06 norm:0.03377567 max memory_allocated 4332.26953125 time 0.08347225189208984 
+[2026-10-08 09:10:51 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:10:55 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:10:59 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:11:03 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:11:11 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:11:22 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:11:34 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:11:34 root] (block_ap.py 162): INFO === Start quantize blocks 19===
+[2026-10-08 09:11:34 root] (block_ap.py 262): INFO blocks 19 epoch 0 recon_loss:0.02786872535943985 val_loss:0.03382771834731102 quant_lr:5e-06 norm:0.03253742 max memory_allocated 4332.26953125 time 0.05829262733459473 
+[2026-10-08 09:11:38 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:11:42 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:11:46 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:11:51 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:11:59 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:12:07 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:12:19 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:12:19 root] (block_ap.py 162): INFO === Start quantize blocks 20===
+[2026-10-08 09:12:20 root] (block_ap.py 262): INFO blocks 20 epoch 0 recon_loss:0.030163245275616646 val_loss:0.037679336965084076 quant_lr:5e-06 norm:0.02987122 max memory_allocated 4332.26953125 time 0.05982184410095215 
+[2026-10-08 09:12:24 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:12:29 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:12:33 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:12:38 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:12:49 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:12:58 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:13:10 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:13:10 root] (block_ap.py 162): INFO === Start quantize blocks 21===
+[2026-10-08 09:13:10 root] (block_ap.py 262): INFO blocks 21 epoch 0 recon_loss:0.03237589821219444 val_loss:0.04226737469434738 quant_lr:5e-06 norm:0.02244971 max memory_allocated 4332.26953125 time 0.08910989761352539 
+[2026-10-08 09:13:15 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:13:20 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:13:23 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:13:28 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:13:36 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:13:46 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:13:59 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:13:59 root] (block_ap.py 162): INFO === Start quantize blocks 22===
+[2026-10-08 09:14:00 root] (block_ap.py 262): INFO blocks 22 epoch 0 recon_loss:0.03521842882037163 val_loss:0.047998394817113876 quant_lr:5e-06 norm:0.05016503 max memory_allocated 4332.26953125 time 0.058556556701660156 
+[2026-10-08 09:14:05 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:14:10 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:14:15 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:14:19 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:14:30 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:14:38 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:14:49 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:14:49 root] (block_ap.py 162): INFO === Start quantize blocks 23===
+[2026-10-08 09:14:50 root] (block_ap.py 262): INFO blocks 23 epoch 0 recon_loss:0.03797793388366699 val_loss:0.0537816658616066 quant_lr:5e-06 norm:0.02342422 max memory_allocated 4332.26953125 time 0.09444904327392578 
+[2026-10-08 09:14:54 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:14:57 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:15:01 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:15:05 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:15:13 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:15:21 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:15:32 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:15:32 root] (block_ap.py 162): INFO === Start quantize blocks 24===
+[2026-10-08 09:15:34 root] (block_ap.py 262): INFO blocks 24 epoch 0 recon_loss:0.04130016267299652 val_loss:0.06076591834425926 quant_lr:5e-06 norm:0.03592695 max memory_allocated 4332.26953125 time 0.05916762351989746 
+[2026-10-08 09:15:38 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:15:42 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:15:46 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:15:50 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:15:59 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:16:07 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:16:18 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:16:18 root] (block_ap.py 162): INFO === Start quantize blocks 25===
+[2026-10-08 09:16:19 root] (block_ap.py 262): INFO blocks 25 epoch 0 recon_loss:0.0454290471971035 val_loss:0.06843113154172897 quant_lr:5e-06 norm:0.05526626 max memory_allocated 4332.26953125 time 0.05834817886352539 
+[2026-10-08 09:16:23 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:16:27 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:16:31 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:16:35 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:16:43 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:16:51 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:17:01 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:17:01 root] (block_ap.py 162): INFO === Start quantize blocks 26===
+[2026-10-08 09:17:03 root] (block_ap.py 262): INFO blocks 26 epoch 0 recon_loss:0.05103724077343941 val_loss:0.07870325446128845 quant_lr:5e-06 norm:0.08859283 max memory_allocated 4332.26953125 time 0.058237552642822266 
+[2026-10-08 09:17:07 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:17:12 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:17:16 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:17:21 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:17:31 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:17:41 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:17:52 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:17:52 root] (block_ap.py 162): INFO === Start quantize blocks 27===
+[2026-10-08 09:17:54 root] (block_ap.py 262): INFO blocks 27 epoch 0 recon_loss:0.056375131011009216 val_loss:0.08897347748279572 quant_lr:5e-06 norm:0.06858100 max memory_allocated 4332.26953125 time 0.05825948715209961 
+[2026-10-08 09:17:58 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:18:01 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:18:05 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:18:09 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:18:18 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:18:28 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:18:40 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:18:40 root] (block_ap.py 162): INFO === Start quantize blocks 28===
+[2026-10-08 09:18:41 root] (block_ap.py 262): INFO blocks 28 epoch 0 recon_loss:0.06321153789758682 val_loss:0.10192263126373291 quant_lr:5e-06 norm:0.07922534 max memory_allocated 4332.26953125 time 0.0900721549987793 
+[2026-10-08 09:18:46 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:18:51 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:18:56 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:19:01 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:19:11 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:19:21 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:19:33 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:19:33 root] (block_ap.py 162): INFO === Start quantize blocks 29===
+[2026-10-08 09:19:34 root] (block_ap.py 262): INFO blocks 29 epoch 0 recon_loss:0.07435180991888046 val_loss:0.1202368438243866 quant_lr:5e-06 norm:0.08533575 max memory_allocated 4332.26953125 time 0.05818676948547363 
+[2026-10-08 09:19:39 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:19:43 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:19:48 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:19:52 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:20:01 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:20:10 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:20:23 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:20:23 root] (block_ap.py 162): INFO === Start quantize blocks 30===
+[2026-10-08 09:20:24 root] (block_ap.py 262): INFO blocks 30 epoch 0 recon_loss:3.072847366333008 val_loss:3.1296229362487793 quant_lr:5e-06 norm:nan max memory_allocated 4332.26953125 time 0.04649209976196289 
+[2026-10-08 09:20:28 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:20:32 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:20:36 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:20:39 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:20:47 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:20:55 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:21:05 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:21:05 root] (block_ap.py 162): INFO === Start quantize blocks 31===
+[2026-10-08 09:21:06 root] (block_ap.py 262): INFO blocks 31 epoch 0 recon_loss:2.462010383605957 val_loss:2.5454726219177246 quant_lr:5e-06 norm:5.03101301 max memory_allocated 4332.26953125 time 0.05789995193481445 
+[2026-10-08 09:21:10 root] (block_ap.py 296): INFO pack quantized self_attn.q_proj finished
+[2026-10-08 09:21:14 root] (block_ap.py 296): INFO pack quantized self_attn.k_proj finished
+[2026-10-08 09:21:18 root] (block_ap.py 296): INFO pack quantized self_attn.v_proj finished
+[2026-10-08 09:21:22 root] (block_ap.py 296): INFO pack quantized self_attn.o_proj finished
+[2026-10-08 09:21:30 root] (block_ap.py 296): INFO pack quantized mlp.gate_proj finished
+[2026-10-08 09:21:38 root] (block_ap.py 296): INFO pack quantized mlp.up_proj finished
+[2026-10-08 09:21:49 root] (block_ap.py 296): INFO pack quantized mlp.down_proj finished
+[2026-10-08 09:21:49 root] (main_block_ap.py 172): INFO 1559.205619096756
+[2026-10-08 09:21:49 root] (main_block_ap.py 175): INFO start saving model
+[2026-10-08 09:21:52 root] (main_block_ap.py 178): INFO save model success

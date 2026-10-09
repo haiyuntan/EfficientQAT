@@ -1,0 +1,2 @@
+utc	host_available_kib	gpu_memory_used_mib	gpu_util_percent	cgroup_memory_bytes	oom_events
+2026-10-09T02:19:57.468813+00:00	122068464	0	0	6615879680	low 0;high 0;max 0;oom 0;oom_kill 0;

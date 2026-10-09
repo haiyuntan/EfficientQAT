@@ -1,0 +1,69 @@
+wikitext wikitext-2-raw-v1 {'train': 36718, 'validation': 3760, 'test': 4358}
+allenai/c4 None {'train': 356317, 'validation': 45576}
+togethercomputer/RedPajama-Data-1T-Sample None {'train': 930514}
+tatsu-lab/alpaca None {'train': 52002}
+piqa None {'test': 3084, 'train': 16113, 'validation': 1838}
+allenai/ai2_arc ARC-Easy {'test': 2376, 'train': 2251, 'validation': 570}
+allenai/ai2_arc ARC-Challenge {'test': 1172, 'train': 1119, 'validation': 299}
+hellaswag None {'test': 10003, 'train': 39905, 'validation': 10042}
+winogrande winogrande_xl {'test': 1767, 'train': 40398, 'validation': 1267}
+/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+MMLU local validated 1/57: mmlu_abstract_algebra
+MMLU local validated 2/57: mmlu_anatomy
+MMLU local validated 3/57: mmlu_astronomy
+MMLU local validated 4/57: mmlu_business_ethics
+MMLU local validated 5/57: mmlu_clinical_knowledge
+MMLU local validated 6/57: mmlu_college_biology
+MMLU local validated 7/57: mmlu_college_chemistry
+MMLU local validated 8/57: mmlu_college_computer_science
+MMLU local validated 9/57: mmlu_college_mathematics
+MMLU local validated 10/57: mmlu_college_medicine
+MMLU local validated 11/57: mmlu_college_physics
+MMLU local validated 12/57: mmlu_computer_security
+MMLU local validated 13/57: mmlu_conceptual_physics
+MMLU local validated 14/57: mmlu_econometrics
+MMLU local validated 15/57: mmlu_electrical_engineering
+MMLU local validated 16/57: mmlu_elementary_mathematics
+MMLU local validated 17/57: mmlu_formal_logic
+MMLU local validated 18/57: mmlu_global_facts
+MMLU local validated 19/57: mmlu_high_school_biology
+MMLU local validated 20/57: mmlu_high_school_chemistry
+MMLU local validated 21/57: mmlu_high_school_computer_science
+MMLU local validated 22/57: mmlu_high_school_european_history
+MMLU local validated 23/57: mmlu_high_school_geography
+MMLU local validated 24/57: mmlu_high_school_government_and_politics
+MMLU local validated 25/57: mmlu_high_school_macroeconomics
+MMLU local validated 26/57: mmlu_high_school_mathematics
+MMLU local validated 27/57: mmlu_high_school_microeconomics
+MMLU local validated 28/57: mmlu_high_school_physics
+MMLU local validated 29/57: mmlu_high_school_psychology
+MMLU local validated 30/57: mmlu_high_school_statistics
+MMLU local validated 31/57: mmlu_high_school_us_history
+MMLU local validated 32/57: mmlu_high_school_world_history
+MMLU local validated 33/57: mmlu_human_aging
+MMLU local validated 34/57: mmlu_human_sexuality
+MMLU local validated 35/57: mmlu_international_law
+MMLU local validated 36/57: mmlu_jurisprudence
+MMLU local validated 37/57: mmlu_logical_fallacies
+MMLU local validated 38/57: mmlu_machine_learning
+MMLU local validated 39/57: mmlu_management
+MMLU local validated 40/57: mmlu_marketing
+MMLU local validated 41/57: mmlu_medical_genetics
+MMLU local validated 42/57: mmlu_miscellaneous
+MMLU local validated 43/57: mmlu_moral_disputes
+MMLU local validated 44/57: mmlu_moral_scenarios
+MMLU local validated 45/57: mmlu_nutrition
+MMLU local validated 46/57: mmlu_philosophy
+MMLU local validated 47/57: mmlu_prehistory
+MMLU local validated 48/57: mmlu_professional_accounting
+MMLU local validated 49/57: mmlu_professional_law
+MMLU local validated 50/57: mmlu_professional_medicine
+MMLU local validated 51/57: mmlu_professional_psychology
+MMLU local validated 52/57: mmlu_public_relations
+MMLU local validated 53/57: mmlu_security_studies
+MMLU local validated 54/57: mmlu_sociology
+MMLU local validated 55/57: mmlu_us_foreign_policy
+MMLU local validated 56/57: mmlu_virology
+MMLU local validated 57/57: mmlu_world_religions
+All R0-R5 local datasets validated; no Hub access

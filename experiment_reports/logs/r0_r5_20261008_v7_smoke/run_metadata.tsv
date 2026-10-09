@@ -1,0 +1,5 @@
+run_id	r0_r5_20261008_v7_smoke
+mode	smoke
+model_dir	/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/models/Llama-2-7b-hf
+official_dir	/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/official_w2g64
+gpu_id	0

@@ -1,0 +1,40 @@
+/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[2026-10-08 09:29:02 root](main_e2e_qp.py 406): INFO Namespace(quant_model_path='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R2_smoke/block_ap', model_family='Llama-2-smoke-r0_r5_20261008_v7_smoke', trust_remote_code=False, use_auth_token=False, eval_dataset_size=2, max_train_samples=1, max_eval_samples=1, source_max_len=1024, target_max_len=256, dataset='redpajama', eval_tasks='', conv_temp='llama-2', mask_use=True, dataset_format='pt', overwrite_cache=False, preprocessing_num_workers=1, output_dir='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp', overwrite_output_dir=False, do_train=True, do_eval=False, do_predict=False, evaluation_strategy=<IntervalStrategy.NO: 'no'>, prediction_loss_only=False, per_device_train_batch_size=1, per_device_eval_batch_size=1, per_gpu_train_batch_size=None, per_gpu_eval_batch_size=None, gradient_accumulation_steps=1, eval_accumulation_steps=None, eval_delay=0, learning_rate=1e-05, weight_decay=0.0, adam_beta1=0.9, adam_beta2=0.999, adam_epsilon=1e-08, max_grad_norm=0.3, num_train_epochs=1.0, max_steps=1, lr_scheduler_type=<SchedulerType.COSINE: 'cosine'>, lr_scheduler_kwargs={}, warmup_ratio=0.0, warmup_steps=0, log_level='passive', log_level_replica='warning', log_on_each_node=True, logging_dir='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/runs/Oct08_09-29-02_pytorch-ng-894213-thy-zb6xg', logging_strategy=<IntervalStrategy.STEPS: 'steps'>, logging_first_step=False, logging_steps=1, logging_nan_inf_filter=True, save_strategy=<IntervalStrategy.NO: 'no'>, save_steps=250, save_total_limit=5, save_safetensors=True, save_on_each_node=False, save_only_model=False, no_cuda=False, use_cpu=False, use_mps_device=False, seed=42, data_seed=42, jit_mode_eval=False, use_ipex=False, bf16=True, fp16=False, fp16_opt_level='O1', half_precision_backend='auto', bf16_full_eval=False, fp16_full_eval=False, tf32=None, local_rank=0, ddp_backend=None, tpu_num_cores=None, tpu_metrics_debug=False, debug=[], dataloader_drop_last=False, eval_steps=None, dataloader_num_workers=0, dataloader_prefetch_factor=None, past_index=-1, run_name='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp', disable_tqdm=False, remove_unused_columns=False, label_names=None, load_best_model_at_end=False, metric_for_best_model=None, greater_is_better=None, ignore_data_skip=False, fsdp=[], fsdp_min_num_params=0, fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, fsdp_transformer_layer_cls_to_wrap=None, accelerator_config=AcceleratorConfig(split_batches=False, dispatch_batches=None, even_batches=True, use_seedable_sampler=True, gradient_accumulation_kwargs=None), deepspeed=None, label_smoothing_factor=0.0, optim=<OptimizerNames.PAGED_ADAMW: 'paged_adamw_32bit'>, optim_args=None, adafactor=False, group_by_length=False, length_column_name='length', report_to=[], ddp_find_unused_parameters=None, ddp_bucket_cap_mb=None, ddp_broadcast_buffers=None, dataloader_pin_memory=True, dataloader_persistent_workers=False, skip_memory_metrics=True, use_legacy_prediction_loop=False, push_to_hub=False, resume_from_checkpoint=None, hub_model_id=None, hub_strategy=<HubStrategy.EVERY_SAVE: 'every_save'>, hub_token=None, hub_private_repo=False, hub_always_push=False, gradient_checkpointing=True, gradient_checkpointing_kwargs=None, include_inputs_for_metrics=False, eval_do_concat_batches=True, fp16_backend='auto', push_to_hub_model_id=None, push_to_hub_organization=None, push_to_hub_token=None, mp_parameters='', auto_find_batch_size=False, full_determinism=False, torchdynamo=None, ray_scope='last', ddp_timeout=1800, torch_compile=False, torch_compile_backend=None, torch_compile_mode=None, dispatch_batches=None, split_batches=None, include_tokens_per_second=False, include_num_input_tokens_seen=False, neftune_noise_alpha=None, optim_target_modules=None, sortish_sampler=False, predict_with_generate=False, generation_max_length=None, generation_num_beams=None, generation_config=GenerationConfig {
+  "max_new_tokens": 256
+}
+, cache_dir=None, train_on_source=False, eval_limit=None, audit_updates=True, do_mmlu_eval=False, do_ppl_eval=False, pt_context_len=128, full_finetune=False, wbits=4, group_size=128, max_memory_MB=80000, distributed_state=Distributed environment: DistributedType.NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+, _n_gpu=1, __cached__setup_devices=device(type='cuda', index=0), deepspeed_plugin=None)
+Loading quantized model from /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R2_smoke/block_ap
+  0%|          | 0/32 [00:00<?, ?it/s]  6%|▋         | 2/32 [00:00<00:01, 19.09it/s] 12%|█▎        | 4/32 [00:00<00:02, 12.78it/s] 19%|█▉        | 6/32 [00:00<00:01, 15.17it/s] 25%|██▌       | 8/32 [00:00<00:01, 16.64it/s] 31%|███▏      | 10/32 [00:00<00:01, 17.58it/s] 38%|███▊      | 12/32 [00:00<00:01, 14.23it/s] 44%|████▍     | 14/32 [00:00<00:01, 15.62it/s] 50%|█████     | 16/32 [00:01<00:00, 16.68it/s] 56%|█████▋    | 18/32 [00:01<00:00, 17.48it/s] 62%|██████▎   | 20/32 [00:01<00:00, 14.43it/s] 69%|██████▉   | 22/32 [00:01<00:00, 15.68it/s] 75%|███████▌  | 24/32 [00:01<00:00, 16.69it/s] 81%|████████▏ | 26/32 [00:01<00:00, 17.47it/s] 88%|████████▊ | 28/32 [00:01<00:00, 14.47it/s] 94%|█████████▍| 30/32 [00:01<00:00, 15.70it/s]100%|██████████| 32/32 [00:02<00:00, 16.69it/s]100%|██████████| 32/32 [00:02<00:00, 15.99it/s]
+Loading pre-computed quantized weights...
+Loading pre-computed quantized weights Successfully
+loaded model
+loading redpajama
+load dataset from ./cache/e2e_dataloader_Llama-2-smoke-r0_r5_20261008_v7_smoke_redpajama_128.cache
+loading redpajama successfully
+max_steps is given, it will override any value given in num_train_epochs
+trainable module
+********************************************************************************
+********************************************************************************
+trainable params: 25296896.0 || all params: 313012224 || trainable: 8.081759771784505
+torch.bfloat16 262418432 0.83836480456431
+torch.float32 50593792 0.16163519543569008
+/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp
+[2026-10-08 09:29:15 root](main_e2e_qp.py 487): INFO *** Train ***
+  0%|          | 0/1 [00:00<?, ?it/s]/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+100%|██████████| 1/1 [00:03<00:00,  3.06s/it]                                             {'loss': 2.4007, 'grad_norm': 42.383880615234375, 'learning_rate': 0.0, 'epoch': 1.0}
+100%|██████████| 1/1 [00:03<00:00,  3.06s/it]                                             {'train_runtime': 3.0641, 'train_samples_per_second': 0.326, 'train_steps_per_second': 0.326, 'train_loss': 2.400726079940796, 'epoch': 1.0}
+100%|██████████| 1/1 [00:03<00:00,  3.06s/it]100%|██████████| 1/1 [00:03<00:00,  3.06s/it]
+***** train metrics *****
+  epoch                    =        1.0
+  total_flos               =      130GF
+  train_loss               =     2.4007
+  train_runtime            = 0:00:03.06
+  train_samples_per_second =      0.326
+  train_steps_per_second   =      0.326

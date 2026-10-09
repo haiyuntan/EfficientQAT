@@ -1,1 +1,648 @@
-[]
+[
+  {
+    "path": "logs/r0_r5_20261008_v7/auto.log",
+    "bytes": 24,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7/auto_resume.log",
+    "bytes": 71,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7/full_driver.log",
+    "bytes": 694399,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7/prepare_data.log",
+    "bytes": 3822,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7/smoke_driver.log",
+    "bytes": 229148,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/R0_FP16/eval_results.json",
+    "bytes": 46443123,
+    "copied": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/R0_FP16/log_rank0_1791453759.txt",
+    "bytes": 3579,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/R0_FP16.console.log",
+    "bytes": 293893,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/R1_official_W2g64/eval_results.json",
+    "bytes": 46444404,
+    "copied": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/R1_official_W2g64/log_rank0_1791454327.txt",
+    "bytes": 3702,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/R1_official_W2g64.console.log",
+    "bytes": 397217,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/R2/block_ap/log_rank0_1791455171.txt",
+    "bytes": 1298,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/R2_BlockAP.console.log",
+    "bytes": 2767,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/efficientqat-commit.txt",
+    "bytes": 41,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/nvidia-smi.txt",
+    "bytes": 1689,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/recovery_driver.log",
+    "bytes": 0,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/resources.tsv",
+    "bytes": 188,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/resources_monitor.log",
+    "bytes": 0,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/run_metadata.tsv",
+    "bytes": 232,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/status.tsv",
+    "bytes": 246,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R0_FP16_smoke/eval_results.json",
+    "bytes": 16087,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R0_FP16_smoke/log_rank0_1791449661.txt",
+    "bytes": 3489,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R0_FP16_smoke.log",
+    "bytes": 5771,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R0_MMLU/eval_results.json",
+    "bytes": 697442,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R0_MMLU/log_rank0_1791453590.txt",
+    "bytes": 20996,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R0_MMLU.console.log",
+    "bytes": 30515,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R1_official_smoke/eval_results.json",
+    "bytes": 16093,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R1_official_smoke/log_rank0_1791449705.txt",
+    "bytes": 3606,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R1_official_smoke.log",
+    "bytes": 7501,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R2_BlockAP_smoke/log_rank0_1791449748.txt",
+    "bytes": 32084,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R2_BlockAP_smoke.console.log",
+    "bytes": 34392,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R2_E2E_QP_smoke.console.log",
+    "bytes": 8389,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R2_reload.log",
+    "bytes": 1648,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R2_saved_eval/eval_results.json",
+    "bytes": 16116,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R2_saved_eval/log_rank0_1791453416.txt",
+    "bytes": 3634,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R2_saved_eval.log",
+    "bytes": 7676,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R3_BlockAP_smoke/log_rank0_1791451774.txt",
+    "bytes": 32007,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R3_BlockAP_smoke.console.log",
+    "bytes": 34304,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R3_MMLU/eval_results.json",
+    "bytes": 697470,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R3_MMLU/log_rank0_1791453635.txt",
+    "bytes": 21142,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R3_MMLU.console.log",
+    "bytes": 34459,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R3_saved_eval/eval_results.json",
+    "bytes": 16115,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R3_saved_eval/log_rank0_1791453465.txt",
+    "bytes": 3636,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R3_saved_eval.log",
+    "bytes": 7458,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R4_E2E_QP_smoke.console.log",
+    "bytes": 8329,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R4_MMLU/eval_results.json",
+    "bytes": 697489,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R4_MMLU/log_rank0_1791453675.txt",
+    "bytes": 21140,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R4_MMLU.console.log",
+    "bytes": 34741,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R4_saved_eval/eval_results.json",
+    "bytes": 16115,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R4_saved_eval/log_rank0_1791453506.txt",
+    "bytes": 3634,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R4_saved_eval.log",
+    "bytes": 7638,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R5_Alpaca.console.log",
+    "bytes": 9766,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R5_MMLU/eval_results.json",
+    "bytes": 697395,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R5_MMLU/log_rank0_1791453714.txt",
+    "bytes": 21140,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R5_MMLU.console.log",
+    "bytes": 34691,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R5_saved_eval/eval_results.json",
+    "bytes": 16107,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R5_saved_eval/log_rank0_1791453544.txt",
+    "bytes": 3634,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/R5_saved_eval.log",
+    "bytes": 7638,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/SMOKE_OK",
+    "bytes": 30,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/efficientqat-commit.txt",
+    "bytes": 41,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/nvidia-smi.txt",
+    "bytes": 1689,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/prepare_smoke_data.log",
+    "bytes": 575,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/run_metadata.tsv",
+    "bytes": 234,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/status.tsv",
+    "bytes": 1886,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_smoke/validation.log",
+    "bytes": 103,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/block_ap/config.json",
+    "bytes": 738,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/block_ap/generation_config.json",
+    "bytes": 183,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/block_ap/special_tokens_map.json",
+    "bytes": 414,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/block_ap/tokenizer_config.json",
+    "bytes": 988,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/added_tokens.json",
+    "bytes": 21,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/all_results.json",
+    "bytes": 196,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/config.json",
+    "bytes": 800,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/generation_config.json",
+    "bytes": 64,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/log_rank0_1791451324.txt",
+    "bytes": 4736,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/log_rank0_1791451615.txt",
+    "bytes": 4736,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/log_rank0_1791451742.txt",
+    "bytes": 4735,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/metrics.json",
+    "bytes": 297,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/special_tokens_map.json",
+    "bytes": 552,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/tokenizer_config.json",
+    "bytes": 1134,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/train_results.json",
+    "bytes": 196,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/trainer_state.json",
+    "bytes": 831,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp/update_audit.json",
+    "bytes": 49,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R3_smoke/block_ap/config.json",
+    "bytes": 738,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R3_smoke/block_ap/generation_config.json",
+    "bytes": 183,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R3_smoke/block_ap/special_tokens_map.json",
+    "bytes": 414,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R3_smoke/block_ap/tokenizer_config.json",
+    "bytes": 988,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/added_tokens.json",
+    "bytes": 21,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/all_results.json",
+    "bytes": 197,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/config.json",
+    "bytes": 800,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/generation_config.json",
+    "bytes": 64,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/log_rank0_1791453345.txt",
+    "bytes": 4734,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/metrics.json",
+    "bytes": 298,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/special_tokens_map.json",
+    "bytes": 552,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/tokenizer_config.json",
+    "bytes": 1134,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/train_results.json",
+    "bytes": 197,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/trainer_state.json",
+    "bytes": 831,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R4_smoke/e2e_qp/update_audit.json",
+    "bytes": 49,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/added_tokens.json",
+    "bytes": 21,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/all_results.json",
+    "bytes": 196,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/config.json",
+    "bytes": 800,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/generation_config.json",
+    "bytes": 64,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/log_rank0_1791453388.txt",
+    "bytes": 4709,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/metrics.json",
+    "bytes": 297,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/special_tokens_map.json",
+    "bytes": 552,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/tokenizer_config.json",
+    "bytes": 1135,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/train_results.json",
+    "bytes": 196,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/trainer_state.json",
+    "bytes": 970,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "outputs/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp/update_audit.json",
+    "bytes": 49,
+    "copied": true,
+    "tail_only": false
+  }
+]

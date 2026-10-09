@@ -1,0 +1,8 @@
+/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+GPU: NVIDIA A800 80GB PCIe
+Loading quantized model from /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R2_smoke/e2e_qp
+  0%|          | 0/32 [00:00<?, ?it/s]  3%|▎         | 1/32 [00:00<00:03,  7.99it/s]  9%|▉         | 3/32 [00:00<00:02, 14.15it/s] 16%|█▌        | 5/32 [00:00<00:01, 16.44it/s] 22%|██▏       | 7/32 [00:00<00:01, 17.58it/s] 28%|██▊       | 9/32 [00:00<00:01, 13.91it/s] 34%|███▍      | 11/32 [00:00<00:01, 15.45it/s] 41%|████      | 13/32 [00:00<00:01, 16.59it/s] 47%|████▋     | 15/32 [00:01<00:01, 13.89it/s] 53%|█████▎    | 17/32 [00:01<00:00, 15.27it/s] 59%|█████▉    | 19/32 [00:01<00:00, 16.40it/s] 66%|██████▌   | 21/32 [00:01<00:00, 17.23it/s] 72%|███████▏  | 23/32 [00:01<00:00, 14.33it/s] 78%|███████▊  | 25/32 [00:01<00:00, 15.57it/s] 84%|████████▍ | 27/32 [00:01<00:00, 16.58it/s] 91%|█████████ | 29/32 [00:01<00:00, 14.03it/s] 97%|█████████▋| 31/32 [00:02<00:00, 15.32it/s]100%|██████████| 32/32 [00:02<00:00, 15.05it/s]
+Loading pre-computed quantized weights...
+Loading pre-computed quantized weights Successfully
+SMOKE_OK kind=efficientqat shape=(1, 7, 32001) last_token_logit_std=1.143180

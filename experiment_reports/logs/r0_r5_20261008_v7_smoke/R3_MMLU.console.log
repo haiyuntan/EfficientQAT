@@ -1,0 +1,252 @@
+/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+['main_block_ap.py', '--resume_quant', '/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R3_smoke/block_ap', '--wbits', '2', '--net', 'Llama-2', '--group_size', '64', '--output_dir', '/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/logs/r0_r5/r0_r5_20261008_v7_smoke/R3_MMLU', '--eval_tasks', 'mmlu', '--num_fewshot', '5', '--eval_batch_size', '1', '--eval_limit', '1']
+[2026-10-08 10:00:35 root](main_block_ap.py 125): INFO Namespace(model=None, cache_dir='./cache', output_dir='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/logs/r0_r5/r0_r5_20261008_v7_smoke/R3_MMLU', save_quant_dir=None, real_quant=False, resume_quant='/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R3_smoke/block_ap', calib_dataset='redpajama', train_size=4096, val_size=64, training_seqlen=2048, batch_size=2, epochs=2, ppl_seqlen=2048, ppl_datasets='wikitext2,c4', ppl_max_samples=None, num_fewshot=5, eval_limit=1, seed=2, eval_ppl=False, eval_tasks='mmlu', eval_batch_size=1, wbits=2, group_size=64, quant_lr=0.0001, weight_lr=1e-05, min_lr_factor=20, clip_grad=0.3, wd=0, net='Llama-2', max_memory='70GiB', early_stop=0, off_load_to_disk=False)
+Loading quantized model from /XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R3_smoke/block_ap
+  0%|          | 0/32 [00:00<?, ?it/s]  9%|▉         | 3/32 [00:00<00:01, 23.16it/s] 19%|█▉        | 6/32 [00:00<00:01, 25.58it/s] 28%|██▊       | 9/32 [00:00<00:01, 19.44it/s] 38%|███▊      | 12/32 [00:00<00:01, 17.47it/s] 44%|████▍     | 14/32 [00:00<00:00, 18.00it/s] 50%|█████     | 16/32 [00:00<00:01, 14.93it/s] 56%|█████▋    | 18/32 [00:01<00:00, 15.94it/s] 62%|██████▎   | 20/32 [00:01<00:00, 16.84it/s] 69%|██████▉   | 22/32 [00:01<00:00, 17.56it/s] 75%|███████▌  | 24/32 [00:01<00:00, 14.59it/s] 81%|████████▏ | 26/32 [00:01<00:00, 15.78it/s] 88%|████████▊ | 28/32 [00:01<00:00, 16.75it/s] 94%|█████████▍| 30/32 [00:01<00:00, 17.50it/s]100%|██████████| 32/32 [00:01<00:00, 14.53it/s]100%|██████████| 32/32 [00:01<00:00, 16.58it/s]
+Loading pre-computed quantized weights...
+Loading pre-computed quantized weights Successfully
+[2026-10-08 10:00:41 root](main_block_ap.py 133): INFO memory footprint after loading quantized model: 2.21GiB
+[2026-10-08 10:00:46 lm-eval](huggingface.py 118): WARNING `pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+[2026-10-08 10:00:48 lm-eval](huggingface.py 337): WARNING Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+[2026-10-08 10:00:52 lm-eval](evaluator.py 131): INFO Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_international_law from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_prehistory from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_jurisprudence from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_european_history from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_philosophy from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_professional_law from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_moral_disputes from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_world_history from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_moral_scenarios from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_logical_fallacies from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_us_history from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_world_religions from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_formal_logic from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_geography from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_human_sexuality from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_public_relations from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_sociology from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_us_foreign_policy from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_macroeconomics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_professional_psychology from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_government_and_politics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_econometrics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_psychology from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_microeconomics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_security_studies from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_human_aging from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_professional_medicine from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_medical_genetics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_virology from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_nutrition from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_college_medicine from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_management from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_marketing from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_business_ethics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_professional_accounting from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_clinical_knowledge from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_global_facts from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_miscellaneous from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_anatomy from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_statistics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_computer_security from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_abstract_algebra from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_electrical_engineering from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_chemistry from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_machine_learning from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_college_chemistry from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_physics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_elementary_mathematics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_college_mathematics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_conceptual_physics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_college_biology from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_college_computer_science from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_biology from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_mathematics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_college_physics from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_high_school_computer_science from None to 5
+[2026-10-08 10:00:52 lm-eval](evaluator.py 222): WARNING Overwriting default num_fewshot of mmlu_astronomy from None to 5
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_international_law on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 107.93it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_prehistory on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.68it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_jurisprudence on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 109.86it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_european_history on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.58it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_philosophy on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 109.76it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_professional_law on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.26it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_moral_disputes on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.22it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_world_history on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.77it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_moral_scenarios on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 109.72it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_logical_fallacies on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.36it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_us_history on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.96it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_world_religions on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.41it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_formal_logic on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.38it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_geography on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 110.51it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_human_sexuality on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.57it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_public_relations on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.50it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_sociology on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.23it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_us_foreign_policy on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 110.48it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_macroeconomics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.23it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_professional_psychology on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.25it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_government_and_politics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.94it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_econometrics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.28it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_psychology on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.22it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_microeconomics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.07it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_security_studies on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.85it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_human_aging on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.28it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_professional_medicine on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 108.34it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_medical_genetics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.67it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_virology on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.38it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_nutrition on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.21it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_college_medicine on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.54it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_management on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.49it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_marketing on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.83it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_business_ethics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.48it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_professional_accounting on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.02it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_clinical_knowledge on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.84it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_global_facts on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 114.40it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_miscellaneous on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.87it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_anatomy on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 114.60it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_statistics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.25it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_computer_security on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.98it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_abstract_algebra on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.75it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_electrical_engineering on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.48it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_chemistry on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 110.13it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_machine_learning on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.75it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_college_chemistry on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.47it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_physics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.20it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_elementary_mathematics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.23it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_college_mathematics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.25it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_conceptual_physics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.14it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_college_biology on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.94it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_college_computer_science on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 112.39it/s]
+[2026-10-08 10:00:52 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_biology on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 110.92it/s]
+[2026-10-08 10:00:53 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_mathematics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.37it/s]
+[2026-10-08 10:00:53 lm-eval](task.py 395): INFO Building contexts for mmlu_college_physics on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.06it/s]
+[2026-10-08 10:00:53 lm-eval](task.py 395): INFO Building contexts for mmlu_high_school_computer_science on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 113.07it/s]
+[2026-10-08 10:00:53 lm-eval](task.py 395): INFO Building contexts for mmlu_astronomy on rank 0...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 109.88it/s]
+[2026-10-08 10:00:53 lm-eval](evaluator.py 362): INFO Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/228 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/228 [00:02<10:51,  2.87s/it]Running loglikelihood requests:   2%|▏         | 5/228 [00:03<01:48,  2.05it/s]Running loglikelihood requests:   4%|▍         | 9/228 [00:03<00:55,  3.94it/s]Running loglikelihood requests:   6%|▌         | 13/228 [00:03<00:35,  6.11it/s]Running loglikelihood requests:   7%|▋         | 17/228 [00:03<00:25,  8.39it/s]Running loglikelihood requests:   9%|▉         | 21/228 [00:03<00:19, 10.83it/s]Running loglikelihood requests:  11%|█         | 25/228 [00:04<00:15, 13.40it/s]Running loglikelihood requests:  13%|█▎        | 29/228 [00:04<00:12, 15.81it/s]Running loglikelihood requests:  14%|█▍        | 33/228 [00:04<00:13, 14.92it/s]Running loglikelihood requests:  16%|█▌        | 37/228 [00:04<00:10, 17.43it/s]Running loglikelihood requests:  18%|█▊        | 41/228 [00:04<00:09, 19.71it/s]Running loglikelihood requests:  20%|█▉        | 45/228 [00:05<00:08, 21.95it/s]Running loglikelihood requests:  21%|██▏       | 49/228 [00:05<00:07, 23.84it/s]Running loglikelihood requests:  23%|██▎       | 53/228 [00:05<00:06, 25.40it/s]Running loglikelihood requests:  25%|██▌       | 57/228 [00:05<00:06, 26.60it/s]Running loglikelihood requests:  27%|██▋       | 61/228 [00:05<00:06, 27.49it/s]Running loglikelihood requests:  29%|██▊       | 65/228 [00:05<00:05, 28.17it/s]Running loglikelihood requests:  30%|███       | 69/228 [00:05<00:05, 28.68it/s]Running loglikelihood requests:  32%|███▏      | 73/228 [00:05<00:05, 29.06it/s]Running loglikelihood requests:  34%|███▍      | 77/228 [00:06<00:05, 29.33it/s]Running loglikelihood requests:  36%|███▌      | 81/228 [00:06<00:04, 29.50it/s]Running loglikelihood requests:  37%|███▋      | 85/228 [00:06<00:04, 30.27it/s]Running loglikelihood requests:  39%|███▉      | 89/228 [00:06<00:04, 30.82it/s]Running loglikelihood requests:  41%|████      | 93/228 [00:06<00:04, 31.26it/s]Running loglikelihood requests:  43%|████▎     | 97/228 [00:06<00:04, 31.58it/s]Running loglikelihood requests:  44%|████▍     | 101/228 [00:06<00:03, 31.80it/s]Running loglikelihood requests:  46%|████▌     | 105/228 [00:06<00:03, 31.96it/s]Running loglikelihood requests:  48%|████▊     | 109/228 [00:07<00:03, 32.08it/s]Running loglikelihood requests:  50%|████▉     | 113/228 [00:07<00:03, 32.15it/s]Running loglikelihood requests:  51%|█████▏    | 117/228 [00:07<00:03, 32.20it/s]Running loglikelihood requests:  53%|█████▎    | 121/228 [00:07<00:03, 32.26it/s]Running loglikelihood requests:  55%|█████▍    | 125/228 [00:07<00:03, 32.35it/s]Running loglikelihood requests:  57%|█████▋    | 129/228 [00:07<00:03, 32.61it/s]Running loglikelihood requests:  58%|█████▊    | 133/228 [00:07<00:02, 32.85it/s]Running loglikelihood requests:  60%|██████    | 137/228 [00:07<00:02, 33.06it/s]Running loglikelihood requests:  62%|██████▏   | 141/228 [00:08<00:02, 33.20it/s]Running loglikelihood requests:  64%|██████▎   | 145/228 [00:08<00:02, 33.33it/s]Running loglikelihood requests:  65%|██████▌   | 149/228 [00:08<00:02, 33.43it/s]Running loglikelihood requests:  67%|██████▋   | 153/228 [00:08<00:02, 33.51it/s]Running loglikelihood requests:  69%|██████▉   | 157/228 [00:08<00:02, 33.57it/s]Running loglikelihood requests:  71%|███████   | 161/228 [00:08<00:01, 33.65it/s]Running loglikelihood requests:  72%|███████▏  | 165/228 [00:08<00:01, 33.71it/s]Running loglikelihood requests:  74%|███████▍  | 169/228 [00:08<00:01, 33.75it/s]Running loglikelihood requests:  76%|███████▌  | 173/228 [00:08<00:01, 33.80it/s]Running loglikelihood requests:  78%|███████▊  | 177/228 [00:09<00:01, 33.85it/s]Running loglikelihood requests:  79%|███████▉  | 181/228 [00:09<00:01, 33.88it/s]Running loglikelihood requests:  81%|████████  | 185/228 [00:09<00:01, 33.94it/s]Running loglikelihood requests:  83%|████████▎ | 189/228 [00:09<00:01, 34.70it/s]Running loglikelihood requests:  85%|████████▍ | 193/228 [00:09<00:00, 35.25it/s]Running loglikelihood requests:  86%|████████▋ | 197/228 [00:09<00:00, 35.64it/s]Running loglikelihood requests:  88%|████████▊ | 201/228 [00:09<00:00, 35.94it/s]Running loglikelihood requests:  90%|████████▉ | 205/228 [00:09<00:00, 36.18it/s]Running loglikelihood requests:  92%|█████████▏| 209/228 [00:10<00:00, 36.37it/s]Running loglikelihood requests:  93%|█████████▎| 213/228 [00:10<00:00, 36.56it/s]Running loglikelihood requests:  95%|█████████▌| 217/228 [00:10<00:00, 36.73it/s]Running loglikelihood requests:  97%|█████████▋| 221/228 [00:10<00:00, 36.90it/s]Running loglikelihood requests:  99%|█████████▊| 225/228 [00:10<00:00, 37.06it/s]Running loglikelihood requests: 100%|██████████| 228/228 [00:10<00:00, 21.86it/s]
+[2026-10-08 10:01:10 root](main_block_ap.py 58): INFO |                 Tasks                 |Version|Filter|n-shot|Metric|Value |   |Stderr|
+|---------------------------------------|-------|------|-----:|------|-----:|---|------|
+|mmlu                                   |N/A    |none  |     0|acc   |0.1404|±  |N/A   |
+| - humanities                          |N/A    |none  |     5|acc   |0.1538|±  |N/A   |
+|  - formal_logic                       |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_european_history       |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_us_history             |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_world_history          |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - international_law                  |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - jurisprudence                      |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - logical_fallacies                  |      0|none  |     5|acc   |1.0000|±  |N/A   |
+|  - moral_disputes                     |      0|none  |     5|acc   |1.0000|±  |N/A   |
+|  - moral_scenarios                    |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - philosophy                         |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - prehistory                         |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - professional_law                   |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - world_religions                    |      0|none  |     5|acc   |0.0000|±  |N/A   |
+| - other                               |N/A    |none  |     5|acc   |0.1538|±  |N/A   |
+|  - business_ethics                    |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - clinical_knowledge                 |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - college_medicine                   |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - global_facts                       |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - human_aging                        |      0|none  |     5|acc   |1.0000|±  |N/A   |
+|  - management                         |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - marketing                          |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - medical_genetics                   |      0|none  |     5|acc   |1.0000|±  |N/A   |
+|  - miscellaneous                      |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - nutrition                          |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - professional_accounting            |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - professional_medicine              |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - virology                           |      0|none  |     5|acc   |0.0000|±  |N/A   |
+| - social_sciences                     |N/A    |none  |     5|acc   |0.0000|±  |N/A   |
+|  - econometrics                       |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_geography              |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_government_and_politics|      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_macroeconomics         |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_microeconomics         |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_psychology             |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - human_sexuality                    |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - professional_psychology            |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - public_relations                   |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - security_studies                   |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - sociology                          |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - us_foreign_policy                  |      0|none  |     5|acc   |0.0000|±  |N/A   |
+| - stem                                |N/A    |none  |     5|acc   |0.2105|±  |N/A   |
+|  - abstract_algebra                   |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - anatomy                            |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - astronomy                          |      0|none  |     5|acc   |1.0000|±  |N/A   |
+|  - college_biology                    |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - college_chemistry                  |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - college_computer_science           |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - college_mathematics                |      0|none  |     5|acc   |1.0000|±  |N/A   |
+|  - college_physics                    |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - computer_security                  |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - conceptual_physics                 |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - electrical_engineering             |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - elementary_mathematics             |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_biology                |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_chemistry              |      0|none  |     5|acc   |1.0000|±  |N/A   |
+|  - high_school_computer_science       |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_mathematics            |      0|none  |     5|acc   |1.0000|±  |N/A   |
+|  - high_school_physics                |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - high_school_statistics             |      0|none  |     5|acc   |0.0000|±  |N/A   |
+|  - machine_learning                   |      0|none  |     5|acc   |0.0000|±  |N/A   |
+
+[2026-10-08 10:01:10 root](main_block_ap.py 64): INFO Average Acc: 14.04%
