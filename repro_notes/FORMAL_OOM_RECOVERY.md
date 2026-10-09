@@ -28,3 +28,10 @@ metadata is retained and recovery commits are recorded separately.
 Resource telemetry records available host memory, GPU memory and cgroup OOM counts.
 Analysis export excludes weights, datasets and caches. Network push status must be
 reported separately from local experiment completion.
+
+The first recovery attempt (02:19 UTC) exited before model initialization without
+an OOM counter increment. Its driver and resource monitor both vanished together.
+Recovery is supervised in a live execution session rather than relying on nohup.
+The report tree now explicitly includes small metadata under experiment_reports/outputs;
+the generic outputs/ ignore rule previously prevented those files being tracked.
+GitHub push succeeded with the corrected credential: remote reached 14c34eb.

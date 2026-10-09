@@ -18,3 +18,7 @@ checkpoint-*/
 # Python artifacts
 __pycache__/
 *.pyc
+
+# Small exported training metadata is intentionally versioned.
+!experiment_reports/outputs/
+!experiment_reports/outputs/**
