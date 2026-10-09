@@ -71,6 +71,12 @@
   },
   {
     "path": "logs/r0_r5_20261008_v7_full/R2_BlockAP.console.log",
+    "bytes": 266,
+    "copied": true,
+    "tail_only": false
+  },
+  {
+    "path": "logs/r0_r5_20261008_v7_full/R2_BlockAP.console.log.before-20261009T021958Z.log",
     "bytes": 2767,
     "copied": true,
     "tail_only": false
@@ -89,7 +95,7 @@
   },
   {
     "path": "logs/r0_r5_20261008_v7_full/recovery_driver.log",
-    "bytes": 0,
+    "bytes": 686,
     "copied": true,
     "tail_only": false
   },
@@ -106,6 +112,12 @@
     "tail_only": false
   },
   {
+    "path": "logs/r0_r5_20261008_v7_full/resume-commits.txt",
+    "bytes": 41,
+    "copied": true,
+    "tail_only": false
+  },
+  {
     "path": "logs/r0_r5_20261008_v7_full/run_metadata.tsv",
     "bytes": 232,
     "copied": true,
@@ -113,7 +125,7 @@
   },
   {
     "path": "logs/r0_r5_20261008_v7_full/status.tsv",
-    "bytes": 246,
+    "bytes": 286,
     "copied": true,
     "tail_only": false
   },

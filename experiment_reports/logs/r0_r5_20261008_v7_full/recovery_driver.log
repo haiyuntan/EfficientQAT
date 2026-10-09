@@ -1,0 +1,7 @@
+Reusing completed R0_FP16_evaluation; evaluation gate will be checked again
+R0 gate: WikiText2 PPL=5.47 (reference 5.47 ± 1.00); Average Acc=64.81% (reference 64.86% ± 5.00 pp)
+Reusing completed R1_official_W2g64_evaluation; evaluation gate will be checked again
+R1 gate: WikiText2 PPL=6.86 (reference 6.86 ± 1.00); Average Acc=60.15% (reference 60.14% ± 5.00 pp)
+===== R2_BlockAP started 2026-10-09T02:19:58Z =====
+/HOME/sysu_qling/sysu_qling_3/HDD_POOL/anaconda3/envs/efficientqat/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(

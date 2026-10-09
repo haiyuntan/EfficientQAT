@@ -1,0 +1,1 @@
+{"run_name": "/XYFS01/HDD_POOL/sysu_qling/sysu_qling_3/tan/EFFICIENTQAT/outputs/r0_r5/r0_r5_20261008_v7_smoke/R5_smoke/e2e_qp", "train_runtime": 3.5303, "train_samples_per_second": 0.567, "train_steps_per_second": 0.567, "total_flos": 280431083520.0, "train_loss": 5.021202921867371, "epoch": 0.5}
