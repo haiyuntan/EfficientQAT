@@ -137,7 +137,7 @@ run_logged() {
   printf '%s\tRUNNING\t%s\n' "$step" "$(date -u +%FT%TZ)" >>"$LOG_ROOT/status.tsv"
   echo "===== $step started $(date -u +%FT%TZ) ====="
   set +e
-  "$@" 2>&1 | tee "$logfile"
+  nohup "$@" </dev/null 2>&1 | tee "$logfile"
   local rc=${PIPESTATUS[0]}
   set -e
   if (( rc != 0 )); then

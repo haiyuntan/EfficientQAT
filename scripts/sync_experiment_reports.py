@@ -18,7 +18,12 @@ MAX_BYTES = 2 * 1024 * 1024
 
 def git(*args):
     env = dict(os.environ, GIT_TERMINAL_PROMPT="0")
-    return subprocess.run(["git", *args], cwd=REPO, env=env, check=True, timeout=55)
+    command = ["git"]
+    if env.get("REPORT_GITHUB_TOKEN"):
+        # Supply credentials from process memory; never write them into Git config.
+        helper = '!f() { if [ "$1" = get ]; then printf "username=%s\\npassword=%s\\n" haiyuntan "$REPORT_GITHUB_TOKEN"; fi; }; f'
+        command += ["-c", "credential.helper=", "-c", "credential.helper=" + helper]
+    return subprocess.run([*command, *args], cwd=REPO, env=env, check=True, timeout=55)
 
 
 def snapshot(local_only=False):
