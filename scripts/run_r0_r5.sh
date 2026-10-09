@@ -9,8 +9,8 @@ MODE="${1:-smoke}"
 RUN_ID="${2:-$(date -u +%Y%m%dT%H%M%SZ)}"
 GPU_ID="${GPU_ID:-0}"
 RESUME_FROM="${RESUME_FROM:-}"
-if [[ -n "$RESUME_FROM" && ( "$MODE" != "smoke" || "$RESUME_FROM" != "R2_E2E_QP" ) ]]; then
-  echo "Only smoke RESUME_FROM=R2_E2E_QP is supported" >&2
+if [[ -n "$RESUME_FROM" && ! ( "$MODE" == "smoke" && "$RESUME_FROM" == "R2_E2E_QP" ) && ! ( "$MODE" == "full" && "$RESUME_FROM" == "R2_BlockAP" ) ]]; then
+  echo "Supported resumes: smoke R2_E2E_QP or full R2_BlockAP" >&2
   exit 2
 fi
 MODEL_DIR="${MODEL_DIR:-$PROJECT_ROOT/models/Llama-2-7b-hf}"
@@ -101,7 +101,11 @@ export CUDA_VISIBLE_DEVICES="$GPU_ID"
 printf 'run_id\t%s\nmode\t%s\nmodel_dir\t%s\nofficial_dir\t%s\ngpu_id\t%s\n' \
   "$RUN_ID" "$MODE" "$MODEL_DIR" "$OFFICIAL_DIR" "$GPU_ID" >"$LOG_ROOT/run_metadata.tsv"
 nvidia-smi >"$LOG_ROOT/nvidia-smi.txt"
-git -C "$REPO_ROOT" rev-parse HEAD >"$LOG_ROOT/efficientqat-commit.txt"
+if [[ -n "$RESUME_FROM" ]]; then
+  git -C "$REPO_ROOT" rev-parse HEAD >>"$LOG_ROOT/resume-commits.txt"
+else
+  git -C "$REPO_ROOT" rev-parse HEAD >"$LOG_ROOT/efficientqat-commit.txt"
+fi
 
 CURRENT_STEP="preflight"
 on_exit() {
@@ -118,6 +122,18 @@ run_logged() {
   local logfile="$2"
   shift 2
   CURRENT_STEP="$step"
+  if [[ "$MODE" == full && "$RESUME_FROM" == R2_BlockAP && ( "$step" == R0_FP16_evaluation || "$step" == R1_official_W2g64_evaluation ) ]]; then
+    if ! awk -F '\t' -v step="$step" '$1 == step && $2 == "DONE" {done=1} END {exit !done}' "$LOG_ROOT/status.tsv"; then
+      echo "Cannot resume: $step has no DONE record" >&2
+      return 1
+    fi
+    test -s "$logfile"
+    echo "Reusing completed $step; evaluation gate will be checked again"
+    return 0
+  fi
+  if [[ -e "$logfile" ]]; then
+    mv "$logfile" "$logfile.before-$(date -u +%Y%m%dT%H%M%SZ).log"
+  fi
   printf '%s\tRUNNING\t%s\n' "$step" "$(date -u +%FT%TZ)" >>"$LOG_ROOT/status.tsv"
   echo "===== $step started $(date -u +%FT%TZ) ====="
   set +e
@@ -232,7 +248,7 @@ block_ap() {
     --wbits "$bits" --group_size "$group" \
     --calib_dataset redpajama --train_size 4096 --val_size 64 \
     --training_seqlen 2048 --batch_size 2 --epochs 2 \
-    --quant_lr 1e-4 --weight_lr "$weight_lr" --real_quant \
+    --quant_lr 1e-4 --weight_lr "$weight_lr" --real_quant --off_load_to_disk \
     --cache_dir "$REPO_ROOT/cache" --output_dir "$logdir" \
     --save_quant_dir "$out" --eval_ppl --ppl_seqlen 2048 \
     --eval_tasks "$TASKS" --eval_batch_size 16

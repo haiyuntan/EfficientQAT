@@ -21,7 +21,7 @@ def git(*args):
     return subprocess.run(["git", *args], cwd=REPO, env=env, check=True, timeout=55)
 
 
-def snapshot():
+def snapshot(local_only=False):
     manifest = []
     for category in ("logs", "outputs"):
         source = PROJECT / category / "r0_r5"
@@ -59,6 +59,9 @@ def snapshot():
         git("-c", "user.name=haiyuntan", "-c", "user.email=haiyuntan@users.noreply.github.com", "commit", "-m", "Update R0-R5 experiment analysis artifacts", "--", "experiment_reports")
     elif changes.returncode != 0:
         raise RuntimeError("Cannot inspect staged reports")
+    if local_only:
+        print("Reports committed locally; push deferred", flush=True)
+        return
     branch = subprocess.check_output(["git", "branch", "--show-current"], cwd=REPO, text=True).strip()
     if not branch:
         raise RuntimeError("Cannot synchronize a detached HEAD")
@@ -69,6 +72,7 @@ def snapshot():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--after-run", help="Wait for this formal run's ALL_DONE marker, then push once")
+    parser.add_argument("--local-only", action="store_true", help="Commit reports without a network push")
     args = parser.parse_args()
     if args.after_run:
         if not re.fullmatch(r"[A-Za-z0-9._-]+", args.after_run) or args.after_run in {".", ".."}:
@@ -80,7 +84,7 @@ if __name__ == "__main__":
     with (REPO / ".git/report-sync.lock").open("w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         try:
-            snapshot()
+            snapshot(args.local_only)
         except Exception as error:
             print(type(error).__name__ + ": " + str(error), flush=True)
             raise SystemExit(1)
